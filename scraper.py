@@ -56,15 +56,25 @@ HEADERS = {
 #   titulo   : CSS del nombre del comercio dentro de la tarjeta (opcional)
 # --------------------------------------------------------------------------
 BANCOS: dict[str, dict] = {
-    "bchile":    {"nombre": "Banco de Chile",  "url": "https://sitiospublicos.bancochile.cl/personas/beneficios", "js": True,  "selector": None, "titulo": None},
-    "estado":    {"nombre": "BancoEstado",     "url": "https://www.bancoestado.cl/beneficios",                    "js": True,  "selector": None, "titulo": None},
-    "santander": {"nombre": "Santander",       "url": "https://banco.santander.cl/beneficios",                    "js": True,  "selector": None, "titulo": None},
-    "bci":       {"nombre": "BCI",             "url": "https://www.bci.cl/beneficios/beneficios-bci",             "js": True,  "selector": None, "titulo": None},
-    "scotia":    {"nombre": "Scotiabank",      "url": "https://www.scotiabankchile.cl/beneficios",                "js": True,  "selector": None, "titulo": None},
-    "itau":      {"nombre": "Itaú",            "url": "https://itaubeneficios.cl",                                "js": True,  "selector": None, "titulo": None},
-    "falabella": {"nombre": "Banco Falabella", "url": "https://www.bancofalabella.cl/descuentos",                 "js": True,  "selector": None, "titulo": None},
-    "security":  {"nombre": "Security",        "url": "https://www.bancosecurity.cl/beneficios",                  "js": True,  "selector": None, "titulo": None},
-    "ripley":    {"nombre": "Banco Ripley",    "url": "https://www.bancoripley.cl/beneficios",                    "js": True,  "selector": None, "titulo": None},
+    # Banco de Chile publica sus beneficios en una API interna (se lee desde el navegador).
+    "bchile":    {"nombre": "Banco de Chile",  "api": "bchile",
+                  "url": "https://sitiospublicos.bancochile.cl/personas/beneficios"},
+    # BancoEstado, Santander e Itaú bloquean navegadores automáticos: se respetan
+    # y se mantienen solo los descuentos cargados a mano.
+    "estado":    {"nombre": "BancoEstado",     "activo": False, "url": "https://www.bancoestado.cl/beneficios"},
+    "santander": {"nombre": "Santander",       "activo": False, "url": "https://banco.santander.cl/beneficios"},
+    "itau":      {"nombre": "Itaú",            "activo": False, "url": "https://itaubeneficios.cl"},
+    "bci":       {"nombre": "BCI",             "url": "https://www.bci.cl/beneficios/beneficios-bci", "js": True,
+                  "selector": None, "titulo": None},
+    "scotia":    {"nombre": "Scotiabank",      "url": "https://www.scotiabankchile.cl/beneficios", "js": True,
+                  "selector": ".scotia-box-solid, .sc-box-bannerhero", "titulo": None},
+    "falabella": {"nombre": "Banco Falabella", "url": "https://www.bancofalabella.cl/descuentos", "js": True,
+                  "selector": 'div[class*="NewCardBenefits_content"]', "titulo": '[class*="NewCardBenefits_title"]'},
+    "security":  {"nombre": "Security",        "js": True, "selector": None, "titulo": None,
+                  "urls": ["https://personas.bancosecurity.cl/beneficios",
+                           "https://personas.bancosecurity.cl/beneficios/gourmet"]},
+    "ripley":    {"nombre": "Banco Ripley",    "url": "https://www.bancoripley.cl/beneficios-y-promociones", "js": True,
+                  "selector": None, "titulo": None},
 }
 
 # El orden importa: gana la primera categoría que coincida.
@@ -73,14 +83,17 @@ CATEGORIAS: dict[str, list[str]] = {
     "bencina":         ["copec", "shell", "petrobras", "aramco", "bencina", "combustible", "litro"],
     "entretenimiento": ["cinemark", "cineplanet", "cinepolis", "cine", "teatro", "concierto", "fantasilandia",
                         "puntoticket", "ticketmaster", "museo", "parque", "bowling", "entretencion",
-                        "chuck e. cheese", "chuck e cheese", "kidzania", "buin zoo", "show", "evento"],
+                        "chuck e. cheese", "chuck e cheese", "kidzania", "buin zoo", "show", "evento", "color run",
+                        "carrera", "running", "festival", "entrada"],
     "comida":          ["restaurant", "restaurante", "restoran", "sushi", "pizza", "pizzeria", "burger", "hamburguesa",
                         "cafe", "cafeteria", "starbucks", "juan maestro", "mamut", "domino", "papa john", "papa johns",
                         "mcdonald", "mcdonalds", "mccombo", "kfc", "delivery", "rappi", "pedidosya", "uber eats",
                         "comida", "cocina", "gastronomia", "gourmet", "bar", "sabores", "dunkin", "doggis",
                         "tommy beans", "chicken", "chick'en", "latte", "le vice", "lovdo", "wendy", "china wok",
                         "telepizza", "pizza hut", "kitchen", "sandwich", "sangucheria", "heladeria", "pasteleria",
-                        "panaderia", "nikkei", "mexicana", "peruana", "parrilla", "grill", "brunch", "almuerzo"],
+                        "panaderia", "nikkei", "mexicana", "peruana", "parrilla", "grill", "brunch", "almuerzo",
+                        "caffe", "coffee", "churro", "churromania", "pretzel", "paleta", "palettas", "helado",
+                        "emporio", "dulce", "dulcentorno", "jugo", "boost", "shawarma", "wrap", "taco", "empanada"],
     "supermercado":    ["jumbo", "lider", "tottus", "unimarc", "santa isabel", "acuenta", "supermercado", "mercado"],
     "salud":           ["cruz verde", "salcobrand", "ahumada", "farmacia", "clinica", "dental", "optica",
                         "nutrition", "suplemento", "medico", "laboratorio"],
@@ -89,7 +102,8 @@ CATEGORIAS: dict[str, list[str]] = {
     "moda":            ["paris", "h&m", "zara", "adidas", "nike", "vestuario", "calzado", "ropa", "moda",
                         "zapatilla", "zapato"],
     "viajes":          ["sky", "latam", "jetsmart", "hotel", "turismo", "viaje", "vuelo", "despegar",
-                        "avis", "budget", "arriendo de auto", "arrendar un auto", "rent a car"],
+                        "avis", "budget", "arriendo de auto", "arrendar un auto", "rent a car", "cabify", "uber",
+                        "estacionamiento", "aeropuerto"],
 }
 
 # Textos que no son descuentos en comercios: productos financieros del banco.
@@ -102,7 +116,7 @@ RE_PRECIO_PRODUCTO = re.compile(r"-\d{1,2}\s?%.*\$\s?\d|\$\s?\d[\d.]*\s*-\d{1,2}
 
 # Nombres que no identifican un comercio (días, etiquetas genéricas, títulos de promoción).
 RE_NOMBRE_GENERICO = re.compile(
-    r"^(?:nuevo|nueva|hasta|comercio|cmr|dcto\.?|descuento|beneficio|ver mas|ver detalle|mañana|manana|hoy|todos los dias"
+    r"^(?:nuevo|nueva|hasta|comercio|restaurante|restaurantes|tienda|tiendas|cmr|dcto\.?|descuento|beneficio|ver mas|ver detalle|mañana|manana|hoy|todos los dias"
     r"|(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do)"
     r"(?:\s*(?:,|y|a|-)\s*(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do))*)$"
 )
@@ -253,6 +267,33 @@ IMG_GENERICA = re.compile(r"logo|banner|imagen|image|icono|icon|foto|^\W*$", re.
 COLA = re.compile(r"(?:\s+(?:exclusivo|presencial|pagando|valido|válido|solo|con|por|en|todos|hasta|sin|y|online|vigente))+$", re.I)
 
 
+RUIDO_ARCHIVO = {"thumbnail", "thumb", "card", "cards", "bd", "bn", "img", "web", "banner", "beneficio", "beneficios",
+                 "logos", "nuevo", "new", "final", "v", "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+                 "agosto", "septiembre", "octubre", "noviembre", "diciembre", "copia", "copy", "sitio"}
+
+
+def nombre_desde_archivo(src: str) -> str:
+    """'Cards_LOGO_Web_Baqueano.webp' -> 'Baqueano'; 'DOMINGA BISTRO LOGO WEB 15' -> 'Dominga Bistro'."""
+    base = os.path.splitext(os.path.basename(src.split("?")[0]))[0]
+    if re.search(r"icon|calendar|arrow|chevron|sin.?t.?tulo|dise.?o|[^\x00-\x7f]", base, re.I):
+        return ""
+    base = re.sub(r"\d{4,}", " ", base)
+    base = re.sub(r"(?<=[a-z])(?=[A-Z])", " ", base)
+    tokens = re.split(r"[\s_\-]+", base)
+    partes, actual = [], []
+    for t in tokens:
+        if t.lower() == "logo":
+            partes.append(actual); actual = []
+        elif t and not t.isdigit() and t.lower() not in RUIDO_ARCHIVO and not re.fullmatch(r"\d+\w{0,2}", t):
+            actual.append(t)
+    partes.append(actual)
+    for parte in reversed(partes):  # el nombre suele ir después de "logo"
+        nombre = " ".join(parte)
+        if 2 <= len(nombre) <= 30:
+            return nombre.title() if nombre.isupper() else nombre
+    return ""
+
+
 def limpiar_nombre(s: str) -> str:
     s = COLA.sub("", RE_PREFIJO.sub("", limpiar(s))).strip(" -–:|·.")
     return s[:1].upper() + s[1:60] if s else ""
@@ -260,6 +301,8 @@ def limpiar_nombre(s: str) -> str:
 
 def es_generico(nombre: str) -> bool:
     n = normalizar(nombre).strip(" .!¡?")
+    if re.fullmatch(r"[\d\s%$.,]+", n) or n.startswith(("en www", "www.")):
+        return True
     return (not n or bool(RE_NOMBRE_GENERICO.match(n)) or bool(RE_PCT.search(nombre))
             or n.startswith(("hasta ", "todos los", "disfruta", "canjea", "aprovecha", "conoce", "exclusivo",
                              "presencial", "valido", "sin tope", "pagando", "con tu", "con tus", "solo ",
@@ -287,6 +330,9 @@ def nombre_comercio(card: Tag, sel: str | None, texto: str) -> str | None:
             v = (img.get(attr) or "").strip()
             if v and not IMG_GENERICA.search(v):
                 candidatos.append(v)
+    for img in card.find_all("img", src=True):  # "BD_CruzVerde1783434975.jpg" -> "Cruz Verde"
+        if n := nombre_desde_archivo(img["src"]):
+            candidatos.append(n)
     for el in [card, *card.find_all(True)]:
         for attr in ("aria-label", "title", "data-name", "data-comercio", "data-title"):
             v = (el.get(attr) or "").strip()
@@ -311,6 +357,10 @@ def nombre_comercio(card: Tag, sel: str | None, texto: str) -> str | None:
     return None
 
 
+RE_LUGAR = re.compile(
+    r"\b(?i:presencial)\s+(?i:en)\s+((?!Mallplaza\b)[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s(?:y\s|del\s|de\s|la\s)?(?!(?:Lunes|Martes|Miércoles|Jueves|Viernes|Sábado|Domingo|Hasta|Nuevo|Mañana|Hoy|Todos|Sin)\b)[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*)")
+
+
 def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
     soup = BeautifulSoup(html, "lxml")
     for b in soup(["script", "style", "noscript", "nav", "footer", "header"]):
@@ -331,15 +381,113 @@ def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
         a = c if c.name == "a" else c.find("a", href=True)
         link = urljoin(cfg["url"], a["href"]) if a and a.get("href") else cfg["url"]
         vig = RE_VIG.search(normalizar(texto))
+        lugar = RE_LUGAR.search(texto)
         out.append(Descuento(
             shop=shop, cat=clasificar(f"{shop} {texto}"), bank=banco, pct=pct,
             days=parse_dias(texto) or list(range(7)),
             cond=corto(texto.replace(shop, "", 1)),
             perLitre=litro, upTo=bool(RE_HASTA.search(texto)),
             vig=f"Hasta {vig.group(1)}" if vig else "",
+            loc=lugar.group(1) if lugar else "",
             url=link,
         ))
     return out
+
+
+# ------------------------- adaptador Banco de Chile -------------------------
+BCH_API = "/api/content/spaces/personas/types/beneficios/entries?per_page=100&page="
+BCH_DETALLE = "https://sitiospublicos.bancochile.cl/personas/beneficios/detalle/"
+TAG_DIAS = {"domingo": 0, "lunes": 1, "martes": 2, "miercoles": 3, "miércoles": 3,
+            "jueves": 4, "viernes": 5, "sabado": 6, "sábado": 6}
+TAG_NO_LUGAR = re.compile(r"-|metropolitana|segmentado|^todo|region|región")
+BCH_CATEGORIAS = [
+    ("beneficios/sabores", "comida"), ("beneficios/delivery", "comida"),
+    ("beneficios/bienestar/belleza", "belleza"), ("beneficios/bienestar", "salud"),
+    ("beneficios/panoramas", "entretenimiento"), ("beneficios/viajes", "viajes"),
+]
+RE_HTML = re.compile(r"<[^>]+>")
+
+
+def bch_descargar(url: str) -> list[dict]:
+    """Abre la página en un navegador real y pide la lista a la API del propio sitio."""
+    from playwright.sync_api import sync_playwright
+    with sync_playwright() as p:
+        nav = p.chromium.launch(headless=True)
+        pag = nav.new_page(locale="es-CL")
+        pag.goto(url, wait_until="domcontentloaded", timeout=TIMEOUT_S * 1000)
+        try:
+            pag.wait_for_load_state("networkidle", timeout=20000)
+        except Exception:
+            pass
+        datos = pag.evaluate("""async (api) => {
+            let todo = [], p = 1, total = 1;
+            do {
+                const r = await fetch(api + p).then(r => r.json());
+                todo = todo.concat(r.entries || []);
+                total = (r.meta && r.meta.total_pages) || 1;
+                p++;
+            } while (p <= total && p <= 30);
+            return todo;
+        }""", BCH_API)
+        nav.close()
+    return datos
+
+
+def bch_convertir(e: dict) -> Descuento | None:
+    meta, f = e.get("meta", {}), e.get("fields", {})
+    fin = meta.get("unpublish_at")
+    if fin:
+        try:
+            if datetime.fromisoformat(fin.replace("Z", "+00:00")) < datetime.now(timezone.utc):
+                return None
+        except ValueError:
+            pass
+    shop = limpiar(f.get("Titulo") or meta.get("name") or "")
+    tipo = f.get("Tipo Beneficio") or ""
+    extracto = limpiar(f.get("Extracto") or "")
+    desc = limpiar(RE_HTML.sub(" ", f.get("Descripcion") or ""))
+    pct, litro = parse_pct(tipo.replace(";", " "))
+    if pct is None:
+        pct, litro = parse_pct(f"{extracto} {desc}")
+    if pct is None or not shop:
+        return None
+    if RE_NO_ES_DESCUENTO.search(normalizar(f"{shop} {extracto}")):
+        return None
+    tags = [t.strip().lower() for t in meta.get("tags") or []]
+    if "todos-los-dias" in tags:
+        dias = list(range(7))
+    else:
+        dias = sorted({TAG_DIAS[t] for t in tags if t in TAG_DIAS}) or parse_dias(f"{extracto} {desc}") or list(range(7))
+    lugares = [re.sub(r"\b(Del|De|La|Los|Las|Y)\b(?!$)", lambda m: m.group(1).lower(), t.title()).replace("La ", "La ", 1)
+               for t in tags if t not in TAG_DIAS and not TAG_NO_LUGAR.search(t)]
+    lugares = [l[:1].upper() + l[1:] for l in lugares]
+    categoria = meta.get("category") or ""
+    cat = next((c for pref, c in BCH_CATEGORIAS if categoria.startswith(pref)), None)
+    if not cat:
+        cat = "moda" if "vestuario-y-calzado" in tags else clasificar(f"{shop} {extracto} {f.get('Keywords') or ''}")
+    vig = RE_VIG.search(normalizar(f.get("Vigencia") or ""))
+    return Descuento(
+        shop=shop[:60], cat=cat, bank="bchile", pct=pct, days=dias,
+        cond=corto(extracto[:1].upper() + extracto[1:] if extracto else desc),
+        perLitre=litro, upTo="hasta" in tipo.lower(),
+        loc=", ".join(lugares[:3]),
+        vig=f"Hasta {vig.group(1)}" if vig else "",
+        url=BCH_DETALLE + meta.get("slug", "") if meta.get("slug") else BANCOS["bchile"]["url"],
+    )
+
+
+def adaptador_bchile(cfg: dict) -> list[Descuento]:
+    datos = bch_descargar(cfg["url"])
+    try:
+        os.makedirs("debug", exist_ok=True)
+        with open("debug/bchile-api.json", "w", encoding="utf-8") as fh:
+            json.dump(datos[:20], fh, ensure_ascii=False, indent=1)  # muestra para revisar el formato
+    except OSError:
+        pass
+    return [d for d in (bch_convertir(e) for e in datos) if d]
+
+
+ADAPTADORES = {"bchile": adaptador_bchile}
 
 
 # ------------------------------ mezcla ------------------------------------
@@ -401,15 +549,27 @@ def scrapear(bancos: list[str]) -> dict[str, list[Descuento]]:
     res: dict[str, list[Descuento]] = {}
     for i, b in enumerate(bancos):
         cfg = BANCOS[b]
+        if not cfg.get("activo", True):
+            log.info("%-16s omitido (el sitio bloquea navegadores automáticos)", cfg["nombre"])
+            continue
         if i:
             time.sleep(DELAY_S)
         try:
-            html = bajar_html_js(cfg["url"]) if cfg["js"] else bajar_html(cfg["url"])
-            guardar_copia(b, html)
-            res[b] = extraer(html, b, cfg)
-            log.info("%-16s %3d descuentos (%d KB de página)", cfg["nombre"], len(res[b]), len(html) // 1024)
+            if cfg.get("api"):
+                res[b] = ADAPTADORES[cfg["api"]](cfg)
+                log.info("%-16s %3d descuentos (API)", cfg["nombre"], len(res[b]))
+            else:
+                encontrados: list[Descuento] = []
+                for j, url in enumerate(cfg.get("urls") or [cfg["url"]]):
+                    c = {**cfg, "url": url}
+                    html = bajar_html_js(url) if cfg.get("js") else bajar_html(url)
+                    guardar_copia(b if j == 0 else f"{b}-{j}", html)
+                    nuevos = extraer(html, b, c)
+                    encontrados += nuevos
+                    log.info("%-16s %3d descuentos en %s (%d KB)", cfg["nombre"], len(nuevos), url, len(html) // 1024)
+                res[b] = encontrados
             if not res[b]:
-                log.warning("  0 resultados en %s: se conservan los anteriores", cfg["url"])
+                log.warning("  0 resultados: se conservan los anteriores")
         except Exception as e:  # un banco caído no detiene a los demás
             log.error("%-16s error: %s (se conservan los anteriores)", cfg["nombre"], e)
     return res
