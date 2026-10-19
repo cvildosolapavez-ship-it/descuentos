@@ -209,6 +209,21 @@ async function cargar(){
   }
 }
 cargar();
+
+// En el iPhone la app instalada puede quedar abierta en segundo plano por días.
+// Al volver a abrirla: si cambió el día o hay una versión nueva publicada, se recarga sola.
+const APP_VERSION="2026-10-18b";
+const diaCarga=new Date().toDateString();
+async function revisarActualizacion(){
+  if(new Date().toDateString()!==diaCarga){location.reload();return;}
+  try{
+    const html=await fetch("./?v="+Date.now(),{cache:"no-store"}).then(r=>r.ok?r.text():"");
+    if(html&&!html.includes('APP_VERSION="'+APP_VERSION+'"')){location.reload();return;}
+  }catch{}
+  cargar();
+}
+document.addEventListener("visibilitychange",()=>{if(document.visibilityState==="visible")revisarActualizacion();});
+window.addEventListener("pageshow",e=>{if(e.persisted)revisarActualizacion();});
 </script>
 </body>
 </html>
