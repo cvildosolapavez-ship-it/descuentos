@@ -157,24 +157,36 @@ function renderDate(){$("date").textContent=dateOf(st.day).toLocaleDateString("e
 
 // Descuentos válidos ese día de la semana y todavía vigentes en esa fecha
 const onDay=d=>{const f=dateOf(d);return DEALS.filter(x=>{if(!x.days.includes(d))return false;const fin=finVigencia(x.vig);return !fin||fin>=f;});};
+// Filtros cruzados: cada grupo cuenta según los demás filtros activos (día, banco, categoría, búsqueda)
+const okBank=d=>!st.banks.size||st.banks.has(d.bank);
+const okCat=d=>!st.cats.size||st.cats.has(d.cat);
+const okQ=d=>{const q=st.q.trim().toLowerCase();return !q||(d.shop+" "+d.loc).toLowerCase().includes(q);};
 function renderDays(){
   const order=[0,1,2,3,4,5,6];
-  $("days").innerHTML=order.map(d=>`<button class="day" data-d="${d}" aria-pressed="${d===st.day}" aria-label="${dateOf(d).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})}">
-    <span>${DOW[d]}</span><b>${dateOf(d).getDate()}</b><small>${onDay(d).length}</small>${d===today?'<span class="dot" aria-label="hoy"></span>':''}</button>`).join("");
+  $("days").innerHTML=order.map(d=>{const n=onDay(d).filter(x=>okBank(x)&&okCat(x)&&okQ(x)).length;
+    return `<button class="day" data-d="${d}" aria-pressed="${d===st.day}" aria-label="${dateOf(d).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})}, ${n} descuentos">
+    <span>${DOW[d]}</span><b>${dateOf(d).getDate()}</b><small>${n}</small>${d===today?'<span class="dot" aria-label="hoy"></span>':''}</button>`}).join("");
   document.querySelector("h1 span").textContent = st.day===today?"hoy":`${DOW[st.day].toLowerCase()} ${dateOf(st.day).getDate()}`;
   renderDate();
 }
 function renderChips(){
-  const day=onDay(st.day);
-  const cuenta=k=>day.filter(x=>x.bank===k).length;
-  $("banks").innerHTML=Object.entries(BANKS).sort((a,b)=>cuenta(b[0])-cuenta(a[0])).map(([k,b])=>{const n=cuenta(k);
+  const day=onDay(st.day).filter(okQ);
+  // Bancos: cuentan según la categoría elegida. El orden usa el total del día, así no saltan al tocar.
+  const total=k=>day.filter(x=>x.bank===k).length;
+  const nBank=k=>day.filter(x=>x.bank===k&&okCat(x)).length;
+  const sb=$("banks").scrollLeft, sc=$("cats").scrollLeft;
+  $("banks").innerHTML=Object.entries(BANKS)
+    .sort((a,b)=>(st.banks.has(b[0])-st.banks.has(a[0]))||total(b[0])-total(a[0]))
+    .map(([k,b])=>{const n=nBank(k);
     return `<button class="chip${n?'':' zero'}" data-bank="${k}" aria-pressed="${st.banks.has(k)}"><i style="background:${b.c}"></i>${b.n} <small>${n}</small></button>`}).join("");
-  $("cats").innerHTML=Object.entries(CATS).map(([k,c])=>{const n=day.filter(x=>x.cat===k).length;
+  // Categorías: cuentan según el día y los bancos elegidos
+  $("cats").innerHTML=Object.entries(CATS).map(([k,c])=>{const n=day.filter(x=>x.cat===k&&okBank(x)).length;
     return `<button class="chip${n?'':' zero'}" data-cat="${k}" aria-pressed="${st.cats.has(k)}">${c} <small>${n}</small></button>`}).join("");
+  $("banks").scrollLeft=sb; $("cats").scrollLeft=sc;
 }
 function renderList(){
   const q=st.q.trim().toLowerCase();
-  let r=onDay(st.day).filter(d=>(!st.banks.size||st.banks.has(d.bank))&&(!st.cats.size||st.cats.has(d.cat))&&(!q||(d.shop+" "+d.loc).toLowerCase().includes(q)));
+  let r=onDay(st.day).filter(d=>okBank(d)&&okCat(d)&&okQ(d));
   r.sort(st.sort==="name"?(a,b)=>a.shop.localeCompare(b.shop):st.sort==="fav"?(a,b)=>(st.favs.has(b.id)-st.favs.has(a.id))||b.pct-a.pct:(a,b)=>(!!a.perLitre-!!b.perLitre)||b.pct-a.pct||a.shop.localeCompare(b.shop));
   $("count").textContent=r.length;
   const total=r.length;r=r.slice(0,st.limit);
@@ -193,13 +205,13 @@ document.addEventListener("click",e=>{
   const t=e.target.closest("button");if(!t)return;
   if(t.id==="more"){st.limit+=40;renderList()}
   else if(t.dataset.d){st.day=+t.dataset.d;st.limit=40;all()}
-  else if(t.dataset.bank){const k=t.dataset.bank;st.banks.has(k)?st.banks.delete(k):st.banks.add(k);store.set("banks",[...st.banks]);renderChips();renderList()}
-  else if(t.dataset.cat){const k=t.dataset.cat;st.cats.has(k)?st.cats.delete(k):st.cats.add(k);store.set("cats",[...st.cats]);renderChips();renderList()}
+  else if(t.dataset.bank){const k=t.dataset.bank;st.banks.has(k)?st.banks.delete(k):st.banks.add(k);store.set("banks",[...st.banks]);st.limit=40;all()}
+  else if(t.dataset.cat){const k=t.dataset.cat;st.cats.has(k)?st.cats.delete(k):st.cats.add(k);store.set("cats",[...st.cats]);st.limit=40;all()}
   else if(t.dataset.fav){const k=+t.dataset.fav;st.favs.has(k)?st.favs.delete(k):st.favs.add(k);store.set("favs2",[...st.favs]);renderList()}
-  else if(t.id==="clearBanks"){st.banks.clear();store.set("banks",[]);renderChips();renderList()}
-  else if(t.id==="clearCats"){st.cats.clear();store.set("cats",[]);renderChips();renderList()}
+  else if(t.id==="clearBanks"){st.banks.clear();store.set("banks",[]);st.limit=40;all()}
+  else if(t.id==="clearCats"){st.cats.clear();store.set("cats",[]);st.limit=40;all()}
 });
-$("q").addEventListener("input",e=>{st.q=e.target.value;st.limit=40;renderList()});
+$("q").addEventListener("input",e=>{st.q=e.target.value;st.limit=40;all()});
 $("sort").addEventListener("change",e=>{st.sort=e.target.value;renderList()});
 async function cargar(){
   $("list").innerHTML='<div class="empty">Cargando descuentos…</div>';
@@ -218,7 +230,7 @@ cargar();
 
 // En el iPhone la app instalada puede quedar abierta en segundo plano por días.
 // Al volver a abrirla: si cambió el día o hay una versión nueva publicada, se recarga sola.
-const APP_VERSION="2026-10-18c";
+const APP_VERSION="2026-10-18d";
 const diaCarga=new Date().toDateString();
 async function revisarActualizacion(){
   if(new Date().toDateString()!==diaCarga){location.reload();return;}
