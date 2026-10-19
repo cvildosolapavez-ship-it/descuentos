@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T22:42-03:00",
+  "actualizado": "2026-10-18T22:50-03:00",
   "descuentos": [
     {
       "id": 0,
@@ -1690,7 +1690,7 @@
     },
     {
       "shop": "Yogen Fruz",
-      "cat": "otros",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
@@ -1708,7 +1708,7 @@
     },
     {
       "shop": "Leonidas",
-      "cat": "otros",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
@@ -1726,7 +1726,7 @@
     },
     {
       "shop": "Juan Valdez",
-      "cat": "otros",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
@@ -2874,7 +2874,31 @@
       "id": 147
     },
     {
-      "shop": "Shopping y servicios",
+      "shop": "Stanley",
+      "cat": "entretenimiento",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Beneficios Security Explora los beneficios y descuentos que te ofrecemos por ser cliente Security Todos los beneficios Beneficios destacados Espacio Gourmet…",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Tienda online",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 148
+    },
+    {
+      "shop": "Stanley",
       "cat": "otros",
       "bank": "security",
       "pct": 25,
@@ -2887,18 +2911,36 @@
         5,
         6
       ],
-      "cond": "25% de descuento",
+      "cond": "Shopping y servicios 25% de descuento Exclusivo en tienda online con tus Tarjetas Debit y One. Tienda online Todos los dias 25% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Tienda online",
       "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios",
+      "url": "https://personas.bancosecurity.cl/beneficios/shopping-y-servicios/stanley",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 148
+      "id": 149
     },
     {
-      "shop": "We%20transport%202.png",
+      "shop": "Tessa",
+      "cat": "otros",
+      "bank": "security",
+      "pct": 25,
+      "days": [
+        6
+      ],
+      "cond": "Shopping y servicios 25% de descuento Los sábados, exclusivo en tienda física con tu Tarjeta One. Vitacura. Sábado 25% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Vitacura",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/shopping-y-servicios/tessa",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 150
+    },
+    {
+      "shop": "WeTransport",
       "cat": "viajes",
       "bank": "security",
       "pct": 30,
@@ -2911,91 +2953,145 @@
         5,
         6
       ],
-      "cond": "Viajes 30% de descuento",
+      "cond": "Viajes 30% de descuento Exclusivo en app con el cupón SECURITYXWT30 y tu Tarjeta One. WeTransport app Todos los días 30% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "WeTransport app",
       "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 149
-    },
-    {
-      "shop": "Gourmet",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 150
-    },
-    {
-      "shop": "Logo%20cafe%20folks.png",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Gourmet 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios",
+      "url": "https://personas.bancosecurity.cl/beneficios/viajes/wetransport",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 151
     },
     {
-      "shop": "Gourmet",
+      "shop": "Mirazu Robata",
       "cat": "comida",
       "bank": "security",
-      "pct": 20,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "20% de descuento",
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Viña del Mar. Jueves 40% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar",
       "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/mirazu-robata",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 152
     },
     {
-      "shop": "Gourmet",
+      "shop": "Amar Chicureo",
       "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Gourmet 40% de descuento Los lunes, exclusivo en tienda física con tu Tarjeta One. Colina. Lunes 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Colina",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/amar-chicureo",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 153
+    },
+    {
+      "shop": "Amares",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, en tienda física con tu Tarjeta One. Antofagasta. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Antofagasta",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/amares-costafusion",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 154
+    },
+    {
+      "shop": "Bassotto Café",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Las Condes. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Las Condes",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bassotto-cafe",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 155
+    },
+    {
+      "shop": "BIfe Sureño",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Gourmet 40% de descuento Los miércoles, en tienda física con tu Tarjeta One. Los Ángeles. Miércoles 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Los Ángeles",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bife-sureno",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 156
+    },
+    {
+      "shop": "Café Folks",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Puerto Varas. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Puerto Varas",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/cafe-folks",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 157
+    },
+    {
+      "shop": "Café Malva",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Gourmet 40% de descuento Los martes, exclusivo en tienda física con tu Tarjeta One. Talca. Martes 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Talca",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/cafe-malva",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 158
+    },
+    {
+      "shop": "Mirazu Robata",
+      "cat": "entretenimiento",
       "bank": "security",
       "pct": 50,
       "days": [
@@ -3007,298 +3103,120 @@
         5,
         6
       ],
-      "cond": "50% de descuento",
+      "cond": "Beneficios Security Explora los beneficios y descuentos que te ofrecemos por ser cliente Security Todos los beneficios Beneficios destacados Espacio Gourmet…",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar",
       "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 153
-    },
-    {
-      "shop": "120x120 duran.png",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Gourmet 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 154
-    },
-    {
-      "shop": "Aramco",
-      "cat": "bencina",
-      "bank": "ripley",
-      "pct": 150,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "¡Hasta $150 dcto. Por litro en ! Con tus tarjetas Banco Ripley Conoce más",
-      "perLitre": true,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 155
-    },
-    {
-      "shop": "Pastamore Italiana",
-      "cat": "otros",
-      "bank": "ripley",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "40% dcto R.M. (Vitacura)",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 156
-    },
-    {
-      "shop": "Kuntsmann CraftBar Restobar",
-      "cat": "otros",
-      "bank": "ripley",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "40% dcto R.M. (La Florida / Providencia)",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 157
-    },
-    {
-      "shop": "Uncle Fletch Hamburguesas",
-      "cat": "comida",
-      "bank": "ripley",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "40% dcto R.M. (Ñuñoa / Las Condes)",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 158
-    },
-    {
-      "shop": "Tropicalia Pizzas y sandiwch",
-      "cat": "comida",
-      "bank": "ripley",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "40% dcto R.M. (Vitacura)",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 159
     },
     {
-      "shop": "Fogón Austral Carnes a la parrilla",
+      "shop": "Club Gordos",
       "cat": "comida",
-      "bank": "ripley",
-      "pct": 40,
+      "bank": "security",
+      "pct": 20,
       "days": [
-        0,
-        1,
         2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Las Condes)",
+      "cond": "Gourmet 20% de descuento Los martes y jueves, exclusivo en tienda física con tus Tarjetas Debit y One. Providencia, Viña del Mar y Concepción. Martes y jueves…",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia, Viña del Mar y Concepción",
       "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/club-gordos",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 160
     },
     {
-      "shop": "El Quincho del Cacho",
+      "shop": "Do Sushi",
       "cat": "comida",
-      "bank": "ripley",
+      "bank": "security",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "Carnes a la parrilla 40% dcto R.M. (Cerrillos / Pte Alto / Sn Bernardo)",
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Providencia. Jueves 40% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia",
       "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/do-sushi",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 161
     },
     {
-      "shop": "Rossie La loca Restobar",
-      "cat": "otros",
-      "bank": "ripley",
-      "pct": 40,
+      "shop": "Don Carlos",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 50,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        0
       ],
-      "cond": "40% dcto RM (Providencia / La Reina)",
+      "cond": "Gourmet 50% de descuento Los domingos, exclusivo en tienda física con tu Tarjeta Black One. Las Condes. Domingo 50% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes",
       "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/don-carlos",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 162
     },
     {
-      "shop": "Loca Pasta Comida Italiana",
+      "shop": "Durán Bar de Carnes",
       "cat": "comida",
-      "bank": "ripley",
+      "bank": "security",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Las Condes)",
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Concepción. Jueves 40% de descuento",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Concepción",
       "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/duran-bar-de-carnes",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 163
     },
     {
-      "shop": "Soho Thai Tailandesa",
-      "cat": "otros",
-      "bank": "ripley",
-      "pct": 40,
+      "shop": "Fast Not Junk",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 20,
       "days": [
-        0,
-        1,
         2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Santiago / Las Condes)",
+      "cond": "Gourmet 20% de descuento Los martes y jueves, exclusivo en tienda física con tus Tarjetas Debit y One. Providencia, Las Condes y Viña del Mar. Martes y jueves…",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia, Las Condes y Viña del Mar",
       "vig": "",
-      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/fast-not-junk",
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 164
     },
     {
-      "shop": "Taringa Pizzas y sandiwch",
+      "shop": "Pastamore",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Vitacura)",
+      "cond": "Martes Italiana 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3306,23 +3224,17 @@
       "id": 165
     },
     {
-      "shop": "La Fabbrica Pizzería",
+      "shop": "Kuntsmann CraftBar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (La Reina / Lo Barnechea)",
+      "cond": "Martes Restobar 40% dcto R.M. (La Florida / Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "La Florida, Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3330,23 +3242,17 @@
       "id": 166
     },
     {
-      "shop": "Gracielo Bar Bar",
+      "shop": "Uncle Fletch",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Providencia)",
+      "cond": "Martes Hamburguesas 40% dcto R.M. (Ñuñoa / Las Condes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Ñuñoa, Las Condes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3354,23 +3260,17 @@
       "id": 167
     },
     {
-      "shop": "Antonella Bar Burgers - Pizza",
+      "shop": "Tropicalia",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Las Condes / Vitacura)",
+      "cond": "Martes Pizzas y sandiwch 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3378,23 +3278,17 @@
       "id": 168
     },
     {
-      "shop": "Koychi Korean Street Food",
-      "cat": "otros",
+      "shop": "Fogón Austral",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Providencia / Las Condes / La Florida / Ñuñoa)",
+      "cond": "Exclusivo Black Martes Carnes a la parrilla 40% dcto R.M. (Las Condes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3402,23 +3296,17 @@
       "id": 169
     },
     {
-      "shop": "Los Vikingos Carnes y Parrilladas",
-      "cat": "otros",
+      "shop": "El Quincho del Cacho",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Santiago)",
+      "cond": "Martes Carnes a la parrilla 40% dcto R.M. (Cerrillos / Pte Alto / Sn Bernardo) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Cerrillos, Pte Alto, Sn Bernardo",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3426,23 +3314,17 @@
       "id": 170
     },
     {
-      "shop": "Ocean Pacific's Pescados y Mariscos",
-      "cat": "otros",
+      "shop": "Rossie La loca",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Santiago / Vitacura)",
+      "cond": "Martes Restobar 40% dcto RM (Providencia / La Reina) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia, La Reina",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3450,23 +3332,17 @@
       "id": 171
     },
     {
-      "shop": "Psiquis bar Hamburguesas",
+      "shop": "Loca Pasta",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto R.M. (Providencia)",
+      "cond": "Martes Comida Italiana 40% dcto R.M. (Las Condes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3474,23 +3350,17 @@
       "id": 172
     },
     {
-      "shop": "La Yunta Sandwich Gourmet",
+      "shop": "Soho Thai",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto R.M. (Vitacura / Las Condes / Providencia)",
+      "cond": "Miércoles Tailandesa 40% dcto R.M. (Santiago / Las Condes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Santiago, Las Condes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3498,23 +3368,17 @@
       "id": 173
     },
     {
-      "shop": "Don Carlos Carnes",
-      "cat": "otros",
+      "shop": "Taringa",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto R.M. (Las Condes)",
+      "cond": "Miércoles Pizzas y sandiwch 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3522,23 +3386,17 @@
       "id": 174
     },
     {
-      "shop": "TPM Mediterranea",
-      "cat": "otros",
+      "shop": "La Fabbrica",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto R.M. (Las Condes / Providencia)",
+      "cond": "Miércoles Pizzería 40% dcto R.M. (La Reina / Lo Barnechea) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "La Reina, Lo Barnechea",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3546,23 +3404,17 @@
       "id": 175
     },
     {
-      "shop": "Infiltrados Carnes a la parrilla",
+      "shop": "Gracielo Bar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Vitacura)",
+      "cond": "Jueves Bar 40% dcto R.M. (Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3570,23 +3422,17 @@
       "id": 176
     },
     {
-      "shop": "La Parrilla del Guaton Jeréz Parrilladas",
+      "shop": "Antonella Bar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Vitacura)",
+      "cond": "Jueves Burgers - Pizza 40% dcto R.M. (Las Condes / Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes, Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3594,23 +3440,17 @@
       "id": 177
     },
     {
-      "shop": "La Dicha Internacional",
-      "cat": "otros",
+      "shop": "Koychi",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Vitacura)",
+      "cond": "Jueves Korean Street Food 40% dcto R.M. (Providencia / Las Condes / La Florida / Ñuñoa) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia, Las Condes, La Florida, Ñuñoa",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3618,23 +3458,17 @@
       "id": 178
     },
     {
-      "shop": "Zulú Mediterranea de autor",
-      "cat": "otros",
+      "shop": "Los Vikingos",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto R.M. (Vitacura)",
+      "cond": "Jueves Carnes y Parrilladas 40% dcto R.M. (Santiago) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Santiago",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3642,23 +3476,17 @@
       "id": 179
     },
     {
-      "shop": "Rustico Almuerzos y comidas de picoteos",
+      "shop": "Ocean Pacific's",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto XII Región (Punta Arenas)",
+      "cond": "Jueves Pescados y Mariscos 40% dcto R.M. (Santiago / Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Santiago, Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3666,23 +3494,17 @@
       "id": 180
     },
     {
-      "shop": "La Fabrica 737",
+      "shop": "Psiquis bar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "Sushi, Tablas Pizzas 40% dcto X Región (Osorno)",
+      "cond": "Jueves Hamburguesas 40% dcto R.M. (Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3690,23 +3512,17 @@
       "id": 181
     },
     {
-      "shop": "Zamai Social Food",
-      "cat": "otros",
+      "shop": "La Yunta",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto V Región (Quillota)",
+      "cond": "Jueves Sandwich Gourmet 40% dcto R.M. (Vitacura / Las Condes / Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura, Las Condes, Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3714,23 +3530,17 @@
       "id": 182
     },
     {
-      "shop": "Otra Cozza Italiana",
-      "cat": "otros",
+      "shop": "Don Carlos",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        5
       ],
-      "cond": "40% dcto V Región (Viña del Mar / Reñaca / Olmue)",
+      "cond": "Exclusivo Black Viernes Carnes 40% dcto R.M. (Las Condes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3738,23 +3548,17 @@
       "id": 183
     },
     {
-      "shop": "La Isla Fusion peruana",
+      "shop": "TPM",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
         6
       ],
-      "cond": "40% dcto I Región (Iquique)",
+      "cond": "Sábado Mediterranea 40% dcto R.M. (Las Condes / Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Las Condes, Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3762,23 +3566,17 @@
       "id": 184
     },
     {
-      "shop": "Reses Bar y Brasas Carnes a la parrilla",
+      "shop": "Infiltrados",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
         6
       ],
-      "cond": "40% dcto V Región (Viña del Mar / Los Andes)",
+      "cond": "Sábado Carnes a la parrilla 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3786,23 +3584,17 @@
       "id": 185
     },
     {
-      "shop": "Mr Hern Fish & Chips Bistr",
+      "shop": "La Parrilla del Guaton Jeréz",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
         6
       ],
-      "cond": "Tablas, sandwichs, burgers. 40% dcto X Región (Puerto Montt)",
+      "cond": "Exclusivo Black Sábado Parrilladas 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3810,23 +3602,17 @@
       "id": 186
     },
     {
-      "shop": "Wake Up! Cofee & Food",
+      "shop": "La Dicha",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        0
       ],
-      "cond": "Cafetería y Comida Mediterranea 40% dcto VII Región (Curicó)",
+      "cond": "Domingo Internacional 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3834,23 +3620,17 @@
       "id": 187
     },
     {
-      "shop": "Gallardía Bar Restaurante",
+      "shop": "Zulú",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        0
       ],
-      "cond": "40% dcto X Región (Osorno)",
+      "cond": "Domingo Mediterranea de autor 40% dcto R.M. (Vitacura) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Vitacura",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3858,23 +3638,17 @@
       "id": 188
     },
     {
-      "shop": "El Galpón Carne Premium",
-      "cat": "otros",
+      "shop": "Rustico",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        1
       ],
-      "cond": "40% dcto X Región (Osorno)",
+      "cond": "Lunes Almuerzos y comidas de picoteos 40% dcto XII Región (Punta Arenas) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Punta Arenas",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3882,23 +3656,17 @@
       "id": 189
     },
     {
-      "shop": "Trybar",
+      "shop": "La Fabrica 737",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        1
       ],
-      "cond": "Tablas, sandwichs, burgers. 40% dcto X Región (Osorno)",
+      "cond": "Lunes Sushi, Tablas Pizzas 40% dcto X Región (Osorno) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Osorno",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3906,23 +3674,17 @@
       "id": 190
     },
     {
-      "shop": "Lebol Fusion Chilena",
-      "cat": "otros",
+      "shop": "Zamai",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        1
       ],
-      "cond": "40% dcto VIII Región (Concepción)",
+      "cond": "Lunes Social Food 40% dcto V Región (Quillota) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Quillota",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3930,23 +3692,17 @@
       "id": 191
     },
     {
-      "shop": "Baqueano Carnes",
-      "cat": "otros",
+      "shop": "Otra Cozza",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto IX Region (Temuco)",
+      "cond": "Martes Italiana 40% dcto V Región (Viña del Mar / Reñaca / Olmue) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar, Reñaca, Olmue",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3954,23 +3710,17 @@
       "id": 192
     },
     {
-      "shop": "La Negra Restaurant Criolla Peruana",
+      "shop": "La Isla",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto XV Región (Arica)",
+      "cond": "Martes Fusion peruana 40% dcto I Región (Iquique) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Iquique",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -3978,23 +3728,17 @@
       "id": 193
     },
     {
-      "shop": "Bar Nomade",
+      "shop": "Reses Bar y Brasas",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "Bar, pizzas 40% dcto II Región (Antofagasta)",
+      "cond": "Martes Carnes a la parrilla 40% dcto V Región (Viña del Mar / Los Andes) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar, Los Andes",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4002,23 +3746,17 @@
       "id": 194
     },
     {
-      "shop": "Blind Bar Bar",
+      "shop": "Mr Hern Fish & Chips Bistr",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "40% dcto II Región (Calama)",
+      "cond": "Martes Tablas, sandwichs, burgers. 40% dcto X Región (Puerto Montt) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Puerto Montt",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4026,23 +3764,17 @@
       "id": 195
     },
     {
-      "shop": "Sazón Peruana Peruana",
+      "shop": "Wake Up! Cofee & Food",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto V Región (Viña del Mar)",
+      "cond": "Miércoles Cafetería y Comida Mediterranea 40% dcto VII Región (Curicó) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Curicó",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4050,23 +3782,17 @@
       "id": 196
     },
     {
-      "shop": "Quinta pata al Gato Platillos de autor",
-      "cat": "otros",
+      "shop": "Gallardía",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto V Región (Quilpue)",
+      "cond": "Miércoles Bar Restaurante 40% dcto X Región (Osorno) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Osorno",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4074,23 +3800,17 @@
       "id": 197
     },
     {
-      "shop": "Cervecería Nogg Bar",
+      "shop": "El Galpón",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto VII Región (Machalí)",
+      "cond": "Miércoles Carne Premium 40% dcto X Región (Osorno) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Osorno",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4098,23 +3818,17 @@
       "id": 198
     },
     {
-      "shop": "Toro Bayo Carnes a la parrilla",
+      "shop": "Trybar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "40% dcto VII Región (Talca)",
+      "cond": "Miércoles Tablas, sandwichs, burgers. 40% dcto X Región (Osorno) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Osorno",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4122,23 +3836,17 @@
       "id": 199
     },
     {
-      "shop": "Dynos2",
+      "shop": "Lebol",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "Carnes angus ,sangucheria. Tablas y otros. 40% dcto XVI Región (Chillan)",
+      "cond": "Miércoles Fusion Chilena 40% dcto VIII Región (Concepción) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Concepción",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4146,23 +3854,17 @@
       "id": 200
     },
     {
-      "shop": "Taurus Steakbar",
+      "shop": "Baqueano",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        3
       ],
-      "cond": "Carnes angus ,sangucheria. Tablas y otros. 40% dcto XVI Región (Chillan)",
+      "cond": "Miércoles Carnes 40% dcto IX Region (Temuco) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Temuco",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4170,23 +3872,17 @@
       "id": 201
     },
     {
-      "shop": "La Pasta de la Nonna Italiana",
-      "cat": "otros",
+      "shop": "La Negra Restaurant",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto VIII Región (Concepción / San Pedro de la Paz)",
+      "cond": "Jueves Criolla Peruana 40% dcto XV Región (Arica) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Arica",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4194,23 +3890,17 @@
       "id": 202
     },
     {
-      "shop": "Hashigo Sushi",
+      "shop": "Bar Nomade",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto VIII Región (Temuco)",
+      "cond": "Jueves Bar, pizzas 40% dcto II Región (Antofagasta) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Antofagasta",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4218,23 +3908,17 @@
       "id": 203
     },
     {
-      "shop": "Carnivo Carne",
-      "cat": "otros",
+      "shop": "Blind Bar",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto IX Region (Temuco)",
+      "cond": "Jueves Bar 40% dcto II Región (Calama) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Calama",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4242,23 +3926,17 @@
       "id": 204
     },
     {
-      "shop": "Martina Lougne Hamburguesas y Tablas",
+      "shop": "Sazón Peruana",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto IX Region (Temuco)",
+      "cond": "Jueves Peruana 40% dcto V Región (Viña del Mar) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4266,23 +3944,17 @@
       "id": 205
     },
     {
-      "shop": "Inca Pecador Comida Peruana",
+      "shop": "Quinta pata al Gato",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto X Región (Osorno / Puerto Varas)",
+      "cond": "Jueves Platillos de autor 40% dcto V Región (Quilpue) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Quilpue",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4290,23 +3962,17 @@
       "id": 206
     },
     {
-      "shop": "Matureo Bar Comida Rapida",
+      "shop": "Cervecería Nogg",
       "cat": "comida",
       "bank": "ripley",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "40% dcto X Región (Osorno)",
+      "cond": "Jueves Bar 40% dcto VII Región (Machalí) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Machalí",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4314,23 +3980,17 @@
       "id": 207
     },
     {
-      "shop": "Sanbar Restobar",
-      "cat": "otros",
+      "shop": "Toro Bayo",
+      "cat": "comida",
       "bank": "ripley",
-      "pct": 20,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "20% dcto R.M. (Ñuñoa)",
+      "cond": "Jueves Carnes a la parrilla 40% dcto VII Región (Talca) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Talca",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4338,23 +3998,17 @@
       "id": 208
     },
     {
-      "shop": "Ora Bar Gastronomia Nikkei",
+      "shop": "Dynos2",
       "cat": "comida",
       "bank": "ripley",
-      "pct": 20,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "20% dcto R.M. (Ñuñoa)",
+      "cond": "Jueves Carnes angus ,sangucheria. Tablas y otros. 40% dcto XVI Región (Chillan) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Chillan",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
@@ -4362,7 +4016,133 @@
       "id": 209
     },
     {
-      "shop": "Kento Sushi Sushi",
+      "shop": "Taurus Steakbar",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Carnes angus ,sangucheria. Tablas y otros. 40% dcto XVI Región (Chillan) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Chillan",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 210
+    },
+    {
+      "shop": "La Pasta de la Nonna",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Italiana 40% dcto VIII Región (Concepción / San Pedro de la Paz) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Concepción, San Pedro de la Paz",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 211
+    },
+    {
+      "shop": "Hashigo",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Sushi 40% dcto VIII Región (Temuco) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Temuco",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 212
+    },
+    {
+      "shop": "Carnivo",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Carne 40% dcto IX Region (Temuco) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Temuco",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 213
+    },
+    {
+      "shop": "Martina Lougne",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Hamburguesas y Tablas 40% dcto IX Region (Temuco) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Temuco",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 214
+    },
+    {
+      "shop": "Inca Pecador",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Jueves Comida Peruana 40% dcto X Región (Osorno / Puerto Varas) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Osorno, Puerto Varas",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 215
+    },
+    {
+      "shop": "Matureo Bar",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 40,
+      "days": [
+        0
+      ],
+      "cond": "Domingo Comida Rapida 40% dcto X Región (Osorno) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Osorno",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 216
+    },
+    {
+      "shop": "Sanbar",
       "cat": "comida",
       "bank": "ripley",
       "pct": 20,
@@ -4375,15 +4155,63 @@
         5,
         6
       ],
-      "cond": "20% dcto R.M. (Las Condes / Vitacura)",
+      "cond": "Todos los días Restobar 20% dcto R.M. (Ñuñoa) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Ñuñoa",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 210
+      "id": 217
+    },
+    {
+      "shop": "Ora Bar",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 20,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Todos los días Gastronomia Nikkei 20% dcto R.M. (Ñuñoa) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Ñuñoa",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 218
+    },
+    {
+      "shop": "Kento Sushi",
+      "cat": "comida",
+      "bank": "ripley",
+      "pct": 20,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Todos los días Sushi 20% dcto R.M. (Las Condes / Vitacura) Más información",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Las Condes, Vitacura",
+      "vig": "",
+      "url": "https://www.bancoripley.cl/beneficios-y-promociones",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 219
     },
     {
       "shop": "Porfirio",
@@ -4399,15 +4227,15 @@
         5,
         6
       ],
-      "cond": "Fusión Chilena, Peruana y Mexicana 20% dcto R.M. (Providencia)",
+      "cond": "Todos los días Fusión Chilena, Peruana y Mexicana 20% dcto R.M. (Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 211
+      "id": 220
     },
     {
       "shop": "Expendio",
@@ -4423,18 +4251,18 @@
         5,
         6
       ],
-      "cond": "Mexicana, Chilena y Peruana 20% dcto R.M. (Providencia)",
+      "cond": "Todos los días Mexicana, Chilena y Peruana 20% dcto R.M. (Providencia) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Providencia",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 212
+      "id": 221
     },
     {
-      "shop": "Don Taco Mexicana",
+      "shop": "Don Taco",
       "cat": "comida",
       "bank": "ripley",
       "pct": 20,
@@ -4447,18 +4275,18 @@
         5,
         6
       ],
-      "cond": "20% dcto II Región (Antofagasta)",
+      "cond": "Todos los días Mexicana 20% dcto II Región (Antofagasta) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Antofagasta",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 213
+      "id": 222
     },
     {
-      "shop": "Koala Sushi Sushi",
+      "shop": "Koala Sushi",
       "cat": "comida",
       "bank": "ripley",
       "pct": 20,
@@ -4471,19 +4299,19 @@
         5,
         6
       ],
-      "cond": "20% dcto V Región (Viña del Mar / Valparaíso)",
+      "cond": "Todos los días Sushi 20% dcto V Región (Viña del Mar / Valparaíso) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar, Valparaíso",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 214
+      "id": 223
     },
     {
-      "shop": "Rossonero Italiano",
-      "cat": "otros",
+      "shop": "Rossonero",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 20,
       "days": [
@@ -4495,19 +4323,19 @@
         5,
         6
       ],
-      "cond": "20% dcto V Región (Viña del Mar)",
+      "cond": "Todos los días Italiano 20% dcto V Región (Viña del Mar) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Viña del Mar",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 215
+      "id": 224
     },
     {
-      "shop": "Gustó Restobar Saludable",
-      "cat": "otros",
+      "shop": "Gustó Restobar",
+      "cat": "comida",
       "bank": "ripley",
       "pct": 20,
       "days": [
@@ -4519,15 +4347,15 @@
         5,
         6
       ],
-      "cond": "20% dcto VIII Región (Concepción)",
+      "cond": "Todos los días Saludable 20% dcto VIII Región (Concepción) Más información",
       "perLitre": false,
       "upTo": false,
-      "loc": "",
+      "loc": "Concepción",
       "vig": "",
       "url": "https://www.bancoripley.cl/beneficios-y-promociones",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 216
+      "id": 225
     }
   ]
 }
