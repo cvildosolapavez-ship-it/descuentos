@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-18T22:08-03:00",
+  "actualizado": "2026-10-18T22:31-03:00",
   "descuentos": [
     {
       "id": 0,
@@ -956,8 +956,8 @@
       "origen": "manual"
     },
     {
-      "shop": "Comercio",
-      "cat": "comida",
+      "shop": "Avis Budget",
+      "cat": "viajes",
       "bank": "bci",
       "pct": 20,
       "days": [
@@ -969,7 +969,7 @@
         5,
         6
       ],
-      "cond": "Avis Budget 20% descuento Con Avis y Bci arrendar un auto es más barato",
+      "cond": "20% descuento Con Avis y Bci arrendar un auto es más barato",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -980,14 +980,20 @@
       "id": 53
     },
     {
-      "shop": "Comercio",
-      "cat": "otros",
+      "shop": "Salcobrand",
+      "cat": "salud",
       "bank": "bci",
       "pct": 20,
       "days": [
-        3
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
       ],
-      "cond": "Winkler Nutrition 20% descuento Suplementos deportivos y alimentos funcionales Todos los miércoles",
+      "cond": "20% descuento Todo lo que necesitas en un lugar.",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -998,14 +1004,14 @@
       "id": 54
     },
     {
-      "shop": "Comercio",
-      "cat": "otros",
+      "shop": "Winkler Nutrition",
+      "cat": "salud",
       "bank": "bci",
-      "pct": 40,
+      "pct": 20,
       "days": [
-        5
+        3
       ],
-      "cond": "Güeros 40% descuento Auténtica cocina mexicana para disfrutar Todos los viernes",
+      "cond": "20% descuento Suplementos deportivos y alimentos funcionales Todos los miércoles",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1016,14 +1022,14 @@
       "id": 55
     },
     {
-      "shop": "Comercio",
-      "cat": "viajes",
+      "shop": "Güeros",
+      "cat": "comida",
       "bank": "bci",
       "pct": 40,
       "days": [
-        4
+        5
       ],
-      "cond": "Marriott 40% descuento AC Kitchen - Hotel Santiago Cenco Costanera Todos los jueves",
+      "cond": "40% descuento Auténtica cocina mexicana para disfrutar Todos los viernes",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1034,20 +1040,14 @@
       "id": 56
     },
     {
-      "shop": "Comercio",
-      "cat": "otros",
+      "shop": "Marriott",
+      "cat": "comida",
       "bank": "bci",
-      "pct": 49,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "Maneja el auto del futuro con tasa 0,49% Financia tu Tesla en 12 a 48 cuotas preferenciales con tu Tarjeta de Crédito Bci. Hazte Cliente",
+      "cond": "40% descuento AC Kitchen - Hotel Santiago Cenco Costanera Todos los jueves",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1058,20 +1058,14 @@
       "id": 57
     },
     {
-      "shop": "Comercio",
-      "cat": "otros",
+      "shop": "Marriott",
+      "cat": "comida",
       "bank": "bci",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        5
       ],
-      "cond": "Protege tu auto pagando menos Contrata tu Seguro de Auto con 40% de descuento y 2 cuotas GRATIS Contratar",
+      "cond": "40% descuento Akun Bar - Las Condes desde las 16.00 hrs Todos los viernes",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1082,151 +1076,7 @@
       "id": 58
     },
     {
-      "shop": "Comercio",
-      "cat": "otros",
-      "bank": "bci",
-      "pct": 100,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "🎃 ¡Tasa de miedo! Tu crédito de consumo con tasa desde 0,85% Simula 100% online en simples pasos y accede a condiciones comerciales preferenciales. Simular",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 59
-    },
-    {
-      "shop": "Comercio",
-      "cat": "otros",
-      "bank": "bci",
-      "pct": 99,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "El camino a tu nuevo hogar 🏡 Aprovecha la Tasa Subsidiada desde 3,35% y Supertasa de 3,99% en propiedades sobre 10.000 UF. Simula hoy",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 60
-    },
-    {
-      "shop": "Invierte fácil",
-      "cat": "otros",
-      "bank": "bci",
-      "pct": 100,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "¡Comienza a invertir hoy! Abre hoy una cuenta para invertir 100% online y sin costo de mantención. Abrir cuenta",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 61
-    },
-    {
-      "shop": "Contrata tu Fogape",
-      "cat": "otros",
-      "bank": "bci",
-      "pct": 100,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "100% digital con solo unos clics Más información",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bci.cl/beneficios/beneficios-bci",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 62
-    },
-    {
-      "shop": "¡Haz de cada momento una experiencia en los mejores restaura",
-      "cat": "comida",
-      "bank": "scotia",
-      "pct": 50,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Ruta Gourmet ntes! Hasta 50% Dcto. Promoción válida todos los días de octubre de 2026. Exclusivo pagando con tus Tarjetas de Crédito Visa Scotiabank. Conoce más",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.scotiabankchile.cl/scclubfront/categoria/platosycomida/rutagourmet",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 63
-    },
-    {
-      "shop": "Canjea tus ScotiaPesos por entretenimiento",
-      "cat": "entretenimiento",
-      "bank": "scotia",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Parques de entretenciones Disfruta hasta 40% Dcto. en el canje de entradas Válido hasta agotar stock. ¡Canjéalos aquí!",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://beneficios.scotiabank.cl/scclubfront/categoria/miscanjes/entretencion",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 64
-    },
-    {
-      "shop": "Especial electrohogar en Scotia Marketplace",
+      "shop": "En www.scotiamarketplace.cl",
       "cat": "otros",
       "bank": "scotia",
       "pct": 60,
@@ -1239,7 +1089,7 @@
         5,
         6
       ],
-      "cond": "Scotia Marketplace Hasta 60% Dcto. Acumula x3 ScotiaPesos, paga en hasta 24 Cuotas sin Interés y despacho gratis limitado compras sobre $50.000 en…",
+      "cond": "Scotia Marketplace Especial electrohogar en Scotia Marketplace Hasta 60% Dcto. Acumula x3 ScotiaPesos, paga en hasta 24 Cuotas sin Interés y despacho gratis…",
       "perLitre": false,
       "upTo": true,
       "loc": "",
@@ -1247,35 +1097,11 @@
       "url": "https://scotiamarketplace.cl/",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 65
+      "id": 59
     },
     {
-      "shop": "¡Tu tarjeta de Crédito no tiene fronteras en beneficios!",
-      "cat": "comida",
-      "bank": "scotia",
-      "pct": 30,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Ruta Gourmet Internacional Hasta 30% Devolución Si viajas a Perú o Uruguay, usa tus Tarjetas de Crédito Visa Scotiabank y disfruta beneficios en restaurantes…",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.scotiarewards.cl/scclubfront/categoria/platosycomida/rutainternacional",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 66
-    },
-    {
-      "shop": "¡Todos los días de octubre!",
-      "cat": "otros",
+      "shop": "OKAMI",
+      "cat": "belleza",
       "bank": "scotia",
       "pct": 25,
       "days": [
@@ -1287,7 +1113,7 @@
         5,
         6
       ],
-      "cond": "Nuevo beneficio Regalonea tu piel con un 25% Dcto. en OKAMI Exclusivo pagando con tus Tarjetas de Débito o Crédito Scotiabank Válido en toda la línea de…",
+      "cond": "Nuevo beneficio ¡Todos los días de octubre! Regalonea tu piel con un 25% Dcto. en Exclusivo pagando con tus Tarjetas de Débito o Crédito Scotiabank Válido en…",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1295,34 +1121,10 @@
       "url": "https://www.scotiarewards.cl/scclubfront/categoria/mundos/descuentos?beneficio=OKAMIAON26",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 67
+      "id": 60
     },
     {
-      "shop": "Disfruta nuestra Ruta Gourmet",
-      "cat": "comida",
-      "bank": "scotia",
-      "pct": 50,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Hasta un 50% de dcto. en los mejores restaurantes en Chile y Buenos Aires",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.scotiabankchile.cl/beneficios",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 68
-    },
-    {
-      "shop": "Comercio",
+      "shop": "25",
       "cat": "otros",
       "bank": "scotia",
       "pct": 25,
@@ -1335,7 +1137,7 @@
         5,
         6
       ],
-      "cond": "25 25 % Dcto. % Dcto.",
+      "cond": "25 % Dcto. % Dcto.",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1343,10 +1145,10 @@
       "url": "https://www.scotiabankchile.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 69
+      "id": 61
     },
     {
-      "shop": "Hasta",
+      "shop": "Copec",
       "cat": "bencina",
       "bank": "scotia",
       "pct": 100,
@@ -1359,7 +1161,7 @@
         5,
         6
       ],
-      "cond": "Hasta $100 Dcto. $100 Dcto. Por litro a través de la App Copec.",
+      "cond": "Hasta Hasta $100 Dcto. $100 Dcto. Por litro a través de la App .",
       "perLitre": true,
       "upTo": false,
       "loc": "",
@@ -1367,10 +1169,10 @@
       "url": "https://www.scotiabankchile.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 70
+      "id": 62
     },
     {
-      "shop": "Comercio",
+      "shop": "30",
       "cat": "otros",
       "bank": "scotia",
       "pct": 30,
@@ -1383,7 +1185,7 @@
         5,
         6
       ],
-      "cond": "30 30 % Dcto. % Dcto.",
+      "cond": "30 % Dcto. % Dcto.",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1391,10 +1193,10 @@
       "url": "https://www.scotiabankchile.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 71
+      "id": 63
     },
     {
-      "shop": "Dcto. en la app de PedidosYa",
+      "shop": "PedidosYa",
       "cat": "comida",
       "bank": "scotia",
       "pct": 20,
@@ -1407,7 +1209,7 @@
         5,
         6
       ],
-      "cond": "20% Pagando con Tarjetas de Débito o Crédito Visa Scotia Infinite, Singular, Signature y Wealth Management. El descuento aplicar al momento del pago de forma…",
+      "cond": "20% Dcto. en la app de Pagando con Tarjetas de Débito o Crédito Visa Scotia Infinite, Singular, Signature y Wealth Management. El descuento aplicar al momento…",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1415,11 +1217,35 @@
       "url": "https://www.scotiabankchile.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
-      "id": 72
+      "id": 64
+    },
+    {
+      "shop": "Cinépolis",
+      "cat": "entretenimiento",
+      "bank": "scotia",
+      "pct": 30,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Disfruta de un 30% dcto. en canjes cinépolis 1 entrada 2D por 2.100 ScotiaPesos. 2 entradas 2D por 4.200 ScotiaPesos. 1 snack pack mediano por 2.450…",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.scotiabankchile.cl/beneficios",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 65
     },
     {
       "shop": "Descuentos Ruta Gourmet",
-      "cat": "otros",
+      "cat": "comida",
       "bank": "scotia",
       "pct": 40,
       "days": [
@@ -1439,23 +1265,143 @@
       "url": "https://www.scotiabankchile.cl/beneficios",
       "origen": "scraper",
       "leido": "2026-10-18",
+      "id": 66
+    },
+    {
+      "shop": "Chuck E. Cheese",
+      "cat": "entretenimiento",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Dcto en Exclusivo presencial Jueves 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 67
+    },
+    {
+      "shop": "Mcdonalds",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en McCombo Big Mac Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 68
+    },
+    {
+      "shop": "Doggis",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en Presencial en totem y por la app Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 69
+    },
+    {
+      "shop": "Juan Maestro",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en Valido vía Tótem y por la app Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 70
+    },
+    {
+      "shop": "Tommy Beans",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en Presencial en totem y por la app Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 71
+    },
+    {
+      "shop": "Barrio Chick'en",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en Presencial en totem y por la app Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
+      "id": 72
+    },
+    {
+      "shop": "Lovdo",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Dcto en Exclusivo delivery Mañana 40% Sin Tope",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://www.bancofalabella.cl/descuentos",
+      "origen": "scraper",
+      "leido": "2026-10-18",
       "id": 73
     },
     {
-      "shop": "Sá-Do-Lu",
+      "shop": "Nuevo Mañana",
       "cat": "otros",
       "bank": "falabella",
-      "pct": 25,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        1
       ],
-      "cond": "25% Sin Tope",
+      "cond": "40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1466,22 +1412,16 @@
       "id": 74
     },
     {
-      "shop": "Todos los días",
-      "cat": "otros",
+      "shop": "Papa Johns",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "Hasta 40% Sin Tope",
+      "cond": "Dcto en Presencial y online Martes 40% Sin Tope",
       "perLitre": false,
-      "upTo": true,
+      "upTo": false,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1490,14 +1430,14 @@
       "id": 75
     },
     {
-      "shop": "Dcto en Chuck E. Cheese",
-      "cat": "otros",
+      "shop": "Dunkin'",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
-        4
+        2
       ],
-      "cond": "Exclusivo presencial Jueves 40% Sin Tope",
+      "cond": "Dcto de Presencial y online Martes 40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1508,22 +1448,16 @@
       "id": 76
     },
     {
-      "shop": "Vi-Sá-Do-Lu-Mi",
-      "cat": "otros",
+      "shop": "Bianco Latte",
+      "cat": "comida",
       "bank": "falabella",
       "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "Hasta 40% Sin Tope",
+      "cond": "Dcto en Exclusivo presencial Martes 40% Sin Tope",
       "perLitre": false,
-      "upTo": true,
+      "upTo": false,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1532,20 +1466,14 @@
       "id": 77
     },
     {
-      "shop": "CMR",
-      "cat": "otros",
+      "shop": "Le Vice",
+      "cat": "comida",
       "bank": "falabella",
-      "pct": 46,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "$25.990 -46% $26.990 $47.990",
+      "cond": "Dcto en Presencial y online Martes 40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1556,20 +1484,14 @@
       "id": 78
     },
     {
-      "shop": "CMR",
-      "cat": "otros",
+      "shop": "Just Burger",
+      "cat": "comida",
       "bank": "falabella",
-      "pct": 26,
+      "pct": 40,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "$169.990 -26% $174.990 $229.990",
+      "cond": "Dcto en Presencial y online Martes 40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1580,22 +1502,16 @@
       "id": 79
     },
     {
-      "shop": "CMR",
+      "shop": "Nuevo Martes",
       "cat": "otros",
       "bank": "falabella",
-      "pct": 39,
+      "pct": 25,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "$109.990 -39% $113.990 $179.990",
+      "cond": "Hasta 25% Descuento",
       "perLitre": false,
-      "upTo": false,
+      "upTo": true,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1604,22 +1520,16 @@
       "id": 80
     },
     {
-      "shop": "CMR",
+      "shop": "Nuevo Martes",
       "cat": "otros",
       "bank": "falabella",
-      "pct": 47,
+      "pct": 20,
       "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
+        2
       ],
-      "cond": "$15.990 -47% $16.990 $29.990",
+      "cond": "Hasta 20% Descuento",
       "perLitre": false,
-      "upTo": false,
+      "upTo": true,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1628,20 +1538,17 @@
       "id": 81
     },
     {
-      "shop": "Todos los días",
+      "shop": "Nuevo Lunes a Jueves",
       "cat": "otros",
       "bank": "falabella",
-      "pct": 15,
+      "pct": 40,
       "days": [
-        0,
         1,
         2,
         3,
-        4,
-        5,
-        6
+        4
       ],
-      "cond": "15% Descuento",
+      "cond": "40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1652,16 +1559,16 @@
       "id": 82
     },
     {
-      "shop": "Martes",
+      "shop": "Nuevo Miércoles",
       "cat": "otros",
       "bank": "falabella",
-      "pct": 25,
+      "pct": 40,
       "days": [
-        2
+        3
       ],
-      "cond": "Hasta 25% Sin Tope",
+      "cond": "40% Sin tope",
       "perLitre": false,
-      "upTo": true,
+      "upTo": false,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1670,10 +1577,10 @@
       "id": 83
     },
     {
-      "shop": "Dcto en Mcdonalds",
-      "cat": "comida",
+      "shop": "Nuevo Todos los días",
+      "cat": "otros",
       "bank": "falabella",
-      "pct": 40,
+      "pct": 20,
       "days": [
         0,
         1,
@@ -1683,7 +1590,7 @@
         5,
         6
       ],
-      "cond": "McCombo Big Mac Mañana 40% Sin Tope",
+      "cond": "20% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1694,22 +1601,17 @@
       "id": 84
     },
     {
-      "shop": "Dcto en Doggis",
+      "shop": "Nuevo Martes y Sábado",
       "cat": "otros",
       "bank": "falabella",
       "pct": 40,
       "days": [
-        0,
-        1,
         2,
-        3,
-        4,
-        5,
         6
       ],
-      "cond": "Presencial en totem y por la app Mañana 40% Sin Tope",
+      "cond": "Hasta 40% Sin Tope",
       "perLitre": false,
-      "upTo": false,
+      "upTo": true,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1718,12 +1620,11 @@
       "id": 85
     },
     {
-      "shop": "Dcto en Juan Maestro",
-      "cat": "comida",
+      "shop": "Nuevo Lunes a Sábado",
+      "cat": "otros",
       "bank": "falabella",
       "pct": 40,
       "days": [
-        0,
         1,
         2,
         3,
@@ -1731,9 +1632,9 @@
         5,
         6
       ],
-      "cond": "Valido vía Tótem y por la app Mañana 40% Sin Tope",
+      "cond": "Hasta 40% Sin Tope",
       "perLitre": false,
-      "upTo": false,
+      "upTo": true,
       "loc": "",
       "vig": "",
       "url": "https://www.bancofalabella.cl/descuentos",
@@ -1742,7 +1643,7 @@
       "id": 86
     },
     {
-      "shop": "Dcto en Tommy Beans",
+      "shop": "Nuevo Todos los días",
       "cat": "otros",
       "bank": "falabella",
       "pct": 40,
@@ -1755,7 +1656,7 @@
         5,
         6
       ],
-      "cond": "Presencial en totem y por la app Mañana 40% Sin Tope",
+      "cond": "40% Sin Tope",
       "perLitre": false,
       "upTo": false,
       "loc": "",
@@ -1764,608 +1665,6 @@
       "origen": "scraper",
       "leido": "2026-10-18",
       "id": 87
-    },
-    {
-      "shop": "Dcto en Barrio Chick'en",
-      "cat": "comida",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Presencial en totem y por la app Mañana 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 88
-    },
-    {
-      "shop": "Dcto en Lovdo",
-      "cat": "comida",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Exclusivo delivery Mañana 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 89
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Mañana 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 90
-    },
-    {
-      "shop": "Dcto en Papa Johns",
-      "cat": "comida",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Presencial y online Martes 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 91
-    },
-    {
-      "shop": "Dcto de Dunkin'",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Presencial y online Martes 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 92
-    },
-    {
-      "shop": "Dcto en Bianco Latte",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Exclusivo presencial Martes 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 93
-    },
-    {
-      "shop": "Dcto en Le Vice",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Presencial y online Martes 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 94
-    },
-    {
-      "shop": "Dcto en Just Burger",
-      "cat": "comida",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Presencial y online Martes 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 95
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 25,
-      "days": [
-        2
-      ],
-      "cond": "Martes Hasta 25% Descuento",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 96
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 20,
-      "days": [
-        2
-      ],
-      "cond": "Martes Hasta 20% Descuento",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 97
-    },
-    {
-      "shop": "Miércoles",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        3
-      ],
-      "cond": "40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 98
-    },
-    {
-      "shop": "Viernes",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        5
-      ],
-      "cond": "40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 99
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "cond": "Lunes a Jueves 40% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 100
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        3
-      ],
-      "cond": "Miércoles 40% Sin tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 101
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 20,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Todos los días 20% Sin Tope",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 102
-    },
-    {
-      "shop": "Martes",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 103
-    },
-    {
-      "shop": "Sábado",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        6
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 104
-    },
-    {
-      "shop": "Mañana",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 105
-    },
-    {
-      "shop": "Lunes y Miércoles",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        3
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 106
-    },
-    {
-      "shop": "Mi-Ju-Do-Vi-Sá-Lu",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        0,
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 107
-    },
-    {
-      "shop": "Lunes a Jueves",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        2,
-        3,
-        4
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 108
-    },
-    {
-      "shop": "Miércoles y Martes",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2,
-        3
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 109
-    },
-    {
-      "shop": "Miércoles y Sábado",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        3,
-        6
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 110
-    },
-    {
-      "shop": "Martes a Sábado",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Hasta 40% Sin tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 111
-    },
-    {
-      "shop": "Lunes y Jueves",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        4
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 112
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        2,
-        6
-      ],
-      "cond": "Martes y Sábado Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 113
-    },
-    {
-      "shop": "Lunes a Sábado",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 114
-    },
-    {
-      "shop": "Nuevo",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6
-      ],
-      "cond": "Lunes a Sábado Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 115
-    },
-    {
-      "shop": "Lunes y Martes",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        1,
-        2
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 116
-    },
-    {
-      "shop": "Jueves",
-      "cat": "otros",
-      "bank": "falabella",
-      "pct": 40,
-      "days": [
-        4
-      ],
-      "cond": "Hasta 40% Sin Tope",
-      "perLitre": false,
-      "upTo": true,
-      "loc": "",
-      "vig": "",
-      "url": "https://www.bancofalabella.cl/descuentos",
-      "origen": "scraper",
-      "leido": "2026-10-18",
-      "id": 117
     }
   ]
 }
