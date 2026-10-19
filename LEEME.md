@@ -63,3 +63,20 @@ En GitHub abre `descuentos.json`, toca el lápiz y agrega un bloque como este:
 Su sitio cambió o la URL no es la correcta. Abre su página de beneficios, haz clic derecho
 sobre una tarjeta de descuento → **Inspeccionar**, y ajusta `url` y `selector` de ese banco
 en la sección `BANCOS` de `scraper.py`.
+
+## Banco de Chile (exportación manual, una vez al mes)
+
+El sitio del Banco de Chile bloquea a los servidores de GitHub, así que sus beneficios
+se exportan desde tu navegador:
+
+1. Abre https://sitiospublicos.bancochile.cl/personas/beneficios en Chrome o Edge.
+2. Presiona F12 y entra a la pestaña **Console**. Si Chrome pide confirmar, escribe `allow pasting` y Enter.
+3. Pega el contenido de `exportar-bchile.js` y presiona Enter. Se descarga `bchile-importado.json`.
+4. Súbelo al repositorio (**Add file → Upload files**), reemplazando el anterior.
+
+Cada día el scraper vuelve a leer ese archivo y descarta los beneficios vencidos.
+
+## Bancos que no se leen automáticamente
+
+BancoEstado, Santander e Itaú bloquean navegadores automáticos. Sus descuentos se cargan
+a mano en `descuentos.json` con `"origen": "manual"`.

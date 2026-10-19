@@ -502,7 +502,7 @@ def bch_convertir(e: dict) -> Descuento | None:
         return None
     if RE_NO_ES_DESCUENTO.search(normalizar(f"{shop} {extracto}")):
         return None
-    tags = [t.strip().lower() for t in meta.get("tags") or []]
+    tags = [t.strip().lower() for tag in meta.get("tags") or [] for t in str(tag).split(";") if t.strip()]
     if "todos-los-dias" in tags:
         dias = list(range(7))
     else:
@@ -525,7 +525,20 @@ def bch_convertir(e: dict) -> Descuento | None:
     )
 
 
+ARCHIVO_BCH = "bchile-importado.json"
+
+
 def adaptador_bchile(cfg: dict) -> list[Descuento]:
+    """El sitio del Banco de Chile bloquea a los servidores de GitHub (protección anti-bots),
+    así que los datos se exportan a mano desde un navegador normal a bchile-importado.json
+    (ver LEEME.md). Cada corrida los vuelve a filtrar por vigencia."""
+    if os.path.exists(ARCHIVO_BCH):
+        with open(ARCHIVO_BCH, encoding="utf-8") as fh:
+            j = json.load(fh)
+        datos = j.get("entries", j) if isinstance(j, dict) else j
+        log.info("Banco de Chile: %d beneficios en %s (exportado %s)", len(datos), ARCHIVO_BCH,
+                 j.get("exportado", "?") if isinstance(j, dict) else "?")
+        return [d for d in (bch_convertir(e) for e in datos) if d]
     datos = bch_descargar(cfg["url"])
     try:
         os.makedirs("debug", exist_ok=True)
