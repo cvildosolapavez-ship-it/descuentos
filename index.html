@@ -73,10 +73,41 @@ select{border:1px solid var(--line);background:var(--surface);color:var(--ink);b
 .tag i{width:8px;height:8px;border-radius:50%}
 .cond{color:var(--muted);font-size:.82rem}
 .foot{display:flex;justify-content:space-between;gap:8px;font-size:.75rem;align-items:center}
+.foot .vermas{color:var(--brand);font-weight:600}
 .foot a{color:var(--brand);font-weight:600;text-decoration:none}
 .vig{color:var(--warn);font-weight:600}
 .vig.ok{color:var(--muted);font-weight:500}
 .more{border:0;background:var(--chip);color:var(--ink);border-radius:12px;padding:12px;font:600 .9rem var(--body);cursor:pointer}
+.deal{cursor:pointer;transition:transform .12s ease}
+.deal:active{transform:scale(.99)}
+.deal:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.sheet{position:fixed;inset:0;z-index:50;display:flex;align-items:flex-end;justify-content:center;background:rgba(8,12,24,.5)}
+.sheet-panel{background:var(--bg);width:100%;max-width:560px;max-height:88vh;overflow:auto;border-radius:22px 22px 0 0;
+  padding:8px max(16px,env(safe-area-inset-right,0px)) calc(20px + env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px));
+  animation:subir .22s ease-out}
+@keyframes subir{from{transform:translateY(40px);opacity:.4}to{transform:none;opacity:1}}
+@media (prefers-reduced-motion:reduce){.sheet-panel{animation:none}.deal{transition:none}}
+.grip{width:40px;height:5px;border-radius:3px;background:var(--line);margin:4px auto 10px}
+.sh-head{display:grid;grid-template-columns:76px 1fr auto;gap:12px;align-items:center}
+.sh-head .pct{border-radius:14px;min-height:76px}
+.sh-head h2{margin:0;font-family:var(--display);font-size:1.3rem;line-height:1.15;text-wrap:balance}
+.sh-close{border:0;background:var(--chip);color:var(--ink);width:36px;height:36px;border-radius:50%;font-size:1.1rem;cursor:pointer;align-self:start}
+.sh-rows{display:grid;gap:10px;margin:16px 0}
+.sh-row{background:var(--surface);border-radius:14px;padding:12px 14px;display:grid;grid-template-columns:28px 1fr;gap:8px;min-width:0}
+.sh-row .ic{font-size:1.1rem;line-height:1.4}
+.sh-row h4{margin:0 0 2px;font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.sh-row p{margin:0;font-size:.92rem;overflow-wrap:anywhere}
+.sh-row ul{margin:4px 0 0;padding:0;list-style:none;display:grid;gap:6px}
+.sh-row li{font-size:.9rem;display:flex;justify-content:space-between;gap:10px;align-items:baseline}
+.sh-row li a,.sh-row p a{color:var(--brand);font-weight:600;text-decoration:none;white-space:nowrap}
+.daypills{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
+.daypills span{padding:3px 9px;border-radius:999px;background:var(--chip);font-size:.8rem;font-weight:600;color:var(--muted)}
+.daypills span.on{background:var(--ink);color:var(--bg)}
+.sh-actions{display:grid;gap:8px}
+.btn{display:block;text-align:center;padding:14px;border-radius:14px;font-weight:700;text-decoration:none;font-size:1rem}
+.btn-pri{background:var(--accent);color:var(--accent-ink)}
+.btn-sec{background:var(--chip);color:var(--ink)}
+.sh-note{font-size:.8rem;color:var(--muted);margin:2px 2px 0}
 .empty{text-align:center;padding:40px 16px;color:var(--muted);background:var(--surface);border-radius:16px}
 .note{margin-top:24px;font-size:.78rem;color:var(--muted);display:grid;gap:6px}
 button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
@@ -110,6 +141,9 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
   </div>
 
   <div class="list" id="list"></div>
+  <div class="sheet" id="sheet" hidden role="dialog" aria-modal="true" aria-labelledby="sh-title">
+    <div class="sheet-panel" id="sheet-panel"></div>
+  </div>
   <div class="note">
     <p style="margin:0" id="upd"></p><p style="margin:0">Los descuentos marcados en color salieron de guías anteriores y pueden haber cambiado.</p>
     <p style="margin:0">Confirma siempre condiciones y vigencia en la app de tu banco antes de pagar.</p>
@@ -130,6 +164,8 @@ const BANKS={
   otros:{n:"Otras tarjetas",c:"#8a8f9c"}
 };
 const bankOf=k=>BANKS[k]||{n:k,c:"#8a8f9c"};
+const esc=t=>String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"#";
 const CATS={comida:"🍔 Comida",entretenimiento:"🎬 Entretención",belleza:"💅 Belleza",moda:"👗 Moda",
   supermercado:"🛒 Súper",viajes:"✈️ Viajes",salud:"💊 Salud",bencina:"⛽ Bencina",otros:"🏷️ Otros"};
 
@@ -191,18 +227,83 @@ function renderList(){
   $("count").textContent=r.length;
   const total=r.length;r=r.slice(0,st.limit);
   $("list").innerHTML=r.length?r.map(d=>{const b=bankOf(d.bank);const days=d.days.length===7?"Todos los días":d.days.map(x=>DOW[x]).join(", ");
-    return `<article class="deal">
+    return `<article class="deal" data-id="${d.id}" tabindex="0" aria-label="Ver detalle de ${esc(d.shop)}">
     <div class="pct">${d.perLitre?`<b>$${d.pct}</b><small>x litro</small>`:`${d.upTo?'<small>hasta</small>':''}<b>${d.pct}%</b><small>dcto</small>`}</div>
-    <div class="info"><h3>${d.shop}<button class="fav" data-fav="${d.id}" aria-pressed="${st.favs.has(d.id)}" aria-label="Favorito">${st.favs.has(d.id)?"★":"☆"}</button></h3>
-    <div class="meta"><span class="tag"><i style="background:${b.c}"></i>${b.n}</span><span class="tag">${CATS[d.cat]}</span>${d.loc?`<span class="tag">📍 ${d.loc}</span>`:""}</div>
-    <div class="cond">${d.cond} · ${days}</div>
-    <div class="foot"><span class="vig${/^Visto|confirmar/i.test(d.vig||'')?'':' ok'}">${d.vig||''}</span><a href="${d.url}" target="_blank" rel="noopener">Ver fuente ↗</a></div></div></article>`}).join("")+(total>r.length?`<button class="more" id="more">Ver más (${total-r.length} restantes)</button>`:"")
+    <div class="info"><h3>${esc(d.shop)}<button class="fav" data-fav="${d.id}" aria-pressed="${st.favs.has(d.id)}" aria-label="Favorito">${st.favs.has(d.id)?"★":"☆"}</button></h3>
+    <div class="meta"><span class="tag"><i style="background:${b.c}"></i>${esc(b.n)}</span><span class="tag">${CATS[d.cat]||esc(d.cat)}</span>${d.loc?`<span class="tag">📍 ${esc(d.loc)}</span>`:""}</div>
+    <div class="cond">${esc(d.cond)} · ${days}</div>
+    <div class="foot"><span class="vig${/^Visto|confirmar/i.test(d.vig||'')?'':' ok'}">${esc(d.vig)}</span><span class="vermas">Ver detalle ›</span></div></div></article>`}).join("")+(total>r.length?`<button class="more" id="more">Ver más (${total-r.length} restantes)</button>`:"")
     :`<div class="empty">No hay descuentos para el ${DOW[st.day]} ${dateOf(st.day).getDate()} con estos filtros.<br>Prueba otro día o quita algún filtro.</div>`;
 }
 function all(){renderDays();renderChips();renderList()}
 
+
+// ---------- Detalle de un descuento ----------
+const DIAS_LARGOS=["Domingo","Lunes","Martes","Miércoles","Jueves","Viernes","Sábado"];
+const ARTICULOS=/neatpagos|theclinic|chocale|pauta\.cl|biobiochile|13\.cl|t13\.cl|encancha|centralnoticia/i;
+function tipoEnlace(u){
+  try{const x=new URL(u);
+    if(ARTICULOS.test(x.hostname))return "articulo";
+    if(/\/detalle\/|\/beneficios\/[^/]+\/[^/]+/.test(x.pathname))return "detalle";
+    return "seccion";
+  }catch{return "seccion"}
+}
+const mapa=q=>"https://maps.apple.com/?q="+encodeURIComponent(q);
+let ultimoFoco=null;
+function abrirDetalle(id){
+  const d=DEALS.find(x=>String(x.id)===String(id)); if(!d)return;
+  const b=bankOf(d.bank); const tipo=tipoEnlace(d.url);
+  const dias=d.days.length===7?[0,1,2,3,4,5,6]:d.days;
+  const validoHoy=d.days.includes(st.day);
+  const dirs=(d.dir&&d.dir.length?d.dir:[]);
+  const ubic=dirs.length
+    ?`<ul>${dirs.map(a=>`<li><span>${esc(a)}</span><a href="${mapa(d.shop+", "+a)}" target="_blank" rel="noopener">Mapa ↗</a></li>`).join("")}</ul>`
+    :d.loc?`<p>${esc(d.loc)} · <a href="${mapa(d.shop+", "+d.loc)}" target="_blank" rel="noopener">Mapa ↗</a></p>`
+    :`<p>${/online|app|delivery|web/i.test(d.cond)?"Online o por app":"No informada. Revisa los locales adheridos en el enlace."}</p>`;
+  const etiqueta={detalle:"Ir al descuento ↗",seccion:`Ver en el sitio de ${esc(b.n)} ↗`,articulo:"Ver la fuente ↗"}[tipo];
+  const nota={detalle:"",
+    seccion:`${esc(b.n)} no tiene una página propia para cada descuento. Te llevamos a la sección donde aparece; búscalo como "${esc(d.shop)}".`,
+    articulo:"Este descuento viene de un artículo de prensa. Confírmalo en la app de tu banco antes de pagar."}[tipo];
+  $("sheet-panel").innerHTML=`<div class="grip"></div>
+    <div class="sh-head">
+      <div class="pct">${d.perLitre?`<b>$${d.pct}</b><small>x litro</small>`:`${d.upTo?'<small>hasta</small>':''}<b>${d.pct}%</b><small>dcto</small>`}</div>
+      <div style="min-width:0"><h2 id="sh-title">${esc(d.shop)}</h2>
+        <div class="meta" style="margin-top:6px"><span class="tag"><i style="background:${b.c}"></i>${esc(b.n)}</span><span class="tag">${CATS[d.cat]||esc(d.cat)}</span></div></div>
+      <button class="sh-close" id="sh-close" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="sh-rows">
+      <div class="sh-row"><span class="ic">📅</span><div><h4>Días</h4>
+        <p>${validoHoy?`Válido el ${DIAS_LARGOS[st.day].toLowerCase()} ${dateOf(st.day).getDate()}`:"No aplica el día elegido"}</p>
+        <div class="daypills">${[1,2,3,4,5,6,0].map(x=>`<span class="${dias.includes(x)?"on":""}">${DOW[x]}</span>`).join("")}</div></div></div>
+      <div class="sh-row"><span class="ic">🕒</span><div><h4>Horario</h4><p>${d.horario?esc(d.horario):"No informado. Consulta en el local antes de pagar."}</p></div></div>
+      <div class="sh-row"><span class="ic">📍</span><div><h4>Ubicación</h4>${ubic}</div></div>
+      <div class="sh-row"><span class="ic">💳</span><div><h4>Condiciones</h4><p>${esc(d.cond)}</p>${d.desc&&d.desc!==d.cond?`<p style="margin-top:6px;color:var(--muted)">${esc(d.desc)}</p>`:""}</div></div>
+      ${d.vig?`<div class="sh-row"><span class="ic">⏳</span><div><h4>Vigencia</h4><p>${esc(d.vig)}</p></div></div>`:""}
+    </div>
+    <div class="sh-actions">
+      <a class="btn btn-pri" href="${esc(safeUrl(d.url))}" target="_blank" rel="noopener">${etiqueta}</a>
+      ${d.web?`<a class="btn btn-sec" href="${esc(safeUrl(d.web))}" target="_blank" rel="noopener">Sitio del comercio ↗</a>`:""}
+      ${nota?`<p class="sh-note">${nota}</p>`:""}
+    </div>`;
+  ultimoFoco=document.activeElement;
+  $("sheet").hidden=false; document.body.style.overflow="hidden";
+  $("sh-close").focus();
+}
+function cerrarDetalle(){
+  if($("sheet").hidden)return;
+  $("sheet").hidden=true; document.body.style.overflow="";
+  if(ultimoFoco&&ultimoFoco.focus)ultimoFoco.focus();
+}
+$("sheet").addEventListener("click",e=>{if(e.target.id==="sheet"||e.target.closest("#sh-close"))cerrarDetalle();});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape")cerrarDetalle();
+  const art=e.target.closest&&e.target.closest(".deal");
+  if(art&&(e.key==="Enter"||e.key===" ")&&!e.target.closest("button")){e.preventDefault();abrirDetalle(art.dataset.id);}
+});
 document.addEventListener("click",e=>{
-  const t=e.target.closest("button");if(!t)return;
+  if(e.target.closest("#sheet"))return;
+  const t=e.target.closest("button");
+  if(!t){const art=e.target.closest(".deal");if(art)abrirDetalle(art.dataset.id);return;}
   if(t.id==="more"){st.limit+=40;renderList()}
   else if(t.dataset.d){st.day=+t.dataset.d;st.limit=40;all()}
   else if(t.dataset.bank){const k=t.dataset.bank;st.banks.has(k)?st.banks.delete(k):st.banks.add(k);store.set("banks",[...st.banks]);st.limit=40;all()}
@@ -230,7 +331,7 @@ cargar();
 
 // En el iPhone la app instalada puede quedar abierta en segundo plano por días.
 // Al volver a abrirla: si cambió el día o hay una versión nueva publicada, se recarga sola.
-const APP_VERSION="2026-10-18d";
+const APP_VERSION="2026-10-19a";
 const diaCarga=new Date().toDateString();
 async function revisarActualizacion(){
   if(new Date().toDateString()!==diaCarga){location.reload();return;}

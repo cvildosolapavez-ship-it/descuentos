@@ -69,13 +69,22 @@ BANCOS: dict[str, dict] = {
     "scotia":    {"nombre": "Scotiabank",      "url": "https://www.scotiabankchile.cl/beneficios", "js": True,
                   "selector": ".scotia-box-solid, .sc-box-bannerhero", "titulo": None},
     "falabella": {"nombre": "Banco Falabella", "url": "https://www.bancofalabella.cl/descuentos", "js": True,
-                  "selector": 'div[class*="NewCardBenefits_content"]', "titulo": '[class*="NewCardBenefits_title"]'},
+                  "selector": 'div[class*="NewCardBenefits_content"]', "titulo": '[class*="NewCardBenefits_title"]',
+                  # Falabella no tiene página por descuento: se enlaza la sección de su categoría
+                  "secciones": {"comida": "/descuentos/restaurantes", "salud": "/descuentos/salud",
+                                "belleza": "/descuentos/belleza", "entretenimiento": "/descuentos/entretencion",
+                                "viajes": "/descuentos/viajes", "supermercado": "/descuentos/mercado",
+                                "otros": "/descuentos/todos", "moda": "/descuentos/todos"}},
     "security":  {"nombre": "Security",        "js": True, "selector": "article[data-history-node-id]",
                   "titulo": ".data-container > div:first-child", "lugar": "div:has(> i.la-map-marker)",
                   "urls": ["https://personas.bancosecurity.cl/beneficios",
                            "https://personas.bancosecurity.cl/beneficios/gourmet"]},
     "ripley":    {"nombre": "Banco Ripley",    "url": "https://www.bancoripley.cl/beneficios-y-promociones", "js": True,
-                  "selector": ".new-card_beneficios", "titulo": ".title", "lugar": ".description"},
+                  "selector": ".new-card_beneficios", "titulo": ".title", "lugar": ".description",
+                  # Ripley muestra el detalle en una ventana: se enlaza la pestaña de su categoría
+                  "secciones": {"comida": "#nav-restofans", "belleza": "#nav-bienestar-belleza",
+                                "salud": "#nav-bienestar-belleza", "viajes": "#nav-viajes-y-transportes",
+                                "entretenimiento": "#nav-entretencionyotros", "otros": "#nav-entretencionyotros"}},
 }
 
 # El orden importa: gana la primera categoría que coincida.
@@ -141,6 +150,10 @@ class Descuento:
     loc: str = ""
     vig: str = ""
     url: str = ""
+    horario: str = ""
+    dir: list[str] = field(default_factory=list)
+    desc: str = ""
+    web: str = ""
     origen: str = "scraper"
     leido: str = field(default_factory=lambda: datetime.now(CHILE).date().isoformat())
 
@@ -368,6 +381,51 @@ def nombre_comercio(card: Tag, sel: str | None, texto: str) -> str | None:
     return None
 
 
+def enlace_descuento(card: Tag, cfg: dict) -> str:
+    """Busca el enlace a la página propia del descuento: primero en la tarjeta y luego en
+    sus contenedores cercanos, siempre que haya un único enlace de detalle."""
+    def valido(h: str | None) -> bool:
+        return bool(h) and not h.startswith(("#", "javascript")) and urljoin(cfg["url"], h).rstrip("/") != cfg["url"].rstrip("/")
+    a = card if card.name == "a" else None
+    if a is not None and valido(a.get("href")):
+        return urljoin(cfg["url"], a["href"])
+    for a in card.find_all("a", href=True):
+        if valido(a["href"]):
+            return urljoin(cfg["url"], a["href"])
+    p = card
+    for _ in range(6):
+        p = p.parent
+        if p is None:
+            break
+        detalles = {x["href"] for x in p.find_all("a", href=True) if "detalle" in x["href"]}
+        if len(detalles) == 1:
+            return urljoin(cfg["url"], detalles.pop())
+        if len(detalles) > 1:
+            break
+    return ""
+
+
+def seccion_url(cfg: dict, cat: str) -> str:
+    sec = (cfg.get("secciones") or {}).get(cat)
+    return urljoin(cfg["url"], sec) if sec else cfg["url"]
+
+
+RE_HORARIO = re.compile(
+    r"(?:de\s+|desde\s+las?\s+|entre\s+las?\s+)?\b\d{1,2}(?:[:.]\d{2})?\s*(?:hrs?\.?|horas)?\s*(?:a|-|–|y|hasta)\s*(?:las?\s+)?\d{1,2}(?:[:.]\d{2})?\s*(?:hrs?\.?|horas)\b"
+    r"|\b\d{1,2}[:.]\d{2}\s*(?:a|-|–|y)\s*\d{1,2}[:.]\d{2}(?:\s*hrs?\.?)?"
+    r"|(?:desde|a partir de|hasta)\s+las?\s+\d{1,2}(?:[:.]\d{2})?\s*(?:hrs?\.?|horas)?"
+    r"|horario\s+(?:de\s+)?(?:almuerzo|cena|once|happy hour)", re.I)
+
+
+def extraer_horario(texto: str) -> str:
+    vistos = []
+    for m in RE_HORARIO.finditer(texto or ""):
+        h = limpiar(m.group(0))
+        if h.lower() not in (v.lower() for v in vistos):
+            vistos.append(h)
+    return "; ".join(vistos[:3])
+
+
 RE_LUGAR = re.compile(
     r"\b(?i:presencial)\s+(?i:en)\s+((?!Mallplaza\b)[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+(?:\s(?:y\s|del\s|de\s|la\s)?(?!(?:Lunes|Martes|Miércoles|Jueves|Viernes|Sábado|Domingo|Hasta|Nuevo|Mañana|Hoy|Todos|Sin)\b)[A-ZÁÉÍÓÚÑ][\wáéíóúñ]+)*)")
 
@@ -389,8 +447,7 @@ def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
         shop = nombre_comercio(c, cfg.get("titulo"), texto)
         if not shop:
             continue  # sin comercio identificable no sirve en la app
-        a = c if c.name == "a" else c.find("a", href=True)
-        link = urljoin(cfg["url"], a["href"]) if a and a.get("href") else cfg["url"]
+        link = enlace_descuento(c, cfg)
         vig = RE_VIG.search(normalizar(texto))
         # Los íconos de la tarjeta (ej. "icon/restaurant.svg") también indican la categoría
         iconos = " ".join(os.path.splitext(os.path.basename(i.get("src", "").split("?")[0]))[0]
@@ -409,7 +466,8 @@ def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
             perLitre=litro, upTo=bool(RE_HASTA.search(texto)),
             vig=f"Hasta {vig.group(1)}" if vig else "",
             loc=lugar_txt or (lugar.group(1) if lugar else ""),
-            url=link,
+            url=link or seccion_url(cfg, clasificar(f"{shop} {texto} {iconos}")),
+            horario=extraer_horario(texto),
         ))
     return out
 
@@ -482,6 +540,17 @@ def bch_descargar(url: str) -> list[dict]:
     return [e for n in sorted(paginas) for e in paginas[n]]
 
 
+def bch_direcciones(html: str) -> list[str]:
+    """'<li>VACIO;Carampangue #190;Región de los Ríos;Valdivia;VACIO</li>' -> ['Carampangue #190, Valdivia']"""
+    out = []
+    for item in re.findall(r"<li>(.*?)</li>", html or "", re.S) or ([html] if html and "<" not in html else []):
+        partes = [limpiar(RE_HTML.sub(" ", x)) for x in item.split(";")]
+        partes = [x for x in partes if x and x.upper() != "VACIO" and not re.match(r"(?i)regi[oó]n\b", x)]
+        if partes:
+            out.append(", ".join(dict.fromkeys(partes)))
+    return out[:8]
+
+
 def bch_convertir(e: dict) -> Descuento | None:
     meta, f = e.get("meta", {}), e.get("fields", {})
     fin = meta.get("unpublish_at")
@@ -515,7 +584,13 @@ def bch_convertir(e: dict) -> Descuento | None:
     if not cat:
         cat = "moda" if "vestuario-y-calzado" in tags else clasificar(f"{shop} {extracto} {f.get('Keywords') or ''}")
     vig = RE_VIG.search(normalizar(f.get("Vigencia") or ""))
+    condiciones = limpiar(RE_HTML.sub(" ", f.get("Condiciones Comerciales") or ""))
+    web = (f.get("Url Beneficio Externa") or f.get("Sitio web") or "").strip()
     return Descuento(
+        dir=bch_direcciones(f.get("Sucursales") or ""),
+        horario=extraer_horario(f"{extracto} {desc} {condiciones}"),
+        desc=corto(desc, 400),
+        web=web if web.startswith("http") else "",
         shop=shop[:60], cat=cat, bank="bchile", pct=pct, days=dias,
         cond=corto(extracto[:1].upper() + extracto[1:] if extracto else desc),
         perLitre=litro, upTo="hasta" in tipo.lower(),
