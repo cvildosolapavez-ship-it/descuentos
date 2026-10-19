@@ -1,0 +1,367 @@
+{
+  "nota": "Descuentos cargados a mano. Se agregan en cada actualización; cuando venzan, la app los oculta sola. Revisar cada mes.",
+  "descuentos": [
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "scotia",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        1
+      ],
+      "cond": "Tarjeta Cencosud Scotiabank Mastercard inscrita en la App Copec.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "internacional",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        2
+      ],
+      "cond": "Tarjetas de crédito Mastercard Banco Internacional (Clásica, Gold y Black) en la App Copec.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "itau",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        2
+      ],
+      "cond": "Tarjetas de crédito Itaú Legend, con el código que envía Itaú.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "estado",
+      "pct": 50,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        2
+      ],
+      "cond": "Pagando con el código QR de la app RutPay de BancoEstado.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "coopeuch",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de débito Coopeuch y prepago Dale.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "bci",
+      "pct": 7,
+      "perLitre": false,
+      "upTo": false,
+      "days": [
+        4
+      ],
+      "cond": "7% de devolución (cashback) con tarjetas de crédito BCI pagando en la App Copec.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "tenpo",
+      "pct": 50,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        5
+      ],
+      "cond": "Desde $50 por litro con tarjetas Tenpo Mastercard.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "santander",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        5,
+        6,
+        0
+      ],
+      "cond": "Santander Consumer, con código de descuento.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "mach",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        6
+      ],
+      "cond": "Tarjetas de crédito MACH inscritas en la App Copec.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Copec",
+      "cat": "bencina",
+      "bank": "bice",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        0
+      ],
+      "cond": "Tarjetas de crédito BICE Limitless inscritas en la App Copec.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "mercadopago",
+      "pct": 50,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        1
+      ],
+      "cond": "Pagando con dinero en cuenta Mercado Pago en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "bci",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta Líder BCI pagando en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "scotia",
+      "pct": 200,
+      "perLitre": true,
+      "upTo": true,
+      "days": [
+        4
+      ],
+      "cond": "Tarjetas de crédito Visa o Mastercard Scotiabank en la App Shell. El monto depende de la tarjeta.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "tenpo",
+      "pct": 300,
+      "perLitre": true,
+      "upTo": true,
+      "days": [
+        4
+      ],
+      "cond": "Devolución de $50 a $300 por litro con tarjetas Tenpo en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "losheroes",
+      "pct": 300,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        6
+      ],
+      "cond": "Tarjeta prepago Los Héroes pagando en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://chocale.cl/2026/10/descuentos-en-bencinas-combustibles-octubre-2026/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "security",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        0
+      ],
+      "cond": "Tarjeta de crédito Banco Security pagando en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Shell",
+      "cat": "bencina",
+      "bank": "bice",
+      "pct": 100,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        0
+      ],
+      "cond": "Tarjeta de crédito Banco BICE pagando en la App Shell.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "consorcio",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        1
+      ],
+      "cond": "Devolución con tarjeta de crédito Banco Consorcio en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "mercadopago",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta prepago Mercado Pago (física o digital) en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "ripley",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": true,
+      "days": [
+        3
+      ],
+      "cond": "Tarjetas de crédito o débito Banco Ripley, físicas o en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "otros",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de crédito ABC Visa, física o en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "tenpo",
+      "pct": 300,
+      "perLitre": true,
+      "upTo": true,
+      "days": [
+        5
+      ],
+      "cond": "Tarjetas de crédito o prepago Tenpo en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "otros",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": true,
+      "days": [
+        6
+      ],
+      "cond": "Tarjeta de crédito sbpay física, en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    },
+    {
+      "shop": "Aramco",
+      "cat": "bencina",
+      "bank": "otros",
+      "pct": 150,
+      "perLitre": true,
+      "upTo": false,
+      "days": [
+        0
+      ],
+      "cond": "Tarjeta de crédito SPIN Visa de Cruz Verde, física o en la App Aramco Estaciones.",
+      "loc": "",
+      "vig": "Hasta 31 de octubre de 2026",
+      "url": "https://www.theclinic.cl/2026/10/02/hasta-300-menos-por-litro-de-bencina-revisa-el-listado-de-descuentos-con-bancos-y-aplicaciones-en-bombas-de-todo-el-pais/"
+    }
+  ]
+}

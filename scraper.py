@@ -575,15 +575,32 @@ def vigente(d: dict) -> bool:
         return True
 
 
+ARCHIVO_MANUALES = "descuentos-manuales.json"
+
+
+def cargar_manuales() -> list[dict]:
+    """Descuentos escritos a mano en descuentos-manuales.json (ej. bencina).
+    Se vuelven a leer en cada corrida, así que editar ese archivo basta para cambiarlos."""
+    if not os.path.exists(ARCHIVO_MANUALES):
+        return []
+    with open(ARCHIVO_MANUALES, encoding="utf-8") as fh:
+        j = json.load(fh)
+    lista = j.get("descuentos", []) if isinstance(j, dict) else j
+    hoy = datetime.now(CHILE).date().isoformat()
+    return [{"perLitre": False, "upTo": False, "loc": "", "vig": "", "url": "", **d,
+             "origen": "archivo", "leido": hoy} for d in lista]
+
+
 def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dict]:
-    manuales = [d for d in previos if d.get("origen") == "manual"]
+    manuales = [d for d in previos if d.get("origen") == "manual"] + cargar_manuales()
     vistos = {clave(d) for d in manuales}
     resultado = list(manuales)
     for banco in BANCOS:
         if nuevos.get(banco):
             lista = [asdict(d) for d in nuevos[banco]]
         else:  # sin resultados: conservar lo anterior de ese banco (si sigue siendo válido)
-            lista = [d for d in previos if d.get("origen") != "manual" and d["bank"] == banco and vigente(d)]
+            lista = [d for d in previos if d.get("origen") not in ("manual", "archivo")
+                     and d["bank"] == banco and vigente(d)]
         for d in lista:
             if clave(d) not in vistos:
                 vistos.add(clave(d))
@@ -687,7 +704,7 @@ def main() -> int:
         json.dump({"actualizado": datetime.now(CHILE).isoformat(timespec="minutes"),
                    "descuentos": datos}, f, ensure_ascii=False, indent=2)
     log.info("Guardado %s: %d descuentos (%d manuales)", a.out, len(datos),
-             sum(d.get("origen") == "manual" for d in datos))
+             sum(d.get("origen") in ("manual", "archivo") for d in datos))
     return 0
 
 

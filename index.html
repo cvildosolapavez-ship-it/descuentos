@@ -123,8 +123,13 @@ const BANKS={
   santander:{n:"Santander",c:"#e30613"}, bci:{n:"BCI",c:"#5a5a5a"},
   scotia:{n:"Scotiabank",c:"#c8102e"}, itau:{n:"Itaú",c:"#ec7000"},
   falabella:{n:"Banco Falabella",c:"#3a8f2f"}, security:{n:"Security",c:"#6b2c91"},
-  ripley:{n:"Banco Ripley",c:"#8a2be2"}
+  ripley:{n:"Banco Ripley",c:"#8a2be2"}, bice:{n:"Banco BICE",c:"#1b3a6b"},
+  internacional:{n:"Banco Internacional",c:"#0072ce"}, consorcio:{n:"Banco Consorcio",c:"#d6001c"},
+  coopeuch:{n:"Coopeuch",c:"#e30613"}, mach:{n:"MACH",c:"#6c2bd9"}, tenpo:{n:"Tenpo",c:"#00b26b"},
+  mercadopago:{n:"Mercado Pago",c:"#00a8e8"}, losheroes:{n:"Los Héroes",c:"#f39200"},
+  otros:{n:"Otras tarjetas",c:"#8a8f9c"}
 };
+const bankOf=k=>BANKS[k]||{n:k,c:"#8a8f9c"};
 const CATS={comida:"🍔 Comida",entretenimiento:"🎬 Entretención",belleza:"💅 Belleza",moda:"👗 Moda",
   supermercado:"🛒 Súper",viajes:"✈️ Viajes",salud:"💊 Salud",bencina:"⛽ Bencina",otros:"🏷️ Otros"};
 
@@ -161,7 +166,8 @@ function renderDays(){
 }
 function renderChips(){
   const day=onDay(st.day);
-  $("banks").innerHTML=Object.entries(BANKS).map(([k,b])=>{const n=day.filter(x=>x.bank===k).length;
+  const cuenta=k=>day.filter(x=>x.bank===k).length;
+  $("banks").innerHTML=Object.entries(BANKS).sort((a,b)=>cuenta(b[0])-cuenta(a[0])).map(([k,b])=>{const n=cuenta(k);
     return `<button class="chip${n?'':' zero'}" data-bank="${k}" aria-pressed="${st.banks.has(k)}"><i style="background:${b.c}"></i>${b.n} <small>${n}</small></button>`}).join("");
   $("cats").innerHTML=Object.entries(CATS).map(([k,c])=>{const n=day.filter(x=>x.cat===k).length;
     return `<button class="chip${n?'':' zero'}" data-cat="${k}" aria-pressed="${st.cats.has(k)}">${c} <small>${n}</small></button>`}).join("");
@@ -172,7 +178,7 @@ function renderList(){
   r.sort(st.sort==="name"?(a,b)=>a.shop.localeCompare(b.shop):st.sort==="fav"?(a,b)=>(st.favs.has(b.id)-st.favs.has(a.id))||b.pct-a.pct:(a,b)=>(!!a.perLitre-!!b.perLitre)||b.pct-a.pct||a.shop.localeCompare(b.shop));
   $("count").textContent=r.length;
   const total=r.length;r=r.slice(0,st.limit);
-  $("list").innerHTML=r.length?r.map(d=>{const b=BANKS[d.bank];const days=d.days.length===7?"Todos los días":d.days.map(x=>DOW[x]).join(", ");
+  $("list").innerHTML=r.length?r.map(d=>{const b=bankOf(d.bank);const days=d.days.length===7?"Todos los días":d.days.map(x=>DOW[x]).join(", ");
     return `<article class="deal">
     <div class="pct">${d.perLitre?`<b>$${d.pct}</b><small>x litro</small>`:`${d.upTo?'<small>hasta</small>':''}<b>${d.pct}%</b><small>dcto</small>`}</div>
     <div class="info"><h3>${d.shop}<button class="fav" data-fav="${d.id}" aria-pressed="${st.favs.has(d.id)}" aria-label="Favorito">${st.favs.has(d.id)?"★":"☆"}</button></h3>
@@ -212,7 +218,7 @@ cargar();
 
 // En el iPhone la app instalada puede quedar abierta en segundo plano por días.
 // Al volver a abrirla: si cambió el día o hay una versión nueva publicada, se recarga sola.
-const APP_VERSION="2026-10-18b";
+const APP_VERSION="2026-10-18c";
 const diaCarga=new Date().toDateString();
 async function revisarActualizacion(){
   if(new Date().toDateString()!==diaCarga){location.reload();return;}
