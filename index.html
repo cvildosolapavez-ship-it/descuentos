@@ -41,6 +41,8 @@ h1 span{background:var(--accent);color:var(--accent-ink);padding:0 .25em;border-
 .day{border:0;background:var(--surface);color:var(--ink);border-radius:12px;padding:8px 0;font:600 .8rem var(--body);cursor:pointer;display:grid;gap:2px;justify-items:center;box-shadow:inset 0 0 0 1px var(--line)}
 .day b{font-family:var(--display);font-size:1.05rem;font-variant-numeric:tabular-nums}
 .day[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:none}
+.day small{font-size:.66rem;font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.day[aria-pressed="true"] small{color:var(--bg);opacity:.75}
 .day .dot{width:5px;height:5px;border-radius:50%;background:var(--accent)}
 .search{width:100%;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:12px;padding:10px 12px;font:inherit}
 .label{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:14px 0 6px;display:flex;justify-content:space-between}
@@ -129,19 +131,33 @@ const CATS={comida:"🍔 Comida",entretenimiento:"🎬 Entretención",belleza:"�
 let DEALS=[];
 const ALL=[0,1,2,3,4,5,6];
 const DOW=["Dom","Lun","Mar","Mié","Jue","Vie","Sáb"];
-const today=new Date().getDay();
+const now=new Date();
+const today=now.getDay();
+// La semana parte el domingo y se renueva cada domingo: Dom 18, Lun 19 … Sáb 24
+const weekStart=new Date(now.getFullYear(),now.getMonth(),now.getDate()-today);
+const dateOf=d=>new Date(weekStart.getFullYear(),weekStart.getMonth(),weekStart.getDate()+d);
+const MESES={enero:0,febrero:1,marzo:2,abril:3,mayo:4,junio:5,julio:6,agosto:7,septiembre:8,setiembre:8,octubre:9,noviembre:10,diciembre:11};
+// "Hasta 31 de octubre de 2026" -> fecha de término (null si no se puede leer)
+function finVigencia(v){
+  const m=(v||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").match(/(\d{1,2})\s+de\s+([a-z]+)(?:\s+(?:de|del)\s+(\d{4}))?/);
+  if(!m||MESES[m[2]]===undefined)return null;
+  const y=m[3]?+m[3]:now.getFullYear();
+  return new Date(y,MESES[m[2]],+m[1],23,59);
+}
 const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
 const st={day:today,banks:new Set(store.get("banks",[])),cats:new Set(store.get("cats",[])),favs:new Set(store.get("favs2",[])),q:"",sort:"pct",limit:40};
 
 const $=id=>document.getElementById(id);
-$("date").textContent=new Date().toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"});
+function renderDate(){$("date").textContent=dateOf(st.day).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"});}
 
-const onDay=d=>DEALS.filter(x=>x.days.includes(d));
+// Descuentos válidos ese día de la semana y todavía vigentes en esa fecha
+const onDay=d=>{const f=dateOf(d);return DEALS.filter(x=>{if(!x.days.includes(d))return false;const fin=finVigencia(x.vig);return !fin||fin>=f;});};
 function renderDays(){
-  const order=[1,2,3,4,5,6,0];
-  $("days").innerHTML=order.map(d=>`<button class="day" data-d="${d}" aria-pressed="${d===st.day}">
-    <span>${DOW[d]}</span><b>${onDay(d).length}</b>${d===today?'<span class="dot" aria-label="hoy"></span>':''}</button>`).join("");
-  document.querySelector("h1 span").textContent = st.day===today?"hoy":DOW[st.day].toLowerCase();
+  const order=[0,1,2,3,4,5,6];
+  $("days").innerHTML=order.map(d=>`<button class="day" data-d="${d}" aria-pressed="${d===st.day}" aria-label="${dateOf(d).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})}">
+    <span>${DOW[d]}</span><b>${dateOf(d).getDate()}</b><small>${onDay(d).length}</small>${d===today?'<span class="dot" aria-label="hoy"></span>':''}</button>`).join("");
+  document.querySelector("h1 span").textContent = st.day===today?"hoy":`${DOW[st.day].toLowerCase()} ${dateOf(st.day).getDate()}`;
+  renderDate();
 }
 function renderChips(){
   const day=onDay(st.day);
@@ -163,7 +179,7 @@ function renderList(){
     <div class="meta"><span class="tag"><i style="background:${b.c}"></i>${b.n}</span><span class="tag">${CATS[d.cat]}</span>${d.loc?`<span class="tag">📍 ${d.loc}</span>`:""}</div>
     <div class="cond">${d.cond} · ${days}</div>
     <div class="foot"><span class="vig${/^Visto|confirmar/i.test(d.vig||'')?'':' ok'}">${d.vig||''}</span><a href="${d.url}" target="_blank" rel="noopener">Ver fuente ↗</a></div></div></article>`}).join("")+(total>r.length?`<button class="more" id="more">Ver más (${total-r.length} restantes)</button>`:"")
-    :`<div class="empty">No hay descuentos para el ${DOW[st.day]} con estos filtros.<br>Prueba otro día o quita algún filtro.</div>`;
+    :`<div class="empty">No hay descuentos para el ${DOW[st.day]} ${dateOf(st.day).getDate()} con estos filtros.<br>Prueba otro día o quita algún filtro.</div>`;
 }
 function all(){renderDays();renderChips();renderList()}
 
