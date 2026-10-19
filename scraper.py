@@ -67,19 +67,45 @@ BANCOS: dict[str, dict] = {
     "ripley":    {"nombre": "Banco Ripley",    "url": "https://www.bancoripley.cl/beneficios",                    "js": True,  "selector": None, "titulo": None},
 }
 
+# El orden importa: gana la primera categoría que coincida.
+# Cada palabra se busca completa (con plural opcional), así "bar" no calza con "barato".
 CATEGORIAS: dict[str, list[str]] = {
     "bencina":         ["copec", "shell", "petrobras", "aramco", "bencina", "combustible", "litro"],
-    "supermercado":    ["jumbo", "lider", "tottus", "unimarc", "santa isabel", "acuenta", "supermercado"],
-    "salud":           ["cruz verde", "salcobrand", "ahumada", "farmacia", "clinica", "dental", "optica"],
-    "belleza":         ["preunic", "sephora", "dbs", "peluqueria", "spa", "manicure", "barberia", "cosmetic", "belleza"],
-    "moda":            ["paris", "h&m", "zara", "adidas", "nike", "vestuario", "calzado", "ropa", "moda"],
-    "viajes":          ["sky", "latam", "jetsmart", "hotel", "turismo", "viaje", "vuelo", "despegar"],
     "entretenimiento": ["cinemark", "cineplanet", "cinepolis", "cine", "teatro", "concierto", "fantasilandia",
-                        "puntoticket", "ticketmaster", "museo", "parque", "bowling", "entretencion"],
-    "comida":          ["restaurant", "restoran", "sushi", "pizza", "burger", "cafe", "starbucks", "juan maestro",
-                        "mamut", "domino", "papa john", "mcdonald", "kfc", "delivery", "rappi", "pedidosya",
-                        "comida", "gastronomia", "bar", "sabores"],
+                        "puntoticket", "ticketmaster", "museo", "parque", "bowling", "entretencion",
+                        "chuck e. cheese", "chuck e cheese", "kidzania", "buin zoo", "show", "evento"],
+    "comida":          ["restaurant", "restaurante", "restoran", "sushi", "pizza", "pizzeria", "burger", "hamburguesa",
+                        "cafe", "cafeteria", "starbucks", "juan maestro", "mamut", "domino", "papa john", "papa johns",
+                        "mcdonald", "mcdonalds", "mccombo", "kfc", "delivery", "rappi", "pedidosya", "uber eats",
+                        "comida", "cocina", "gastronomia", "gourmet", "bar", "sabores", "dunkin", "doggis",
+                        "tommy beans", "chicken", "chick'en", "latte", "le vice", "lovdo", "wendy", "china wok",
+                        "telepizza", "pizza hut", "kitchen", "sandwich", "sangucheria", "heladeria", "pasteleria",
+                        "panaderia", "nikkei", "mexicana", "peruana", "parrilla", "grill", "brunch", "almuerzo"],
+    "supermercado":    ["jumbo", "lider", "tottus", "unimarc", "santa isabel", "acuenta", "supermercado", "mercado"],
+    "salud":           ["cruz verde", "salcobrand", "ahumada", "farmacia", "clinica", "dental", "optica",
+                        "nutrition", "suplemento", "medico", "laboratorio"],
+    "belleza":         ["preunic", "sephora", "dbs", "peluqueria", "spa", "manicure", "barberia", "cosmetica",
+                        "belleza", "piel", "okami", "maquillaje", "perfumeria", "skincare"],
+    "moda":            ["paris", "h&m", "zara", "adidas", "nike", "vestuario", "calzado", "ropa", "moda",
+                        "zapatilla", "zapato"],
+    "viajes":          ["sky", "latam", "jetsmart", "hotel", "turismo", "viaje", "vuelo", "despegar",
+                        "avis", "budget", "arriendo de auto", "arrendar un auto", "rent a car"],
 }
+
+# Textos que no son descuentos en comercios: productos financieros del banco.
+RE_NO_ES_DESCUENTO = re.compile(
+    r"\btasa\b|credito de consumo|hipotecari|\binvert|\binversion|fogape|seguro de (?:auto|vida|hogar|salud)"
+    r"|abre (?:hoy )?(?:tu |una )?cuenta|portabilidad|pago automatico de cuentas|refinancia",
+)
+# Ofertas de productos en tienda (ej. "$25.990 -46% $47.990"), no beneficios por día.
+RE_PRECIO_PRODUCTO = re.compile(r"-\d{1,2}\s?%.*\$\s?\d|\$\s?\d[\d.]*\s*-\d{1,2}\s?%")
+
+# Nombres que no identifican un comercio (días, etiquetas genéricas, títulos de promoción).
+RE_NOMBRE_GENERICO = re.compile(
+    r"^(?:nuevo|nueva|hasta|comercio|cmr|dcto\.?|descuento|beneficio|ver mas|ver detalle|mañana|manana|hoy|todos los dias"
+    r"|(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do)"
+    r"(?:\s*(?:,|y|a|-)\s*(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do))*)$"
+)
 
 DIAS = {"domingo": 0, "lunes": 1, "martes": 2, "miercoles": 3, "jueves": 4, "viernes": 5, "sabado": 6}
 
@@ -111,11 +137,20 @@ def limpiar(s: str) -> str:
     return re.sub(r"\s+", " ", s).strip()
 
 
-RE_PCT = re.compile(r"(\d{1,3})\s?%")
+RE_PCT = re.compile(r"(?<![\d,.])(\d{1,3})\s?%(?!\s*(?:online|digital|gratis|garantizad|financiad))", re.I)
 RE_HASTA = re.compile(r"hasta\s+(?:un\s+)?\d{1,3}\s?%", re.I)
 RE_LITRO = re.compile(r"\$\s?(\d{2,4})\s*(?:de\s+)?(?:dcto\.?|descuento)?\s*(?:por|x|/)\s*litro", re.I)
 RE_RANGO = re.compile(r"(lunes|martes|miercoles|jueves|viernes|sabado|domingo)\s+a\s+(lunes|martes|miercoles|jueves|viernes|sabado|domingo)")
 RE_VIG = re.compile(r"(?:hasta|vigente hasta|valido hasta|al)\s+(?:el\s+)?(\d{1,2}\s+de\s+[a-z]+(?:\s+de\s+\d{4})?)", re.I)
+
+
+ABREV = {"do": 0, "lu": 1, "ma": 2, "mi": 3, "ju": 4, "vi": 5, "sa": 6}
+RE_ABREV = re.compile(r"\b(?:lu|ma|mi|ju|vi|sa|do)(?:\s?-\s?(?:lu|ma|mi|ju|vi|sa|do))+\b")
+
+
+def hoy_idx() -> int:
+    """Día de hoy en Chile, con 0 = domingo."""
+    return (datetime.now(CHILE).weekday() + 1) % 7
 
 
 def parse_dias(texto: str) -> list[int]:
@@ -123,6 +158,13 @@ def parse_dias(texto: str) -> list[int]:
     if re.search(r"todos los dias|todo el mes|lunes a domingo|7 dias", t):
         return list(range(7))
     dias: set[int] = set()
+    for grupo in RE_ABREV.findall(t):  # "Sá-Do-Lu", "Vi-Sá-Do-Lu-Mi"
+        dias.update(ABREV[a] for a in re.split(r"\s?-\s?", grupo))
+    # Algunos sitios muestran "Hoy" / "Mañana" en vez del día de la semana
+    if re.search(r"\bhoy\b", t):
+        dias.add(hoy_idx())
+    if re.search(r"\bmanana\b", t):
+        dias.add((hoy_idx() + 1) % 7)
     for a, b in RE_RANGO.findall(t):
         i, j = DIAS[a], DIAS[b]
         dias.update(range(i, j + 1) if i <= j else [*range(i, 7), *range(0, j + 1)])
@@ -145,7 +187,7 @@ def parse_pct(texto: str) -> tuple[int | None, bool]:
 def clasificar(texto: str) -> str:
     t = normalizar(texto)
     for cat, claves in CATEGORIAS.items():
-        if any(re.search(rf"\b{re.escape(k)}", t) for k in claves):
+        if any(re.search(rf"(?<!\w){re.escape(k)}(?:s|es)?(?!\w)", t) for k in claves):
             return cat
     return "otros"
 
@@ -194,18 +236,79 @@ def tarjetas_auto(soup: BeautifulSoup) -> list[Tag]:
     return [c for c in cand if not any(id(d) in ids for d in c.find_all(True))]
 
 
-def nombre_comercio(card: Tag, sel: str | None) -> str:
+RE_PREFIJO = re.compile(r"^(?:(?:dcto\.?|descuento|beneficio)\s+(?:en|de|del)\s+)?(?:la\s+)?(?:app|tienda)\s+(?:de\s+)?|^(?:dcto\.?|descuento|beneficio)\s+(?:en|de|del)\s+", re.I)
+RE_ANTES_PCT = re.compile(r"^([A-ZÁÉÍÓÚÑ0-9][\w'’&.\- ]{1,40}?)\s+(?:hasta\s+)?\d{1,3}\s?%")
+RE_EN_COMERCIO = re.compile(
+    r"(?i:dcto\.?|descuento|devoluci[oó]n)\s+(?i:en)\s+([A-ZÁÉÍÓÚÑ][\w'&.]+(?:\s[A-ZÁÉÍÓÚÑ0-9][\w'&.]*){0,3})")
+MARCAS = {k: n for n in (
+    "Copec", "Shell", "Petrobras", "Aramco", "Starbucks", "McDonald's", "Juan Maestro", "Doggis", "Mamut",
+    "Domino's", "Papa John's", "Pizza Hut", "Telepizza", "KFC", "Burger King", "Wendy's", "Dunkin'",
+    "PedidosYa", "Rappi", "Uber Eats", "Cinemark", "Cineplanet", "Cinépolis", "Fantasilandia", "Preunic",
+    "Sephora", "Cruz Verde", "Salcobrand", "Farmacias Ahumada", "Jumbo", "Lider", "Tottus", "Unimarc",
+    "Santa Isabel", "Paris", "Falabella", "Ripley", "Sky Airline", "LATAM", "JetSMART", "Avis",
+) for k in [normalizar(n).replace("'", "")]}
+IMG_GENERICA = re.compile(r"logo|banner|imagen|image|icono|icon|foto|^\W*$", re.I)
+
+
+COLA = re.compile(r"(?:\s+(?:exclusivo|presencial|pagando|valido|válido|solo|con|por|en|todos|hasta|sin|y|online|vigente))+$", re.I)
+
+
+def limpiar_nombre(s: str) -> str:
+    s = COLA.sub("", RE_PREFIJO.sub("", limpiar(s))).strip(" -–:|·.")
+    return s[:1].upper() + s[1:60] if s else ""
+
+
+def es_generico(nombre: str) -> bool:
+    n = normalizar(nombre).strip(" .!¡?")
+    return (not n or bool(RE_NOMBRE_GENERICO.match(n)) or bool(RE_PCT.search(nombre))
+            or n.startswith(("hasta ", "todos los", "disfruta", "canjea", "aprovecha", "conoce", "exclusivo",
+                             "presencial", "valido", "sin tope", "pagando", "con tu", "con tus", "solo ",
+                             "promocion", "compra", "pide", "usa ", "paga ", "vigencia", "ver ", "dcto")))
+
+
+def nombre_comercio(card: Tag, sel: str | None, texto: str) -> str | None:
+    """Busca el nombre del comercio entre varios candidatos y descarta los genéricos.
+    Devuelve None si no encuentra ninguno útil."""
     if sel and (t := card.select_one(sel)):
-        return limpiar(t.get_text(" "))[:60]
-    for tag in ("h2", "h3", "h4", "h5", "strong", "b"):
-        t = card.find(tag)
-        if t and not RE_PCT.search(t.get_text()):
-            return limpiar(t.get_text(" "))[:60]
-    img = card.find("img", alt=True)
-    if img and img["alt"].strip():
-        return limpiar(img["alt"])[:60]
-    primera = limpiar(card.get_text("\n").split("\n")[0])
-    return RE_PCT.sub("", primera).strip(" -–:")[:60] or "Comercio"
+        n = limpiar_nombre(t.get_text(" "))
+        if not es_generico(n):
+            return n
+    candidatos: list[str] = []
+
+    def textos(tags: list[str]) -> None:
+        for tag in card.find_all(tags):
+            txt = tag.get_text(" ", strip=True)
+            if 2 <= len(txt) <= 50:
+                candidatos.append(txt)
+
+    textos(["h1", "h2", "h3", "h4", "h5", "h6", "strong", "b"])  # 1) títulos
+    for img in card.find_all("img"):  # 2) logos con texto alternativo
+        for attr in ("alt", "title"):
+            v = (img.get(attr) or "").strip()
+            if v and not IMG_GENERICA.search(v):
+                candidatos.append(v)
+    for el in [card, *card.find_all(True)]:
+        for attr in ("aria-label", "title", "data-name", "data-comercio", "data-title"):
+            v = (el.get(attr) or "").strip()
+            if 2 <= len(v) <= 50:
+                candidatos.append(v)
+    if m := RE_ANTES_PCT.match(texto):  # 3) "Avis Budget 20% descuento ..."
+        candidatos.append(m.group(1))
+    if m := RE_EN_COMERCIO.search(texto):  # 4) "25% Dcto. en OKAMI"
+        candidatos.append(m.group(1))
+    t_norm = normalizar(texto)  # 5) marcas conocidas mencionadas en el texto
+    candidatos += [MARCAS[k] for k in MARCAS if re.search(rf"(?<!\w){re.escape(k)}(?!\w)", t_norm)]
+    textos(["p", "span"])  # 6) cualquier texto corto
+    for c in candidatos:
+        n = limpiar_nombre(c)
+        # Títulos largos con signos de exclamación suelen ser frases de promoción
+        if not es_generico(n) and "¡" not in n and len(n) <= 40:
+            return n
+    for c in candidatos:  # segunda pasada: aceptar un título de promoción
+        n = limpiar_nombre(c)
+        if not es_generico(n):
+            return n
+    return None
 
 
 def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
@@ -216,10 +319,15 @@ def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
     out: list[Descuento] = []
     for c in cards:
         texto = limpiar(c.get_text(" "))
+        t_norm = normalizar(texto)
+        if RE_NO_ES_DESCUENTO.search(t_norm) or RE_PRECIO_PRODUCTO.search(texto):
+            continue
         pct, litro = parse_pct(texto)
         if pct is None:
             continue
-        shop = nombre_comercio(c, cfg.get("titulo"))
+        shop = nombre_comercio(c, cfg.get("titulo"), texto)
+        if not shop:
+            continue  # sin comercio identificable no sirve en la app
         a = c if c.name == "a" else c.find("a", href=True)
         link = urljoin(cfg["url"], a["href"]) if a and a.get("href") else cfg["url"]
         vig = RE_VIG.search(normalizar(texto))
@@ -239,6 +347,24 @@ def clave(d: dict) -> tuple:
     return (d["bank"], normalizar(d["shop"]), d["pct"], tuple(d["days"]))
 
 
+DIAS_MAX_SIN_CONFIRMAR = 10
+
+
+def vigente(d: dict) -> bool:
+    """Descarta datos leídos hace mucho o que no pasan los filtros actuales."""
+    if es_generico(d.get("shop", "")):
+        return False
+    if RE_NO_ES_DESCUENTO.search(normalizar(f"{d.get('shop', '')} {d.get('cond', '')}")):
+        return False
+    if RE_PRECIO_PRODUCTO.search(d.get("cond", "")):
+        return False
+    try:
+        leido = datetime.fromisoformat(d.get("leido", "")).date()
+        return (datetime.now(CHILE).date() - leido).days <= DIAS_MAX_SIN_CONFIRMAR
+    except ValueError:
+        return True
+
+
 def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dict]:
     manuales = [d for d in previos if d.get("origen") == "manual"]
     vistos = {clave(d) for d in manuales}
@@ -246,8 +372,8 @@ def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dic
     for banco in BANCOS:
         if nuevos.get(banco):
             lista = [asdict(d) for d in nuevos[banco]]
-        else:  # sin resultados: conservar lo anterior de ese banco
-            lista = [d for d in previos if d.get("origen") != "manual" and d["bank"] == banco]
+        else:  # sin resultados: conservar lo anterior de ese banco (si sigue siendo válido)
+            lista = [d for d in previos if d.get("origen") != "manual" and d["bank"] == banco and vigente(d)]
         for d in lista:
             if clave(d) not in vistos:
                 vistos.add(clave(d))
@@ -255,6 +381,20 @@ def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dic
     for i, d in enumerate(resultado):
         d["id"] = i
     return resultado
+
+
+def guardar_copia(banco: str, html: str) -> None:
+    """Guarda una copia liviana de la página en debug/ para poder revisar
+    su estructura y ajustar selectores sin abrir el sitio."""
+    try:
+        soup = BeautifulSoup(html, "lxml")
+        for t in soup(["script", "style", "noscript", "svg", "iframe", "link", "meta"]):
+            t.decompose()
+        os.makedirs("debug", exist_ok=True)
+        with open(os.path.join("debug", f"{banco}.html"), "w", encoding="utf-8") as f:
+            f.write(soup.prettify()[:3_000_000])
+    except Exception as e:
+        log.warning("No se pudo guardar la copia de %s: %s", banco, e)
 
 
 def scrapear(bancos: list[str]) -> dict[str, list[Descuento]]:
@@ -265,8 +405,9 @@ def scrapear(bancos: list[str]) -> dict[str, list[Descuento]]:
             time.sleep(DELAY_S)
         try:
             html = bajar_html_js(cfg["url"]) if cfg["js"] else bajar_html(cfg["url"])
+            guardar_copia(b, html)
             res[b] = extraer(html, b, cfg)
-            log.info("%-16s %3d descuentos", cfg["nombre"], len(res[b]))
+            log.info("%-16s %3d descuentos (%d KB de página)", cfg["nombre"], len(res[b]), len(html) // 1024)
             if not res[b]:
                 log.warning("  0 resultados en %s: se conservan los anteriores", cfg["url"])
         except Exception as e:  # un banco caído no detiene a los demás
