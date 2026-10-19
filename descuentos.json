@@ -1,0 +1,959 @@
+{
+  "actualizado": "2026-10-18T21:40:00-03:00",
+  "descuentos": [
+    {
+      "id": 0,
+      "shop": "PF Chang's",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Solo Visa Banco de Chile/Edwards. Pedir el descuento al pagar; sin factura.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Hasta 31 oct. 2026",
+      "url": "https://sitiospublicos.bancochile.cl/personas/beneficios/detalle/pf-changs-40visa",
+      "origen": "manual"
+    },
+    {
+      "id": 1,
+      "shop": "La Fête",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 2,
+      "shop": "Dunkin'",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 3,
+      "shop": "Pizza Hut",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Pizzas y combos.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 4,
+      "shop": "Telepizza",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Pizzas y combos.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 5,
+      "shop": "Domino's",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Pizzas y combos.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 6,
+      "shop": "Doggis",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "40% en la app, 30% en el local.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 7,
+      "shop": "Tommy Beans",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        3
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 8,
+      "shop": "Juan Maestro",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        3
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 9,
+      "shop": "Mamut",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        3
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 10,
+      "shop": "KFC",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        4
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 11,
+      "shop": "Wendy's",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        4
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 12,
+      "shop": "China Wok",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        4
+      ],
+      "cond": "Tarjetas Banco de Chile.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 13,
+      "shop": "Starbucks",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        5
+      ],
+      "cond": "Todas las tiendas del país.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Hasta dic. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 14,
+      "shop": "McDonald's (Rappi)",
+      "cat": "comida",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        5
+      ],
+      "cond": "Cupón en Rappi al cerrar el pedido. Tope $9.000 por pedido.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-banco-chile-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 15,
+      "shop": "Teatro Mori",
+      "cat": "entretenimiento",
+      "bank": "bchile",
+      "pct": 30,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Todas las obras en cartelera.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-panoramas-chile",
+      "origen": "manual"
+    },
+    {
+      "id": 16,
+      "shop": "Jerónimo",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        1
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes; sin propina ni happy hour.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 17,
+      "shop": "Dagan",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        2
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 18,
+      "shop": "Demencia",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        3
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 19,
+      "shop": "Dominga Nikkei",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        4
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 20,
+      "shop": "Misceláneo",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        5
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 21,
+      "shop": "Kato",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        6
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 22,
+      "shop": "Sabor y Aroma",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 50,
+      "days": [
+        0
+      ],
+      "cond": "Solo AMEX Santander, presencial. Tope $50.000 al mes.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 23,
+      "shop": "Restaurantes Fork",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 15,
+      "days": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "cond": "Reserva online, mínimo $20.000. Código: 6 primeros dígitos de tu tarjeta.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Todo 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 24,
+      "shop": "Restaurantes Fork",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 25,
+      "days": [
+        5,
+        6,
+        0
+      ],
+      "cond": "Reserva online, mínimo $20.000. Código: 6 primeros dígitos de tu tarjeta.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Todo 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 25,
+      "shop": "CuracaRibs",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 40,
+      "days": [
+        1
+      ],
+      "cond": "Pedidos online (delivery).",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 26,
+      "shop": "Delivery Gourmet",
+      "cat": "comida",
+      "bank": "santander",
+      "pct": 30,
+      "days": [
+        3
+      ],
+      "cond": "Delivery.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-santander-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 27,
+      "shop": "Pizzicarella",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 20,
+      "days": [
+        1,
+        3
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Antofagasta",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 28,
+      "shop": "Pad Thai",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Providencia",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 29,
+      "shop": "Bar Liguria",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 20,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Providencia",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 30,
+      "shop": "Caleta La Reina",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 25,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "La Reina / Providencia",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 31,
+      "shop": "Chueca Bar",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 20,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Providencia",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 32,
+      "shop": "Palacio Danubio Azul",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Las Condes",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 33,
+      "shop": "Fuente Peruana",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Iquique",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 34,
+      "shop": "Dominga Bistró",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Iquique",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 35,
+      "shop": "Rocker Burger",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Talca",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 36,
+      "shop": "La Mulata",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Iquique",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 37,
+      "shop": "Tijuana",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Concepción",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 38,
+      "shop": "Augusta Bar",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Concepción",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 39,
+      "shop": "Chuck E. Cheese",
+      "cat": "entretenimiento",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 40,
+      "shop": "Coya",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        5
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Arica",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 41,
+      "shop": "Bocas del Mar",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        5
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Pichilemu",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 42,
+      "shop": "Toro Bayo",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        5
+      ],
+      "cond": "Tarjeta de crédito BCI o BciPlus+.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Talca",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 43,
+      "shop": "Starbucks",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 30,
+      "days": [
+        1
+      ],
+      "cond": "Tarjeta Líder BCI. Solo bebidas en barra; no aplica en aeropuertos.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 44,
+      "shop": "McDonald's (app)",
+      "cat": "comida",
+      "bank": "bci",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "Tarjeta Líder BCI inscrita en la app. Compra mínima $12.000.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-bci-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 45,
+      "shop": "Cinépolis",
+      "cat": "entretenimiento",
+      "bank": "bci",
+      "pct": 50,
+      "days": [
+        4,
+        5,
+        6,
+        0
+      ],
+      "cond": "Tarjeta Líder BCI. Alianza que se renueva cada mes.",
+      "perLitre": false,
+      "upTo": true,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-panoramas-chile",
+      "origen": "manual"
+    },
+    {
+      "id": 46,
+      "shop": "Siete Cortes",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "CMR Mastercard. Lun–mar todo el día; mié–dom desde las 19:00. Débito Falabella: 30%.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Open Kennedy",
+      "vig": "Hasta 31 oct. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-cmr-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 47,
+      "shop": "La Tabla BordeRío",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        2
+      ],
+      "cond": "CMR Mastercard, Premium o Elite.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Vitacura",
+      "vig": "Hasta 31 oct. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-cmr-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 48,
+      "shop": "Tanta · Muu Grill · La Sanguchera",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 40,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "CMR Mastercard, Premium o Elite.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Mallplaza Tobalaba",
+      "vig": "Hasta 31 oct. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-cmr-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 49,
+      "shop": "Club de Restaurantes CMR",
+      "cat": "comida",
+      "bank": "falabella",
+      "pct": 20,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Sin tope. Inscripción gratis en clubderestaurantescmr.resermap.com y reserva previa.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Varios locales",
+      "vig": "Hasta dic. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-cmr-restaurantes",
+      "origen": "manual"
+    },
+    {
+      "id": 50,
+      "shop": "Cinépolis",
+      "cat": "entretenimiento",
+      "bank": "estado",
+      "pct": 40,
+      "days": [
+        5,
+        6,
+        0
+      ],
+      "cond": "Salas 2D. Excluye 3D, 4DX, IMAX y VIP. Sujeto a stock.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-panoramas-chile",
+      "origen": "manual"
+    },
+    {
+      "id": 51,
+      "shop": "Fantasilandia",
+      "cat": "entretenimiento",
+      "bank": "estado",
+      "pct": 15,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Entradas digitales.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-panoramas-chile",
+      "origen": "manual"
+    },
+    {
+      "id": 52,
+      "shop": "Teatro Mori",
+      "cat": "entretenimiento",
+      "bank": "itau",
+      "pct": 30,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Todas las salas.",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "Visto sept. 2026",
+      "url": "https://www.neatpagos.com/blog/articulo/descuentos-panoramas-chile",
+      "origen": "manual"
+    }
+  ]
+}
