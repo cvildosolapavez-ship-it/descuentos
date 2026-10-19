@@ -131,8 +131,11 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
   <div class="label">Categoría <button id="clearCats">Todas</button></div>
   <div class="chips" id="cats" role="group" aria-label="Filtrar por categoría"></div>
 
+  <div class="label">Región <button id="clearRegs">Todas</button></div>
+  <div class="chips" id="regs" role="group" aria-label="Filtrar por región"></div>
+
   <div class="summary">
-    <div><strong id="count">0</strong> descuentos</div>
+    <div><strong id="count">0</strong> descuentos<span id="count-nac"></span></div>
     <select id="sort" aria-label="Ordenar">
       <option value="pct">Mayor descuento</option>
       <option value="name">Comercio A–Z</option>
@@ -163,6 +166,10 @@ const BANKS={
   mercadopago:{n:"Mercado Pago",c:"#00a8e8"}, losheroes:{n:"Los Héroes",c:"#f39200"},
   otros:{n:"Otras tarjetas",c:"#8a8f9c"}
 };
+const REGIONES=[["arica","Arica y Parinacota"],["tarapaca","Tarapacá"],["antofagasta","Antofagasta"],["atacama","Atacama"],
+  ["coquimbo","Coquimbo"],["valparaiso","Valparaíso"],["rm","Metropolitana"],["ohiggins","O'Higgins"],["maule","Maule"],
+  ["nuble","Ñuble"],["biobio","Biobío"],["araucania","La Araucanía"],["losrios","Los Ríos"],["loslagos","Los Lagos"],
+  ["aysen","Aysén"],["magallanes","Magallanes"]];
 const bankOf=k=>BANKS[k]||{n:k,c:"#8a8f9c"};
 const esc=t=>String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const safeUrl=u=>/^https?:\/\//i.test(u||"")?u:"#";
@@ -186,7 +193,7 @@ function finVigencia(v){
   return new Date(y,MESES[m[2]],+m[1],23,59);
 }
 const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch{return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch{}}};
-const st={day:today,banks:new Set(store.get("banks",[])),cats:new Set(store.get("cats",[])),favs:new Set(store.get("favs2",[])),q:"",sort:"pct",limit:40};
+const st={day:today,banks:new Set(store.get("banks",[])),cats:new Set(store.get("cats",[])),regs:new Set(store.get("regs",[])),favs:new Set(store.get("favs2",[])),q:"",sort:"pct",limit:40};
 
 const $=id=>document.getElementById(id);
 function renderDate(){$("date").textContent=dateOf(st.day).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"});}
@@ -196,10 +203,19 @@ const onDay=d=>{const f=dateOf(d);return DEALS.filter(x=>{if(!x.days.includes(d)
 // Filtros cruzados: cada grupo cuenta según los demás filtros activos (día, banco, categoría, búsqueda)
 const okBank=d=>!st.banks.size||st.banks.has(d.bank);
 const okCat=d=>!st.cats.size||st.cats.has(d.cat);
-const okQ=d=>{const q=st.q.trim().toLowerCase();return !q||(d.shop+" "+d.loc).toLowerCase().includes(q);};
+// Región: muestra lo de esa región más lo válido en todo Chile u online
+const okReg=d=>!st.regs.size||(d.regs||[]).some(r=>st.regs.has(r)||r==="nac");
+// Comunas a mostrar: si hay región elegida, primero las de esa región
+function comunasDe(d){
+  const L=d.lugares&&d.lugares.length?d.lugares:(d.loc||"").split(",").map(x=>[x.trim(),""]).filter(x=>x[0]);
+  if(!st.regs.size)return L.map(x=>x[0]);
+  return [...L.filter(x=>st.regs.has(x[1])),...L.filter(x=>!st.regs.has(x[1]))].map(x=>x[0]);
+}
+function lugarVisible(d){const c=comunasDe(d);return c.slice(0,3).join(", ")+(c.length>3?` +${c.length-3}`:"");}
+const okQ=d=>{const q=st.q.trim().toLowerCase();return !q||(d.shop+" "+comunasDe(d).join(" ")).toLowerCase().includes(q);};
 function renderDays(){
   const order=[0,1,2,3,4,5,6];
-  $("days").innerHTML=order.map(d=>{const n=onDay(d).filter(x=>okBank(x)&&okCat(x)&&okQ(x)).length;
+  $("days").innerHTML=order.map(d=>{const n=onDay(d).filter(x=>okBank(x)&&okCat(x)&&okReg(x)&&okQ(x)).length;
     return `<button class="day" data-d="${d}" aria-pressed="${d===st.day}" aria-label="${dateOf(d).toLocaleDateString("es-CL",{weekday:"long",day:"numeric",month:"long"})}, ${n} descuentos">
     <span>${DOW[d]}</span><b>${dateOf(d).getDate()}</b><small>${n}</small>${d===today?'<span class="dot" aria-label="hoy"></span>':''}</button>`}).join("");
   document.querySelector("h1 span").textContent = st.day===today?"hoy":`${DOW[st.day].toLowerCase()} ${dateOf(st.day).getDate()}`;
@@ -209,28 +225,36 @@ function renderChips(){
   const day=onDay(st.day).filter(okQ);
   // Bancos: cuentan según la categoría elegida. El orden usa el total del día, así no saltan al tocar.
   const total=k=>day.filter(x=>x.bank===k).length;
-  const nBank=k=>day.filter(x=>x.bank===k&&okCat(x)).length;
+  const nBank=k=>day.filter(x=>x.bank===k&&okCat(x)&&okReg(x)).length;
   const sb=$("banks").scrollLeft, sc=$("cats").scrollLeft;
   $("banks").innerHTML=Object.entries(BANKS)
     .sort((a,b)=>(st.banks.has(b[0])-st.banks.has(a[0]))||total(b[0])-total(a[0]))
     .map(([k,b])=>{const n=nBank(k);
     return `<button class="chip${n?'':' zero'}" data-bank="${k}" aria-pressed="${st.banks.has(k)}"><i style="background:${b.c}"></i>${b.n} <small>${n}</small></button>`}).join("");
   // Categorías: cuentan según el día y los bancos elegidos
-  $("cats").innerHTML=Object.entries(CATS).map(([k,c])=>{const n=day.filter(x=>x.cat===k&&okBank(x)).length;
+  $("cats").innerHTML=Object.entries(CATS).map(([k,c])=>{const n=day.filter(x=>x.cat===k&&okBank(x)&&okReg(x)).length;
     return `<button class="chip${n?'':' zero'}" data-cat="${k}" aria-pressed="${st.cats.has(k)}">${c} <small>${n}</small></button>`}).join("");
-  $("banks").scrollLeft=sb; $("cats").scrollLeft=sc;
+  // Regiones: cuentan solo lo que tiene local en esa región (sin los de todo Chile)
+  const sr=$("regs").scrollLeft;
+  $("regs").innerHTML=REGIONES.map(([k,nombre])=>{const n=day.filter(x=>(x.regs||[]).includes(k)&&okBank(x)&&okCat(x)).length;
+    return `<button class="chip${n?'':' zero'}" data-reg="${k}" aria-pressed="${st.regs.has(k)}">${nombre} <small>${n}</small></button>`}).join("");
+  $("banks").scrollLeft=sb; $("cats").scrollLeft=sc; $("regs").scrollLeft=sr;
 }
 function renderList(){
   const q=st.q.trim().toLowerCase();
-  let r=onDay(st.day).filter(d=>okBank(d)&&okCat(d)&&okQ(d));
-  r.sort(st.sort==="name"?(a,b)=>a.shop.localeCompare(b.shop):st.sort==="fav"?(a,b)=>(st.favs.has(b.id)-st.favs.has(a.id))||b.pct-a.pct:(a,b)=>(!!a.perLitre-!!b.perLitre)||b.pct-a.pct||a.shop.localeCompare(b.shop));
+  let r=onDay(st.day).filter(d=>okBank(d)&&okCat(d)&&okReg(d)&&okQ(d));
+  const local=d=>st.regs.size&&(d.regs||[]).some(x=>st.regs.has(x))?0:1;  // con región elegida, primero lo local
+  const orden=st.sort==="name"?(a,b)=>a.shop.localeCompare(b.shop):st.sort==="fav"?(a,b)=>(st.favs.has(b.id)-st.favs.has(a.id))||b.pct-a.pct:(a,b)=>(!!a.perLitre-!!b.perLitre)||b.pct-a.pct||a.shop.localeCompare(b.shop);
+  r.sort((a,b)=>local(a)-local(b)||orden(a,b));
   $("count").textContent=r.length;
+  const nac=st.regs.size?r.filter(d=>!(d.regs||[]).some(x=>st.regs.has(x))).length:0;
+  $("count-nac").textContent=nac?` · ${nac} válidos en todo Chile u online`:"";
   const total=r.length;r=r.slice(0,st.limit);
   $("list").innerHTML=r.length?r.map(d=>{const b=bankOf(d.bank);const days=d.days.length===7?"Todos los días":d.days.map(x=>DOW[x]).join(", ");
     return `<article class="deal" data-id="${d.id}" tabindex="0" aria-label="Ver detalle de ${esc(d.shop)}">
     <div class="pct">${d.perLitre?`<b>$${d.pct}</b><small>x litro</small>`:`${d.upTo?'<small>hasta</small>':''}<b>${d.pct}%</b><small>dcto</small>`}</div>
     <div class="info"><h3>${esc(d.shop)}<button class="fav" data-fav="${d.id}" aria-pressed="${st.favs.has(d.id)}" aria-label="Favorito">${st.favs.has(d.id)?"★":"☆"}</button></h3>
-    <div class="meta"><span class="tag"><i style="background:${b.c}"></i>${esc(b.n)}</span><span class="tag">${CATS[d.cat]||esc(d.cat)}</span>${d.loc?`<span class="tag">📍 ${esc(d.loc)}</span>`:""}</div>
+    <div class="meta"><span class="tag"><i style="background:${b.c}"></i>${esc(b.n)}</span><span class="tag">${CATS[d.cat]||esc(d.cat)}</span>${d.loc?`<span class="tag">📍 ${esc(lugarVisible(d))}</span>`:(d.regs||[]).includes("nac")?`<span class="tag">🇨🇱 Todo Chile</span>`:""}</div>
     <div class="cond">${esc(d.cond)} · ${days}</div>
     <div class="foot"><span class="vig${/^Visto|confirmar/i.test(d.vig||'')?'':' ok'}">${esc(d.vig)}</span><span class="vermas">Ver detalle ›</span></div></div></article>`}).join("")+(total>r.length?`<button class="more" id="more">Ver más (${total-r.length} restantes)</button>`:"")
     :`<div class="empty">No hay descuentos para el ${DOW[st.day]} ${dateOf(st.day).getDate()} con estos filtros.<br>Prueba otro día o quita algún filtro.</div>`;
@@ -248,7 +272,10 @@ function tipoEnlace(u){
     return "seccion";
   }catch{return "seccion"}
 }
-const mapa=q=>"https://maps.apple.com/?q="+encodeURIComponent(q);
+// Apple Maps: con dirección exacta se marca el punto; con solo la comuna se busca el local en esa comuna.
+// Siempre se agrega ", Chile" para no caer en ciudades homónimas de otros países.
+const mapaDir=(local,dir)=>`https://maps.apple.com/?q=${encodeURIComponent(local)}&address=${encodeURIComponent(dir+", Chile")}`;
+const mapaComuna=(local,comuna)=>`https://maps.apple.com/?q=${encodeURIComponent(local+", "+comuna+", Chile")}`;
 let ultimoFoco=null;
 function abrirDetalle(id){
   const d=DEALS.find(x=>String(x.id)===String(id)); if(!d)return;
@@ -256,10 +283,17 @@ function abrirDetalle(id){
   const dias=d.days.length===7?[0,1,2,3,4,5,6]:d.days;
   const validoHoy=d.days.includes(st.day);
   const dirs=(d.dir&&d.dir.length?d.dir:[]);
+  const comunas=comunasDe(d);
+  const nombreReg=k=>(REGIONES.find(r=>r[0]===k)||[,""])[1];
+  const regsTxt=(d.regs||[]).filter(r=>r!=="nac").map(nombreReg).filter(Boolean).join(", ");
   const ubic=dirs.length
-    ?`<ul>${dirs.map(a=>`<li><span>${esc(a)}</span><a href="${mapa(d.shop+", "+a)}" target="_blank" rel="noopener">Mapa ↗</a></li>`).join("")}</ul>`
-    :d.loc?`<p>${esc(d.loc)} · <a href="${mapa(d.shop+", "+d.loc)}" target="_blank" rel="noopener">Mapa ↗</a></p>`
-    :`<p>${/online|app|delivery|web/i.test(d.cond)?"Online o por app":"No informada. Revisa los locales adheridos en el enlace."}</p>`;
+    ?`<ul>${dirs.map(a=>`<li><span>${esc(a)}</span><a href="${mapaDir(d.shop,a)}" target="_blank" rel="noopener">Mapa ↗</a></li>`).join("")}</ul>`
+    :comunas.length
+    ?`<ul>${comunas.map(c=>`<li><span>${esc(c)}</span><a href="${mapaComuna(d.shop,c)}" target="_blank" rel="noopener">Buscar en mapa ↗</a></li>`).join("")}</ul>
+      <p class="sh-note" style="margin-top:6px">El banco no informa la dirección exacta; el mapa busca el local en esa comuna.</p>`
+    :(d.regs||[]).includes("nac")?`<p>Válido en todo Chile u online.</p>`
+    :regsTxt?`<p>Región de ${esc(regsTxt)}. Dirección no informada.</p>`
+    :`<p>No informada. Revisa los locales adheridos en el enlace del banco.</p>`;
   const etiqueta={detalle:"Ir al descuento ↗",seccion:`Ver en el sitio de ${esc(b.n)} ↗`,articulo:"Ver la fuente ↗"}[tipo];
   const nota={detalle:"",
     seccion:`${esc(b.n)} no tiene una página propia para cada descuento. Te llevamos a la sección donde aparece; búscalo como "${esc(d.shop)}".`,
@@ -309,6 +343,8 @@ document.addEventListener("click",e=>{
   else if(t.dataset.bank){const k=t.dataset.bank;st.banks.has(k)?st.banks.delete(k):st.banks.add(k);store.set("banks",[...st.banks]);st.limit=40;all()}
   else if(t.dataset.cat){const k=t.dataset.cat;st.cats.has(k)?st.cats.delete(k):st.cats.add(k);store.set("cats",[...st.cats]);st.limit=40;all()}
   else if(t.dataset.fav){const k=+t.dataset.fav;st.favs.has(k)?st.favs.delete(k):st.favs.add(k);store.set("favs2",[...st.favs]);renderList()}
+  else if(t.dataset.reg){const k=t.dataset.reg;st.regs.has(k)?st.regs.delete(k):st.regs.add(k);store.set("regs",[...st.regs]);st.limit=40;all()}
+  else if(t.id==="clearRegs"){st.regs.clear();store.set("regs",[]);st.limit=40;all()}
   else if(t.id==="clearBanks"){st.banks.clear();store.set("banks",[]);st.limit=40;all()}
   else if(t.id==="clearCats"){st.cats.clear();store.set("cats",[]);st.limit=40;all()}
 });
@@ -331,7 +367,7 @@ cargar();
 
 // En el iPhone la app instalada puede quedar abierta en segundo plano por días.
 // Al volver a abrirla: si cambió el día o hay una versión nueva publicada, se recarga sola.
-const APP_VERSION="2026-10-19a";
+const APP_VERSION="2026-10-19d";
 const diaCarga=new Date().toDateString();
 async function revisarActualizacion(){
   if(new Date().toDateString()!==diaCarga){location.reload();return;}

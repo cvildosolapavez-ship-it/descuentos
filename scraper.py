@@ -38,6 +38,9 @@ from urllib.parse import urljoin
 import requests
 from bs4 import BeautifulSoup, Tag
 
+from geo_chile import COMUNA_REGION, NACIONAL, ubicar
+from geo_chile import _norm as _norm_geo
+
 log = logging.getLogger("descuentos")
 
 CHILE = timezone(timedelta(hours=-3))
@@ -122,7 +125,8 @@ CATEGORIAS: dict[str, list[str]] = {
 # Textos que no son descuentos en comercios: productos financieros del banco.
 RE_NO_ES_DESCUENTO = re.compile(
     r"\btasa\b|credito de consumo|hipotecari|\binvert|\binversion|fogape|seguro de (?:auto|vida|hogar|salud)"
-    r"|abre (?:hoy )?(?:tu |una )?cuenta|portabilidad|pago automatico de cuentas|refinancia",
+    r"|abre (?:hoy )?(?:tu |una )?cuenta|portabilidad|pago automatico de cuentas|refinancia"
+    r"|\bcanje\b|dolares[- ]premio",
 )
 # Ofertas de productos en tienda (ej. "$25.990 -46% $47.990"), no beneficios por día.
 RE_PRECIO_PRODUCTO = re.compile(r"-\d{1,2}\s?%.*\$\s?\d|\$\s?\d[\d.]*\s*-\d{1,2}\s?%")
@@ -154,6 +158,7 @@ class Descuento:
     dir: list[str] = field(default_factory=list)
     desc: str = ""
     web: str = ""
+    regs: list[str] = field(default_factory=list)
     origen: str = "scraper"
     leido: str = field(default_factory=lambda: datetime.now(CHILE).date().isoformat())
 
@@ -576,9 +581,10 @@ def bch_convertir(e: dict) -> Descuento | None:
         dias = list(range(7))
     else:
         dias = sorted({TAG_DIAS[t] for t in tags if t in TAG_DIAS}) or parse_dias(f"{extracto} {desc}") or list(range(7))
-    lugares = [re.sub(r"\b(Del|De|La|Los|Las|Y)\b(?!$)", lambda m: m.group(1).lower(), t.title()).replace("La ", "La ", 1)
-               for t in tags if t not in TAG_DIAS and not TAG_NO_LUGAR.search(t)]
-    lugares = [l[:1].upper() + l[1:] for l in lugares]
+    comunas, regs = ubicar(tags)
+    if "todo-chile" in tags:
+        regs.append("nac")
+    lugares = comunas
     categoria = meta.get("category") or ""
     cat = next((c for pref, c in BCH_CATEGORIAS if categoria.startswith(pref)), None)
     if not cat:
@@ -594,7 +600,8 @@ def bch_convertir(e: dict) -> Descuento | None:
         shop=shop[:60], cat=cat, bank="bchile", pct=pct, days=dias,
         cond=corto(extracto[:1].upper() + extracto[1:] if extracto else desc),
         perLitre=litro, upTo="hasta" in tipo.lower(),
-        loc=", ".join(lugares[:3]),
+        loc=", ".join(lugares),
+        regs=regs,
         vig=f"Hasta {vig.group(1)}" if vig else "",
         url=BCH_DETALLE + meta.get("slug", "") if meta.get("slug") else BANCOS["bchile"]["url"],
     )
@@ -666,6 +673,22 @@ def cargar_manuales() -> list[dict]:
              "origen": "archivo", "leido": hoy} for d in lista]
 
 
+def geolocalizar(d: dict) -> dict:
+    """Limpia 'loc' (solo comunas reales) y calcula las regiones del descuento.
+    'nac' = válido en todo Chile u online."""
+    previas = [c for c, _ in (d.get("lugares") or [])]
+    comunas, regs = ubicar([d.get("loc", "")] + list(d.get("dir") or []) + previas)
+    regs = list(dict.fromkeys(list(d.get("regs") or []) + regs))
+    if not comunas and not [r for r in regs if r != "nac"]:
+        texto = normalizar(f"{d.get('cond', '')} {d.get('desc', '')} {d.get('loc', '')}")
+        if d.get("cat") == "bencina" or NACIONAL.search(texto):
+            regs = ["nac"]
+    d["loc"] = ", ".join(comunas[:4])
+    d["lugares"] = [[c, COMUNA_REGION[_norm_geo(c)][1]] for c in comunas[:30]]
+    d["regs"] = regs
+    return d
+
+
 def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dict]:
     manuales = [d for d in previos if d.get("origen") == "manual"] + cargar_manuales()
     vistos = {clave(d) for d in manuales}
@@ -681,6 +704,7 @@ def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dic
                 vistos.add(clave(d))
                 resultado.append(d)
     for i, d in enumerate(resultado):
+        geolocalizar(d)
         d["id"] = i
     return resultado
 
