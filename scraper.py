@@ -70,11 +70,12 @@ BANCOS: dict[str, dict] = {
                   "selector": ".scotia-box-solid, .sc-box-bannerhero", "titulo": None},
     "falabella": {"nombre": "Banco Falabella", "url": "https://www.bancofalabella.cl/descuentos", "js": True,
                   "selector": 'div[class*="NewCardBenefits_content"]', "titulo": '[class*="NewCardBenefits_title"]'},
-    "security":  {"nombre": "Security",        "js": True, "selector": None, "titulo": None,
+    "security":  {"nombre": "Security",        "js": True, "selector": "article[data-history-node-id]",
+                  "titulo": ".data-container > div:first-child", "lugar": "div:has(> i.la-map-marker)",
                   "urls": ["https://personas.bancosecurity.cl/beneficios",
                            "https://personas.bancosecurity.cl/beneficios/gourmet"]},
     "ripley":    {"nombre": "Banco Ripley",    "url": "https://www.bancoripley.cl/beneficios-y-promociones", "js": True,
-                  "selector": None, "titulo": None},
+                  "selector": ".new-card_beneficios", "titulo": ".title", "lugar": ".description"},
 }
 
 # El orden importa: gana la primera categoría que coincida.
@@ -93,7 +94,10 @@ CATEGORIAS: dict[str, list[str]] = {
                         "telepizza", "pizza hut", "kitchen", "sandwich", "sangucheria", "heladeria", "pasteleria",
                         "panaderia", "nikkei", "mexicana", "peruana", "parrilla", "grill", "brunch", "almuerzo",
                         "caffe", "coffee", "churro", "churromania", "pretzel", "paleta", "palettas", "helado",
-                        "emporio", "dulce", "dulcentorno", "jugo", "boost", "shawarma", "wrap", "taco", "empanada"],
+                        "emporio", "dulce", "dulcentorno", "jugo", "boost", "shawarma", "wrap", "taco", "empanada",
+                        "fusion", "chilena", "italiana", "tailandesa", "thai", "korean", "street food", "mariscos",
+                        "pescados", "carnes", "restobar", "sandiwch", "pastas", "pasta", "yogen", "leonidas",
+                        "juan valdez", "chocolate", "bistro", "tabla", "picada", "bar"],
     "supermercado":    ["jumbo", "lider", "tottus", "unimarc", "santa isabel", "acuenta", "supermercado", "mercado"],
     "salud":           ["cruz verde", "salcobrand", "ahumada", "farmacia", "clinica", "dental", "optica",
                         "nutrition", "suplemento", "medico", "laboratorio"],
@@ -116,7 +120,7 @@ RE_PRECIO_PRODUCTO = re.compile(r"-\d{1,2}\s?%.*\$\s?\d|\$\s?\d[\d.]*\s*-\d{1,2}
 
 # Nombres que no identifican un comercio (días, etiquetas genéricas, títulos de promoción).
 RE_NOMBRE_GENERICO = re.compile(
-    r"^(?:nuevo|nueva|hasta|comercio|restaurante|restaurantes|tienda|tiendas|cmr|dcto\.?|descuento|beneficio|ver mas|ver detalle|mañana|manana|hoy|todos los dias"
+    r"^(?:nuevo|nueva|hasta|comercio|restaurante|restaurantes|tienda|tiendas|cmr|gourmet|shopping y servicios|viajes|bienestar|panoramas|belleza|entretencion|salud|mascotas|hogar|dcto\.?|descuento|beneficio|ver mas|ver detalle|mañana|manana|hoy|todos los dias"
     r"|(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do)"
     r"(?:\s*(?:,|y|a|-)\s*(?:lunes|martes|miercoles|jueves|viernes|sabado|domingo|lu|ma|mi|ju|vi|sa|do))*)$"
 )
@@ -274,7 +278,12 @@ RUIDO_ARCHIVO = {"thumbnail", "thumb", "card", "cards", "bd", "bn", "img", "web"
 
 def nombre_desde_archivo(src: str) -> str:
     """'Cards_LOGO_Web_Baqueano.webp' -> 'Baqueano'; 'DOMINGA BISTRO LOGO WEB 15' -> 'Dominga Bistro'."""
-    base = os.path.splitext(os.path.basename(src.split("?")[0]))[0]
+    from urllib.parse import unquote
+    base = os.path.basename(unquote(src.split("?")[0]))
+    base = re.sub(r"(\.(?:png|jpe?g|webp|gif|svg))+$", "", base, flags=re.I)
+    base = re.sub(r"\b\d+x\d+\b", " ", base)
+    if re.match(r"^(?:imagen|image|logo)\s*(?:[-(\d]|$)", base, re.I):  # "Logo - 2026-10-15T..." no tiene nombre
+        return ""
     if re.search(r"icon|calendar|arrow|chevron|sin.?t.?tulo|dise.?o|[^\x00-\x7f]", base, re.I):
         return ""
     base = re.sub(r"\d{4,}", " ", base)
@@ -328,6 +337,8 @@ def nombre_comercio(card: Tag, sel: str | None, texto: str) -> str | None:
     for img in card.find_all("img"):  # 2) logos con texto alternativo
         for attr in ("alt", "title"):
             v = (img.get(attr) or "").strip()
+            if re.search(r"\.(?:png|jpe?g|webp|gif)$", v, re.I):
+                v = nombre_desde_archivo(v)
             if v and not IMG_GENERICA.search(v):
                 candidatos.append(v)
     for img in card.find_all("img", src=True):  # "BD_CruzVerde1783434975.jpg" -> "Cruz Verde"
@@ -381,14 +392,23 @@ def extraer(html: str, banco: str, cfg: dict) -> list[Descuento]:
         a = c if c.name == "a" else c.find("a", href=True)
         link = urljoin(cfg["url"], a["href"]) if a and a.get("href") else cfg["url"]
         vig = RE_VIG.search(normalizar(texto))
+        # Los íconos de la tarjeta (ej. "icon/restaurant.svg") también indican la categoría
+        iconos = " ".join(os.path.splitext(os.path.basename(i.get("src", "").split("?")[0]))[0]
+                          for i in c.find_all("img") if "icon" in i.get("src", "").lower())
+        lugar_txt = ""
+        if cfg.get("lugar") and (el := c.select_one(cfg["lugar"])):
+            lugar_txt = limpiar(el.get_text(" ")).strip(" .")
+            if m := re.search(r"\(([^)]{2,80})\)", lugar_txt):  # "R.M. (Vitacura)" -> "Vitacura"
+                lugar_txt = m.group(1)
+            lugar_txt = lugar_txt.replace(" / ", ", ")[:60]
         lugar = RE_LUGAR.search(texto)
         out.append(Descuento(
-            shop=shop, cat=clasificar(f"{shop} {texto}"), bank=banco, pct=pct,
+            shop=shop, cat=clasificar(f"{shop} {texto} {iconos}"), bank=banco, pct=pct,
             days=parse_dias(texto) or list(range(7)),
             cond=corto(texto.replace(shop, "", 1)),
             perLitre=litro, upTo=bool(RE_HASTA.search(texto)),
             vig=f"Hasta {vig.group(1)}" if vig else "",
-            loc=lugar.group(1) if lugar else "",
+            loc=lugar_txt or (lugar.group(1) if lugar else ""),
             url=link,
         ))
     return out
@@ -409,28 +429,57 @@ RE_HTML = re.compile(r"<[^>]+>")
 
 
 def bch_descargar(url: str) -> list[dict]:
-    """Abre la página en un navegador real y pide la lista a la API del propio sitio."""
+    """Abre la página en un navegador real. Toma las respuestas que la propia página pide
+    a su API y, si faltan páginas, las pide desde la misma página."""
     from playwright.sync_api import sync_playwright
+    paginas: dict[int, list] = {}
+    total = {"n": 0}
+
+    def al_responder(r):
+        if "/types/beneficios/entries" in r.url and r.status == 200:
+            try:
+                j = r.json()
+                m = re.search(r"[?&]page=(\d+)", r.url)
+                if m and "per_page=100" in r.url:
+                    paginas[int(m.group(1))] = j.get("entries", [])
+                    total["n"] = (j.get("meta") or {}).get("total_pages", total["n"])
+            except Exception:
+                pass
+
     with sync_playwright() as p:
         nav = p.chromium.launch(headless=True)
-        pag = nav.new_page(locale="es-CL")
+        pag = nav.new_page(locale="es-CL", viewport={"width": 1366, "height": 900})
+        pag.on("response", al_responder)
         pag.goto(url, wait_until="domcontentloaded", timeout=TIMEOUT_S * 1000)
         try:
-            pag.wait_for_load_state("networkidle", timeout=20000)
+            pag.wait_for_load_state("networkidle", timeout=25000)
         except Exception:
             pass
-        datos = pag.evaluate("""async (api) => {
-            let todo = [], p = 1, total = 1;
-            do {
-                const r = await fetch(api + p).then(r => r.json());
-                todo = todo.concat(r.entries || []);
-                total = (r.meta && r.meta.total_pages) || 1;
-                p++;
-            } while (p <= total && p <= 30);
-            return todo;
-        }""", BCH_API)
+        for _ in range(15):  # bajar para que la página cargue más resultados
+            pag.mouse.wheel(0, 3000)
+            pag.wait_for_timeout(800)
+        log.info("Banco de Chile: la página entregó %d de %s páginas de la API", len(paginas), total["n"] or "?")
+        faltan = [n for n in range(1, (total["n"] or 10) + 1) if n not in paginas]
+        if faltan:
+            extra = pag.evaluate("""async ([api, faltan]) => {
+                const out = {};
+                for (const p of faltan) {
+                    try {
+                        const r = await fetch(api + p, {credentials: "include", headers: {"Accept": "application/json"}});
+                        const t = await r.text();
+                        try { out[p] = JSON.parse(t).entries || []; }
+                        catch (e) { out[p] = {error: "respuesta no es JSON (" + r.status + ")", muestra: t.slice(0, 300)}; }
+                    } catch (e) { out[p] = {error: String(e)}; }
+                }
+                return out;
+            }""", [BCH_API, faltan])
+            for k, v in extra.items():
+                if isinstance(v, list):
+                    paginas[int(k)] = v
+                else:
+                    anotar_error("bchile", f"página {k}: {v}")
         nav.close()
-    return datos
+    return [e for n in sorted(paginas) for e in paginas[n]]
 
 
 def bch_convertir(e: dict) -> Descuento | None:
@@ -531,6 +580,16 @@ def mezclar(previos: list[dict], nuevos: dict[str, list[Descuento]]) -> list[dic
     return resultado
 
 
+def anotar_error(banco: str, mensaje: str) -> None:
+    """Deja el error en debug/errores.txt para poder revisarlo sin abrir GitHub Actions."""
+    try:
+        os.makedirs("debug", exist_ok=True)
+        with open("debug/errores.txt", "a", encoding="utf-8") as fh:
+            fh.write(f"{datetime.now(CHILE).isoformat(timespec='minutes')} {banco}: {mensaje[:500]}\n")
+    except OSError:
+        pass
+
+
 def guardar_copia(banco: str, html: str) -> None:
     """Guarda una copia liviana de la página en debug/ para poder revisar
     su estructura y ajustar selectores sin abrir el sitio."""
@@ -570,8 +629,10 @@ def scrapear(bancos: list[str]) -> dict[str, list[Descuento]]:
                 res[b] = encontrados
             if not res[b]:
                 log.warning("  0 resultados: se conservan los anteriores")
+                anotar_error(b, "0 resultados")
         except Exception as e:  # un banco caído no detiene a los demás
             log.error("%-16s error: %s (se conservan los anteriores)", cfg["nombre"], e)
+            anotar_error(b, f"{type(e).__name__}: {e}")
     return res
 
 
@@ -604,6 +665,10 @@ def main() -> int:
             j = json.load(f)
             previos = j["descuentos"] if isinstance(j, dict) else j
 
+    try:
+        os.remove("debug/errores.txt")
+    except OSError:
+        pass
     datos = mezclar(previos, scrapear(a.bancos))
     with open(a.out, "w", encoding="utf-8") as f:
         json.dump({"actualizado": datetime.now(CHILE).isoformat(timespec="minutes"),
