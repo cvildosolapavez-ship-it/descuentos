@@ -1,5 +1,5 @@
 {
-  "actualizado": "2026-10-23T07:31-03:00",
+  "actualizado": "2026-10-24T07:25-03:00",
   "descuentos": [
     {
       "id": 0,
@@ -1218,7 +1218,7 @@
       ],
       "cond": "Tarjeta Cencosud Scotiabank Mastercard inscrita en la App Copec.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1240,7 +1240,7 @@
       ],
       "cond": "Tarjetas de crédito Mastercard Banco Internacional (Clásica, Gold y Black) en la App Copec.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1262,7 +1262,7 @@
       ],
       "cond": "Tarjetas de crédito Itaú Legend, con el código que envía Itaú.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1284,7 +1284,7 @@
       ],
       "cond": "Pagando con el código QR de la app RutPay de BancoEstado.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1306,7 +1306,7 @@
       ],
       "cond": "Tarjeta de débito Coopeuch y prepago Dale.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1328,7 +1328,7 @@
       ],
       "cond": "7% de devolución (cashback) con tarjetas de crédito BCI pagando en la App Copec.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1350,7 +1350,7 @@
       ],
       "cond": "Desde $50 por litro con tarjetas Tenpo Mastercard.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1374,7 +1374,7 @@
       ],
       "cond": "Santander Consumer, con código de descuento.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1396,7 +1396,7 @@
       ],
       "cond": "Tarjetas de crédito MACH inscritas en la App Copec.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1418,7 +1418,7 @@
       ],
       "cond": "Tarjetas de crédito BICE Limitless inscritas en la App Copec.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1440,7 +1440,7 @@
       ],
       "cond": "Pagando con dinero en cuenta Mercado Pago en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1462,7 +1462,7 @@
       ],
       "cond": "Tarjeta Líder BCI pagando en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1484,7 +1484,7 @@
       ],
       "cond": "Tarjetas de crédito Visa o Mastercard Scotiabank en la App Shell. El monto depende de la tarjeta.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1506,7 +1506,7 @@
       ],
       "cond": "Devolución de $50 a $300 por litro con tarjetas Tenpo en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1528,7 +1528,7 @@
       ],
       "cond": "Tarjeta prepago Los Héroes pagando en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1550,7 +1550,7 @@
       ],
       "cond": "Tarjeta de crédito Banco Security pagando en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1572,7 +1572,7 @@
       ],
       "cond": "Tarjeta de crédito Banco BICE pagando en la App Shell.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1594,7 +1594,7 @@
       ],
       "cond": "Devolución con tarjeta de crédito Banco Consorcio en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1616,7 +1616,7 @@
       ],
       "cond": "Tarjeta prepago Mercado Pago (física o digital) en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1638,7 +1638,7 @@
       ],
       "cond": "Tarjetas de crédito o débito Banco Ripley, físicas o en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1660,7 +1660,7 @@
       ],
       "cond": "Tarjeta de crédito ABC Visa, física o en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1682,7 +1682,7 @@
       ],
       "cond": "Tarjetas de crédito o prepago Tenpo en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1704,7 +1704,7 @@
       ],
       "cond": "Tarjeta de crédito sbpay física, en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1726,7 +1726,7 @@
       ],
       "cond": "Tarjeta de crédito SPIN Visa de Cruz Verde, física o en la App Aramco Estaciones.",
       "origen": "archivo",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "regs": [
         "nac"
@@ -1756,7 +1756,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -1787,7 +1787,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -1818,7 +1818,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -1849,7 +1849,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -1888,7 +1888,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pucón",
@@ -1919,7 +1919,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -1951,7 +1951,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -1986,7 +1986,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 84
     },
@@ -2012,7 +2012,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -2044,7 +2044,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -2081,7 +2081,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Fernando",
@@ -2123,7 +2123,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -2172,7 +2172,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pichilemu",
@@ -2209,7 +2209,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -2241,7 +2241,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -2273,7 +2273,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -2304,7 +2304,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 93
     },
@@ -2329,7 +2329,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 94
     },
@@ -2361,7 +2361,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Peñalolén",
@@ -2391,7 +2391,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 96
     },
@@ -2419,7 +2419,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -2456,7 +2456,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -2487,7 +2487,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -2524,7 +2524,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -2559,7 +2559,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 101
     },
@@ -2591,7 +2591,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -2622,7 +2622,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 103
     },
@@ -2654,7 +2654,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Huechuraba",
@@ -2689,7 +2689,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -2724,7 +2724,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -2769,7 +2769,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -2806,7 +2806,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -2844,7 +2844,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -2886,7 +2886,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -2925,7 +2925,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 111
     },
@@ -2953,7 +2953,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 112
     },
@@ -2985,7 +2985,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -3018,7 +3018,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -3055,7 +3055,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 115
     },
@@ -3087,7 +3087,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -3125,7 +3125,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -3162,7 +3162,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 118
     },
@@ -3194,7 +3194,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -3231,7 +3231,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 120
     },
@@ -3258,7 +3258,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 121
     },
@@ -3290,7 +3290,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 122
     },
@@ -3322,7 +3322,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -3357,7 +3357,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 124
     },
@@ -3384,7 +3384,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -3425,7 +3425,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -3462,7 +3462,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 127
     },
@@ -3495,7 +3495,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -3542,7 +3542,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -3579,7 +3579,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -3616,7 +3616,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 131
     },
@@ -3648,7 +3648,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -3680,7 +3680,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -3721,7 +3721,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -3756,7 +3756,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -3793,7 +3793,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -3830,7 +3830,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -3864,7 +3864,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -3901,7 +3901,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -3938,7 +3938,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pudahuel",
@@ -3975,7 +3975,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -4006,7 +4006,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 142
     },
@@ -4039,7 +4039,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -4076,7 +4076,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 144
     },
@@ -4108,7 +4108,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 145
     },
@@ -4140,7 +4140,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 146
     },
@@ -4167,7 +4167,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -4204,7 +4204,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 148
     },
@@ -4236,7 +4236,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -4268,7 +4268,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -4309,7 +4309,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -4346,7 +4346,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -4383,7 +4383,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 153
     },
@@ -4415,7 +4415,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 154
     },
@@ -4447,7 +4447,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 155
     },
@@ -4480,7 +4480,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 156
     },
@@ -4514,7 +4514,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -4552,7 +4552,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -4585,7 +4585,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -4622,7 +4622,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -4659,7 +4659,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 161
     },
@@ -4691,7 +4691,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -4729,7 +4729,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -4774,7 +4774,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -4808,7 +4808,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Pedro de la Paz",
@@ -4844,7 +4844,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -4903,7 +4903,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -4935,7 +4935,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -4973,7 +4973,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -5010,7 +5010,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 170
     },
@@ -5043,7 +5043,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -5088,7 +5088,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 172
     },
@@ -5120,7 +5120,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 173
     },
@@ -5152,7 +5152,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 174
     },
@@ -5184,7 +5184,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -5221,7 +5221,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -5252,7 +5252,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -5322,7 +5322,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 178
     },
@@ -5354,7 +5354,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 179
     },
@@ -5387,7 +5387,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -5424,7 +5424,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quintero",
@@ -5455,7 +5455,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 182
     },
@@ -5483,7 +5483,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -5516,7 +5516,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -5548,7 +5548,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -5585,7 +5585,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -5627,7 +5627,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -5666,7 +5666,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -5706,7 +5706,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -5742,7 +5742,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -5775,7 +5775,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -5812,7 +5812,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -5844,7 +5844,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Maipú",
@@ -5881,7 +5881,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 194
     },
@@ -5909,7 +5909,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 195
     },
@@ -5938,7 +5938,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -5972,7 +5972,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Maipú",
@@ -6012,7 +6012,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -6066,7 +6066,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -6098,7 +6098,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -6135,7 +6135,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -6168,7 +6168,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -6202,7 +6202,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -6241,7 +6241,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -6272,7 +6272,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Castro",
@@ -6309,7 +6309,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -6342,7 +6342,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Bernardo",
@@ -6373,7 +6373,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -6405,7 +6405,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -6442,7 +6442,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -6479,7 +6479,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -6525,7 +6525,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -6566,7 +6566,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -6598,7 +6598,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -6640,7 +6640,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -6697,7 +6697,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Maipú",
@@ -6738,7 +6738,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -6775,7 +6775,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -6812,7 +6812,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -6849,7 +6849,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -6900,7 +6900,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -6933,7 +6933,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Miguel",
@@ -6970,7 +6970,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7001,7 +7001,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -7032,7 +7032,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -7064,7 +7064,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -7099,7 +7099,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -7136,7 +7136,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -7171,7 +7171,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -7208,7 +7208,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7242,7 +7242,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Hualpén",
@@ -7274,7 +7274,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -7306,7 +7306,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -7342,7 +7342,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -7378,7 +7378,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 235
     },
@@ -7405,7 +7405,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7442,7 +7442,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Huechuraba",
@@ -7480,7 +7480,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -7520,7 +7520,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7556,7 +7556,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -7591,7 +7591,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -7629,7 +7629,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7660,7 +7660,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -7695,7 +7695,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 244
     },
@@ -7721,7 +7721,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -7752,7 +7752,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -7785,7 +7785,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -7825,7 +7825,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -7862,7 +7862,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 249
     },
@@ -7893,7 +7893,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -7926,7 +7926,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Hualpén",
@@ -7958,7 +7958,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -7993,7 +7993,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Limache",
@@ -8030,7 +8030,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 254
     },
@@ -8058,7 +8058,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -8090,7 +8090,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -8124,7 +8124,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -8161,7 +8161,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 258
     },
@@ -8187,7 +8187,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -8220,7 +8220,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -8251,7 +8251,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 261
     },
@@ -8283,7 +8283,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -8314,7 +8314,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -8349,7 +8349,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -8380,7 +8380,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -8412,7 +8412,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -8449,7 +8449,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 267
     },
@@ -8476,7 +8476,7 @@
         "aysen"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chile Chico",
@@ -8510,7 +8510,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -8541,7 +8541,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Castro",
@@ -8573,7 +8573,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -8606,7 +8606,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -8638,7 +8638,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -8671,7 +8671,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -8704,7 +8704,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -8738,7 +8738,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 276
     },
@@ -8770,7 +8770,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -8808,7 +8808,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -8841,7 +8841,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -8877,7 +8877,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -8910,7 +8910,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -8943,7 +8943,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -8983,7 +8983,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9027,7 +9027,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -9058,7 +9058,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -9099,7 +9099,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -9131,7 +9131,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -9164,7 +9164,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -9196,7 +9196,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9229,7 +9229,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9261,7 +9261,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9293,7 +9293,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -9330,7 +9330,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 293
     },
@@ -9356,7 +9356,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9391,7 +9391,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -9428,7 +9428,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 296
     },
@@ -9462,7 +9462,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9497,7 +9497,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Castro",
@@ -9529,7 +9529,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -9566,7 +9566,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 300
     },
@@ -9592,7 +9592,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 301
     },
@@ -9618,7 +9618,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9655,7 +9655,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -9692,7 +9692,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9729,7 +9729,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9766,7 +9766,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9804,7 +9804,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9841,7 +9841,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -9878,7 +9878,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -9915,7 +9915,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -9946,7 +9946,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -9987,7 +9987,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -10019,7 +10019,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -10053,7 +10053,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -10086,7 +10086,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -10123,7 +10123,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -10168,7 +10168,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -10206,7 +10206,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -10255,7 +10255,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -10294,7 +10294,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quilpué",
@@ -10325,7 +10325,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -10362,7 +10362,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -10396,7 +10396,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -10427,7 +10427,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -10471,7 +10471,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -10512,7 +10512,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 326
     },
@@ -10541,7 +10541,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Maipú",
@@ -10573,7 +10573,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Cañete",
@@ -10606,7 +10606,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -10637,7 +10637,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -10671,7 +10671,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pelluhue",
@@ -10703,7 +10703,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -10742,7 +10742,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -10779,7 +10779,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -10812,7 +10812,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -10845,7 +10845,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Olmué",
@@ -10877,7 +10877,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -10911,7 +10911,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Tomé",
@@ -10942,7 +10942,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -10975,7 +10975,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 340
     },
@@ -11003,7 +11003,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -11034,7 +11034,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -11067,7 +11067,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -11098,7 +11098,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -11135,7 +11135,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -11172,7 +11172,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -11209,7 +11209,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 347
     },
@@ -11243,7 +11243,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -11285,7 +11285,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -11322,7 +11322,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -11354,7 +11354,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -11391,7 +11391,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -11428,7 +11428,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -11461,7 +11461,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -11530,7 +11530,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 355
     },
@@ -11558,7 +11558,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 356
     },
@@ -11584,7 +11584,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -11621,7 +11621,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 358
     },
@@ -11648,7 +11648,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 359
     },
@@ -11681,7 +11681,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -11713,7 +11713,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 361
     },
@@ -11741,7 +11741,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -11778,7 +11778,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 363
     },
@@ -11808,7 +11808,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -11840,7 +11840,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -11880,7 +11880,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -11917,7 +11917,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 367
     },
@@ -11946,7 +11946,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -11983,7 +11983,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -12020,7 +12020,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -12058,7 +12058,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -12112,7 +12112,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 372
     },
@@ -12138,7 +12138,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 373
     },
@@ -12177,7 +12177,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -12240,7 +12240,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -12288,7 +12288,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -12403,7 +12403,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -12458,7 +12458,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talcahuano",
@@ -12495,7 +12495,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -12549,7 +12549,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Miguel",
@@ -12588,7 +12588,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 381
     },
@@ -12620,7 +12620,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Macul",
@@ -12655,7 +12655,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talcahuano",
@@ -12687,7 +12687,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -12719,7 +12719,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 385
     },
@@ -12747,7 +12747,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -12778,7 +12778,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -12811,7 +12811,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arauco",
@@ -12843,7 +12843,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -12879,7 +12879,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -12911,7 +12911,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -12944,7 +12944,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -12976,7 +12976,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13010,7 +13010,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -13043,7 +13043,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13077,7 +13077,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Huechuraba",
@@ -13111,7 +13111,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -13142,7 +13142,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -13174,7 +13174,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13213,7 +13213,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -13247,7 +13247,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -13281,7 +13281,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -13318,7 +13318,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 403
     },
@@ -13349,7 +13349,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -13381,7 +13381,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pudahuel",
@@ -13418,7 +13418,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 406
     },
@@ -13450,7 +13450,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13491,7 +13491,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13522,7 +13522,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -13555,7 +13555,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13591,7 +13591,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13625,7 +13625,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -13662,7 +13662,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -13699,7 +13699,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Huechuraba",
@@ -13730,7 +13730,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Copiapó",
@@ -13767,7 +13767,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -13802,7 +13802,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -13839,7 +13839,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quilpué",
@@ -13871,7 +13871,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -13907,7 +13907,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -13941,7 +13941,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -13978,7 +13978,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -14009,7 +14009,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -14046,7 +14046,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
@@ -14077,7 +14077,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -14108,7 +14108,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -14140,7 +14140,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -14177,7 +14177,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -14209,7 +14209,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -14240,7 +14240,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -14273,7 +14273,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -14304,7 +14304,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -14341,7 +14341,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -14375,7 +14375,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -14422,7 +14422,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -14453,7 +14453,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Maipú",
@@ -14489,7 +14489,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Pedro de la Paz",
@@ -14520,7 +14520,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pirque",
@@ -14551,7 +14551,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -14583,7 +14583,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -14616,7 +14616,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -14647,7 +14647,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -14678,7 +14678,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -14715,7 +14715,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -14756,7 +14756,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -14793,7 +14793,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 446
     },
@@ -14820,7 +14820,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -14854,7 +14854,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -14885,7 +14885,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 449
     },
@@ -14920,7 +14920,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -14979,7 +14979,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -15030,7 +15030,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 452
     },
@@ -15057,7 +15057,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -15088,7 +15088,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 454
     },
@@ -15125,7 +15125,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -15202,7 +15202,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -15239,7 +15239,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 457
     },
@@ -15271,7 +15271,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -15302,7 +15302,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 459
     },
@@ -15330,7 +15330,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -15366,7 +15366,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -15403,7 +15403,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -15437,7 +15437,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -15470,7 +15470,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -15501,7 +15501,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -15539,7 +15539,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 466
     },
@@ -15569,7 +15569,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 467
     },
@@ -15601,7 +15601,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -15633,7 +15633,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 469
     },
@@ -15665,7 +15665,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -15696,7 +15696,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -15733,7 +15733,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -15764,7 +15764,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 473
     },
@@ -15790,7 +15790,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 474
     },
@@ -15817,7 +15817,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -15850,7 +15850,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -15884,7 +15884,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -15925,7 +15925,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -15981,7 +15981,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -16013,7 +16013,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -16044,7 +16044,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 481
     },
@@ -16073,7 +16073,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -16107,7 +16107,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -16138,7 +16138,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -16173,7 +16173,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -16204,7 +16204,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -16248,7 +16248,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -16317,7 +16317,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -16354,7 +16354,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -16391,7 +16391,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -16422,7 +16422,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -16453,7 +16453,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -16488,7 +16488,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -16532,7 +16532,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -16568,7 +16568,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -16613,7 +16613,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -16772,7 +16772,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -16915,7 +16915,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -16946,7 +16946,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pirque",
@@ -16977,7 +16977,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -17008,7 +17008,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -17051,7 +17051,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -17087,7 +17087,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -17134,7 +17134,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -17166,7 +17166,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -17197,7 +17197,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -17243,7 +17243,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -17378,7 +17378,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -17485,7 +17485,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -17555,7 +17555,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -17614,7 +17614,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 511
     },
@@ -17647,7 +17647,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -17730,7 +17730,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -17765,7 +17765,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -17798,7 +17798,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -17856,7 +17856,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -17893,7 +17893,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -17927,7 +17927,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -17958,7 +17958,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -17989,7 +17989,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 520
     },
@@ -18016,7 +18016,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -18052,7 +18052,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puyehue",
@@ -18083,7 +18083,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 523
     },
@@ -18111,7 +18111,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Peñalolén",
@@ -18142,7 +18142,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -18178,7 +18178,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 526
     },
@@ -18210,7 +18210,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -18247,7 +18247,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -18292,7 +18292,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 529
     },
@@ -18324,7 +18324,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 530
     },
@@ -18357,7 +18357,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -18396,7 +18396,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -18433,7 +18433,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quilicura",
@@ -18470,7 +18470,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Peñalolén",
@@ -18503,7 +18503,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Antonio",
@@ -18534,7 +18534,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 536
     },
@@ -18561,7 +18561,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 537
     },
@@ -18587,7 +18587,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 538
     },
@@ -18619,7 +18619,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -18656,7 +18656,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -18693,7 +18693,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -18730,7 +18730,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -18767,7 +18767,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -18808,7 +18808,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -18897,7 +18897,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -18945,7 +18945,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -19010,7 +19010,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 547
     },
@@ -19036,7 +19036,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -19074,7 +19074,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 549
     },
@@ -19101,7 +19101,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -19143,7 +19143,7 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -19284,7 +19284,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 552
     },
@@ -19312,7 +19312,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 553
     },
@@ -19339,7 +19339,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 554
     },
@@ -19367,7 +19367,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 555
     },
@@ -19395,7 +19395,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 556
     },
@@ -19427,7 +19427,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -19464,7 +19464,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 558
     },
@@ -19496,7 +19496,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -19543,7 +19543,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -19602,7 +19602,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 561
     },
@@ -19634,7 +19634,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -19678,7 +19678,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -19767,7 +19767,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -19798,7 +19798,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -19835,7 +19835,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -19872,7 +19872,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -19909,7 +19909,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -19943,7 +19943,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -19980,7 +19980,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20014,7 +20014,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20121,7 +20121,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -20155,7 +20155,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -20219,7 +20219,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20256,7 +20256,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -20290,7 +20290,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20325,7 +20325,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Copiapó",
@@ -20362,7 +20362,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 578
     },
@@ -20403,7 +20403,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -20503,7 +20503,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 580
     },
@@ -20532,7 +20532,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20617,7 +20617,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -20649,7 +20649,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20696,7 +20696,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -20733,7 +20733,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -20850,7 +20850,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Purén",
@@ -20889,7 +20889,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -20943,7 +20943,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -21064,7 +21064,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 589
     },
@@ -21090,7 +21090,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -21127,7 +21127,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 591
     },
@@ -21159,7 +21159,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 592
     },
@@ -21191,7 +21191,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 593
     },
@@ -21223,7 +21223,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 594
     },
@@ -21250,7 +21250,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -21283,7 +21283,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -21355,7 +21355,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -21388,7 +21388,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -21421,7 +21421,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -21453,7 +21453,7 @@
         "aysen"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Coyhaique",
@@ -21489,7 +21489,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 601
     },
@@ -21525,7 +21525,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -21596,7 +21596,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -21633,7 +21633,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 604
     },
@@ -21664,7 +21664,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 605
     },
@@ -21696,7 +21696,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 606
     },
@@ -21737,7 +21737,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -21778,7 +21778,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 608
     },
@@ -21810,7 +21810,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -21851,7 +21851,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -21882,7 +21882,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -21916,7 +21916,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 612
     },
@@ -21943,7 +21943,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -21974,7 +21974,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -22011,7 +22011,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 615
     },
@@ -22043,7 +22043,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 616
     },
@@ -22075,7 +22075,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -22112,7 +22112,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -22147,7 +22147,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -22179,7 +22179,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 620
     },
@@ -22211,7 +22211,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 621
     },
@@ -22243,7 +22243,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 622
     },
@@ -22269,7 +22269,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 623
     },
@@ -22296,7 +22296,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 624
     },
@@ -22325,7 +22325,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -22366,7 +22366,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -22399,7 +22399,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 627
     },
@@ -22429,7 +22429,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -22506,7 +22506,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -22537,7 +22537,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -22571,7 +22571,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -22616,7 +22616,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 632
     },
@@ -22650,7 +22650,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -22752,7 +22752,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -22798,7 +22798,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -22838,7 +22838,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -22884,7 +22884,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -22922,7 +22922,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -22976,7 +22976,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -23015,7 +23015,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23081,7 +23081,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Miguel",
@@ -23119,7 +23119,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -23157,7 +23157,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -23195,7 +23195,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Peñalolén",
@@ -23233,7 +23233,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23287,7 +23287,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23337,7 +23337,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23383,7 +23383,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23422,7 +23422,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23464,7 +23464,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -23502,7 +23502,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Bernardo",
@@ -23541,7 +23541,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Cochamó",
@@ -23579,7 +23579,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -23617,7 +23617,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 654
     },
@@ -23643,7 +23643,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23678,7 +23678,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23716,7 +23716,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -23749,7 +23749,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -23786,7 +23786,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 659
     },
@@ -23818,7 +23818,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 660
     },
@@ -23850,7 +23850,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 661
     },
@@ -23877,7 +23877,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quilpué",
@@ -23912,7 +23912,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -23954,7 +23954,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -23989,7 +23989,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 665
     },
@@ -24021,7 +24021,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24058,7 +24058,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -24095,7 +24095,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24126,7 +24126,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24199,7 +24199,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -24231,7 +24231,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -24262,7 +24262,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -24294,7 +24294,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -24325,7 +24325,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24363,7 +24363,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24413,7 +24413,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -24451,7 +24451,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -24489,7 +24489,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24533,7 +24533,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24577,7 +24577,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -24618,7 +24618,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -24672,7 +24672,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -24714,7 +24714,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -24751,7 +24751,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -24788,7 +24788,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 685
     },
@@ -24814,7 +24814,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -24849,7 +24849,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -24898,7 +24898,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -24974,7 +24974,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -25012,7 +25012,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -25043,7 +25043,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -25084,7 +25084,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 692
     },
@@ -25110,7 +25110,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 693
     },
@@ -25142,7 +25142,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -25173,7 +25173,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Vicente",
@@ -25220,7 +25220,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -25289,7 +25289,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 697
     },
@@ -25317,7 +25317,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Cobquecura",
@@ -25347,7 +25347,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 699
     },
@@ -25373,7 +25373,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -25410,7 +25410,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 701
     },
@@ -25442,7 +25442,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 702
     },
@@ -25474,7 +25474,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 703
     },
@@ -25507,7 +25507,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Macul",
@@ -25539,7 +25539,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
@@ -25573,7 +25573,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -25607,7 +25607,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -25642,7 +25642,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -25677,7 +25677,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -25715,7 +25715,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -25750,7 +25750,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -25785,7 +25785,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -25820,7 +25820,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -25855,7 +25855,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -25893,7 +25893,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -25929,7 +25929,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 716
     },
@@ -25957,7 +25957,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 717
     },
@@ -25983,7 +25983,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -26020,7 +26020,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -26049,7 +26049,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 720
     },
@@ -26084,7 +26084,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -26133,7 +26133,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -26180,7 +26180,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -26227,7 +26227,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -26277,7 +26277,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -26314,7 +26314,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 726
     },
@@ -26340,7 +26340,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "San Vicente",
@@ -26376,7 +26376,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -26411,7 +26411,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 729
     },
@@ -26443,7 +26443,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Pudahuel",
@@ -26480,7 +26480,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 731
     },
@@ -26512,7 +26512,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 732
     },
@@ -26546,7 +26546,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -26603,7 +26603,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talcahuano",
@@ -26640,7 +26640,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -26678,7 +26678,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -26709,7 +26709,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -26748,7 +26748,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -26845,7 +26845,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 739
     },
@@ -26872,7 +26872,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -26925,7 +26925,7 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -26956,7 +26956,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -26991,7 +26991,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -27051,7 +27051,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -27083,7 +27083,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -27116,7 +27116,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -27147,7 +27147,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -27191,7 +27191,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -27226,7 +27226,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -27257,7 +27257,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -27288,7 +27288,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -27319,7 +27319,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -27354,7 +27354,7 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
@@ -27385,7 +27385,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -27416,7 +27416,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -27448,7 +27448,7 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
@@ -27479,7 +27479,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -27510,7 +27510,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -27541,7 +27541,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -27572,7 +27572,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -27603,7 +27603,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -27640,7 +27640,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 762
     },
@@ -27673,7 +27673,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -27709,7 +27709,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -27744,7 +27744,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 765
     },
@@ -27771,7 +27771,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 766
     },
@@ -27798,7 +27798,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -27837,7 +27837,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 768
     },
@@ -27864,7 +27864,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -27895,7 +27895,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 770
     },
@@ -27925,7 +27925,7 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
@@ -27961,7 +27961,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28011,7 +28011,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 773
     },
@@ -28039,7 +28039,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28072,7 +28072,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28109,7 +28109,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -28140,7 +28140,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28183,7 +28183,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -28226,7 +28226,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -28372,7 +28372,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28423,7 +28423,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 781
     },
@@ -28462,7 +28462,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -28539,7 +28539,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 783
     },
@@ -28565,7 +28565,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 784
     },
@@ -28592,7 +28592,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -28634,7 +28634,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -28753,7 +28753,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -28784,7 +28784,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -28815,7 +28815,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -28847,7 +28847,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -28878,7 +28878,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -28909,7 +28909,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -28943,7 +28943,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -28980,7 +28980,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 794
     },
@@ -29006,7 +29006,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 795
     },
@@ -29036,7 +29036,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -29085,7 +29085,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 797
     },
@@ -29111,7 +29111,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
@@ -29143,7 +29143,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -29179,7 +29179,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Rancagua",
@@ -29219,7 +29219,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29288,7 +29288,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -29325,7 +29325,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 803
     },
@@ -29355,7 +29355,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 804
     },
@@ -29381,7 +29381,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -29412,7 +29412,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 806
     },
@@ -29438,7 +29438,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -29469,7 +29469,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -29509,7 +29509,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29548,7 +29548,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -29579,7 +29579,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -29622,7 +29622,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29653,7 +29653,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -29686,7 +29686,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -29717,7 +29717,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29748,7 +29748,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29779,7 +29779,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29810,7 +29810,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29841,7 +29841,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29872,7 +29872,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -29903,7 +29903,7 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
@@ -29934,7 +29934,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Varas",
@@ -29965,7 +29965,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -29996,7 +29996,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -30027,7 +30027,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -30060,7 +30060,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -30094,7 +30094,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -30125,7 +30125,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -30156,7 +30156,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -30187,7 +30187,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -30218,7 +30218,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -30249,7 +30249,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -30292,7 +30292,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -30435,7 +30435,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -30474,7 +30474,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valparaíso",
@@ -30509,7 +30509,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 836
     },
@@ -30535,7 +30535,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 837
     },
@@ -30567,7 +30567,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 838
     },
@@ -30599,7 +30599,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 839
     },
@@ -30631,7 +30631,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 840
     },
@@ -30657,7 +30657,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -30688,7 +30688,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -30719,7 +30719,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -30755,7 +30755,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -30788,7 +30788,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -30820,7 +30820,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -30856,7 +30856,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Huechuraba",
@@ -30887,7 +30887,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -30921,7 +30921,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -30958,7 +30958,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -30990,7 +30990,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -31022,7 +31022,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -31053,7 +31053,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -31088,7 +31088,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -31120,7 +31120,7 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
@@ -31151,7 +31151,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 856
     },
@@ -31183,7 +31183,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -31221,7 +31221,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Doñihue",
@@ -31262,7 +31262,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -31303,7 +31303,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -31336,7 +31336,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 861
     },
@@ -31362,7 +31362,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -31393,7 +31393,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -31424,7 +31424,7 @@
         "coquimbo"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Serena",
@@ -31455,7 +31455,7 @@
         "losrios"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Valdivia",
@@ -31486,7 +31486,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Lo Barnechea",
@@ -31518,7 +31518,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concón",
@@ -31555,7 +31555,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 868
     },
@@ -31583,7 +31583,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 869
     },
@@ -31611,7 +31611,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 870
     },
@@ -31643,7 +31643,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -31672,7 +31672,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 872
     },
@@ -31698,7 +31698,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 873
     },
@@ -31731,7 +31731,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -31821,7 +31821,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -31904,7 +31904,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 876
     },
@@ -31932,7 +31932,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 877
     },
@@ -31966,7 +31966,7 @@
         "atacama"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
@@ -32055,7 +32055,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -32096,7 +32096,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Macul",
@@ -32133,7 +32133,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -32184,7 +32184,7 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
@@ -32308,7 +32308,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -32341,7 +32341,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 884
     },
@@ -32371,7 +32371,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 885
     },
@@ -32401,7 +32401,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 886
     },
@@ -32425,7 +32425,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 887
     },
@@ -32449,7 +32449,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 888
     },
@@ -32473,15 +32473,15 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 889
     },
     {
-      "shop": "Especial electrohogar en Scotia Marketplace",
+      "shop": "Especial productos Ninja en Scotia Marketplace",
       "cat": "otros",
       "bank": "scotia",
-      "pct": 60,
+      "pct": 30,
       "days": [
         0,
         1,
@@ -32491,7 +32491,7 @@
         5,
         6
       ],
-      "cond": "Scotia Marketplace Hasta 60% Dcto. Acumula x3 ScotiaPesos, paga en hasta 24 Cuotas sin Interés y despacho gratis limitado compras sobre $50.000 en…",
+      "cond": "Scotia Marketplace Hasta 30% Dcto. Acumula x3 ScotiaPesos, paga en hasta 24 Cuotas sin Interés y despacho gratis limitado compras sobre $50.000 en…",
       "perLitre": false,
       "upTo": true,
       "loc": "",
@@ -32505,7 +32505,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 890
     },
@@ -32515,7 +32515,7 @@
       "bank": "scotia",
       "pct": 20,
       "days": [
-        5
+        6
       ],
       "cond": "Inscripción ¡Volvió para ti! Ahora también con Tus Tarjetas de Débito y Mastercard. Inscríbete desde hoy hasta el 25 de octubre y obtén un 20% de devolución…",
       "perLitre": false,
@@ -32529,7 +32529,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 891
     },
@@ -32559,7 +32559,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 892
     },
@@ -32583,7 +32583,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 893
     },
@@ -32609,7 +32609,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 894
     },
@@ -32634,7 +32634,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 895
     },
@@ -32664,7 +32664,7 @@
       "web": "",
       "regs": [],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 896
     },
@@ -32690,7 +32690,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 897
     },
@@ -34922,7 +34922,7 @@
       "shop": "Stanley",
       "cat": "entretenimiento",
       "bank": "security",
-      "pct": 40,
+      "pct": 60,
       "days": [
         0,
         1,
@@ -34946,7 +34946,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 979
     },
@@ -34978,7 +34978,7 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 980
     },
@@ -35004,7 +35004,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -35035,7 +35035,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
@@ -35066,7 +35066,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -35103,9 +35103,69 @@
         "nac"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [],
       "id": 984
+    },
+    {
+      "shop": "Hotel Corralco Resort",
+      "cat": "viajes",
+      "bank": "security",
+      "pct": 20,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Viajes 20% de descuento En reservas de habitación Doble Standard, con tus Tarjetas Debit y One. Reserva Nacional Malalcahuello Comuna de Curacautín. Todos los…",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/viajes/hotel-corralco-resort",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [],
+      "id": 985
+    },
+    {
+      "shop": "Hotel VIK",
+      "cat": "viajes",
+      "bank": "security",
+      "pct": 60,
+      "days": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "cond": "Viajes 60% de descuento En reservas de habitación Doble Suite desde $675.890, con tus Tarjetas Debit y One. San Vicente de Tagua Tagua. Todos los días 60% de…",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/viajes/hotel-vik",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [],
+      "id": 986
     },
     {
       "shop": "Mirazu Robata",
@@ -35129,138 +35189,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
           "valparaiso"
         ]
       ],
-      "id": 985
-    },
-    {
-      "shop": "Amares",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        4
-      ],
-      "cond": "Gourmet 40% de descuento Los jueves, en tienda física con tu Tarjeta One. Antofagasta. Jueves 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "Antofagasta",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/amares-costafusion",
-      "horario": "",
-      "dir": [],
-      "desc": "",
-      "web": "",
-      "regs": [
-        "antofagasta"
-      ],
-      "origen": "scraper",
-      "leido": "2026-10-23",
-      "lugares": [
-        [
-          "Antofagasta",
-          "antofagasta"
-        ]
-      ],
-      "id": 986
-    },
-    {
-      "shop": "Bassotto Café",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        4
-      ],
-      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Las Condes. Jueves 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "Las Condes",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bassotto-cafe",
-      "horario": "",
-      "dir": [],
-      "desc": "",
-      "web": "",
-      "regs": [
-        "rm"
-      ],
-      "origen": "scraper",
-      "leido": "2026-10-23",
-      "lugares": [
-        [
-          "Las Condes",
-          "rm"
-        ]
-      ],
       "id": 987
-    },
-    {
-      "shop": "BIfe Sureño",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        3
-      ],
-      "cond": "Gourmet 40% de descuento Los miércoles, en tienda física con tu Tarjeta One. Los Ángeles. Miércoles 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "Los Ángeles",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bife-sureno",
-      "horario": "",
-      "dir": [],
-      "desc": "",
-      "web": "",
-      "regs": [
-        "biobio"
-      ],
-      "origen": "scraper",
-      "leido": "2026-10-23",
-      "lugares": [
-        [
-          "Los Ángeles",
-          "biobio"
-        ]
-      ],
-      "id": 988
-    },
-    {
-      "shop": "Café Folks",
-      "cat": "comida",
-      "bank": "security",
-      "pct": 40,
-      "days": [
-        4
-      ],
-      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Puerto Varas. Jueves 40% de descuento",
-      "perLitre": false,
-      "upTo": false,
-      "loc": "Puerto Varas",
-      "vig": "",
-      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/cafe-folks",
-      "horario": "",
-      "dir": [],
-      "desc": "",
-      "web": "",
-      "regs": [
-        "loslagos"
-      ],
-      "origen": "scraper",
-      "leido": "2026-10-23",
-      "lugares": [
-        [
-          "Puerto Varas",
-          "loslagos"
-        ]
-      ],
-      "id": 989
     },
     {
       "shop": "Amar Chicureo",
@@ -35290,14 +35226,138 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Colina",
           "rm"
         ]
       ],
+      "id": 988
+    },
+    {
+      "shop": "Amares",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, en tienda física con tu Tarjeta One. Antofagasta. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Antofagasta",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/amares-costafusion",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [
+        "antofagasta"
+      ],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [
+        [
+          "Antofagasta",
+          "antofagasta"
+        ]
+      ],
+      "id": 989
+    },
+    {
+      "shop": "Bassotto Café",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Las Condes. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Las Condes",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bassotto-cafe",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [
+        "rm"
+      ],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [
+        [
+          "Las Condes",
+          "rm"
+        ]
+      ],
       "id": 990
+    },
+    {
+      "shop": "BIfe Sureño",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        3
+      ],
+      "cond": "Gourmet 40% de descuento Los miércoles, en tienda física con tu Tarjeta One. Los Ángeles. Miércoles 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Los Ángeles",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/bife-sureno",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [
+        "biobio"
+      ],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [
+        [
+          "Los Ángeles",
+          "biobio"
+        ]
+      ],
+      "id": 991
+    },
+    {
+      "shop": "Café Folks",
+      "cat": "comida",
+      "bank": "security",
+      "pct": 40,
+      "days": [
+        4
+      ],
+      "cond": "Gourmet 40% de descuento Los jueves, exclusivo en tienda física con tu Tarjeta One. Puerto Varas. Jueves 40% de descuento",
+      "perLitre": false,
+      "upTo": false,
+      "loc": "Puerto Varas",
+      "vig": "",
+      "url": "https://personas.bancosecurity.cl/beneficios/gourmet/cafe-folks",
+      "horario": "",
+      "dir": [],
+      "desc": "",
+      "web": "",
+      "regs": [
+        "loslagos"
+      ],
+      "origen": "scraper",
+      "leido": "2026-10-24",
+      "lugares": [
+        [
+          "Puerto Varas",
+          "loslagos"
+        ]
+      ],
+      "id": 992
     },
     {
       "shop": "Café Malva",
@@ -35321,14 +35381,14 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
           "maule"
         ]
       ],
-      "id": 991
+      "id": 993
     },
     {
       "shop": "Club Gordos",
@@ -35355,7 +35415,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -35370,7 +35430,7 @@
           "biobio"
         ]
       ],
-      "id": 992
+      "id": 994
     },
     {
       "shop": "Do Sushi",
@@ -35394,14 +35454,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
           "rm"
         ]
       ],
-      "id": 993
+      "id": 995
     },
     {
       "shop": "Don Carlos",
@@ -35425,14 +35485,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
           "rm"
         ]
       ],
-      "id": 994
+      "id": 996
     },
     {
       "shop": "Durán Bar de Carnes",
@@ -35456,14 +35516,14 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
           "biobio"
         ]
       ],
-      "id": 995
+      "id": 997
     },
     {
       "shop": "Pastamore",
@@ -35487,14 +35547,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 996
+      "id": 998
     },
     {
       "shop": "Kuntsmann CraftBar",
@@ -35518,7 +35578,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Florida",
@@ -35529,7 +35589,7 @@
           "rm"
         ]
       ],
-      "id": 997
+      "id": 999
     },
     {
       "shop": "Uncle Fletch",
@@ -35553,7 +35613,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
@@ -35564,7 +35624,7 @@
           "rm"
         ]
       ],
-      "id": 998
+      "id": 1000
     },
     {
       "shop": "Tropicalia",
@@ -35588,14 +35648,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 999
+      "id": 1001
     },
     {
       "shop": "Fogón Austral",
@@ -35619,14 +35679,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
           "rm"
         ]
       ],
-      "id": 1000
+      "id": 1002
     },
     {
       "shop": "El Quincho del Cacho",
@@ -35650,7 +35710,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Cerrillos",
@@ -35665,7 +35725,7 @@
           "rm"
         ]
       ],
-      "id": 1001
+      "id": 1003
     },
     {
       "shop": "Rossie La loca",
@@ -35689,7 +35749,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -35700,7 +35760,7 @@
           "rm"
         ]
       ],
-      "id": 1002
+      "id": 1004
     },
     {
       "shop": "Loca Pasta",
@@ -35724,14 +35784,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
           "rm"
         ]
       ],
-      "id": 1003
+      "id": 1005
     },
     {
       "shop": "Soho Thai",
@@ -35755,7 +35815,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -35766,7 +35826,7 @@
           "rm"
         ]
       ],
-      "id": 1004
+      "id": 1006
     },
     {
       "shop": "Taringa",
@@ -35790,14 +35850,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 1005
+      "id": 1007
     },
     {
       "shop": "La Fabbrica",
@@ -35821,7 +35881,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "La Reina",
@@ -35832,7 +35892,7 @@
           "rm"
         ]
       ],
-      "id": 1006
+      "id": 1008
     },
     {
       "shop": "Gracielo Bar",
@@ -35856,14 +35916,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
           "rm"
         ]
       ],
-      "id": 1007
+      "id": 1009
     },
     {
       "shop": "Antonella Bar",
@@ -35887,7 +35947,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -35898,7 +35958,7 @@
           "rm"
         ]
       ],
-      "id": 1008
+      "id": 1010
     },
     {
       "shop": "Koychi",
@@ -35922,7 +35982,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
@@ -35941,7 +36001,7 @@
           "rm"
         ]
       ],
-      "id": 1009
+      "id": 1011
     },
     {
       "shop": "Los Vikingos",
@@ -35965,14 +36025,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
           "rm"
         ]
       ],
-      "id": 1010
+      "id": 1012
     },
     {
       "shop": "Ocean Pacific's",
@@ -35996,7 +36056,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Santiago",
@@ -36007,7 +36067,7 @@
           "rm"
         ]
       ],
-      "id": 1011
+      "id": 1013
     },
     {
       "shop": "Psiquis bar",
@@ -36031,14 +36091,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
           "rm"
         ]
       ],
-      "id": 1012
+      "id": 1014
     },
     {
       "shop": "La Yunta",
@@ -36062,7 +36122,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
@@ -36077,7 +36137,7 @@
           "rm"
         ]
       ],
-      "id": 1013
+      "id": 1015
     },
     {
       "shop": "Don Carlos",
@@ -36101,14 +36161,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
           "rm"
         ]
       ],
-      "id": 1014
+      "id": 1016
     },
     {
       "shop": "TPM",
@@ -36132,7 +36192,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -36143,7 +36203,7 @@
           "rm"
         ]
       ],
-      "id": 1015
+      "id": 1017
     },
     {
       "shop": "Infiltrados",
@@ -36167,14 +36227,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 1016
+      "id": 1018
     },
     {
       "shop": "La Parrilla del Guaton Jeréz",
@@ -36198,14 +36258,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 1017
+      "id": 1019
     },
     {
       "shop": "La Dicha",
@@ -36229,14 +36289,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 1018
+      "id": 1020
     },
     {
       "shop": "Zulú",
@@ -36260,14 +36320,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Vitacura",
           "rm"
         ]
       ],
-      "id": 1019
+      "id": 1021
     },
     {
       "shop": "Rustico",
@@ -36291,14 +36351,14 @@
         "magallanes"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Punta Arenas",
           "magallanes"
         ]
       ],
-      "id": 1020
+      "id": 1022
     },
     {
       "shop": "La Fabrica 737",
@@ -36322,14 +36382,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
           "loslagos"
         ]
       ],
-      "id": 1021
+      "id": 1023
     },
     {
       "shop": "Zamai",
@@ -36353,14 +36413,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quillota",
           "valparaiso"
         ]
       ],
-      "id": 1022
+      "id": 1024
     },
     {
       "shop": "Otra Cozza",
@@ -36384,7 +36444,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -36395,7 +36455,7 @@
           "valparaiso"
         ]
       ],
-      "id": 1023
+      "id": 1025
     },
     {
       "shop": "La Isla",
@@ -36419,14 +36479,14 @@
         "tarapaca"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Iquique",
           "tarapaca"
         ]
       ],
-      "id": 1024
+      "id": 1026
     },
     {
       "shop": "Reses Bar y Brasas",
@@ -36450,7 +36510,7 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
@@ -36461,7 +36521,7 @@
           "valparaiso"
         ]
       ],
-      "id": 1025
+      "id": 1027
     },
     {
       "shop": "Mr Hern Fish & Chips Bistr",
@@ -36485,14 +36545,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Puerto Montt",
           "loslagos"
         ]
       ],
-      "id": 1026
+      "id": 1028
     },
     {
       "shop": "Wake Up! Cofee & Food",
@@ -36516,14 +36576,14 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Curicó",
           "maule"
         ]
       ],
-      "id": 1027
+      "id": 1029
     },
     {
       "shop": "Gallardía",
@@ -36547,14 +36607,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
           "loslagos"
         ]
       ],
-      "id": 1028
+      "id": 1030
     },
     {
       "shop": "El Galpón",
@@ -36578,14 +36638,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
           "loslagos"
         ]
       ],
-      "id": 1029
+      "id": 1031
     },
     {
       "shop": "Trybar",
@@ -36609,14 +36669,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
           "loslagos"
         ]
       ],
-      "id": 1030
+      "id": 1032
     },
     {
       "shop": "Lebol",
@@ -36640,14 +36700,14 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
           "biobio"
         ]
       ],
-      "id": 1031
+      "id": 1033
     },
     {
       "shop": "Baqueano",
@@ -36671,14 +36731,14 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
           "araucania"
         ]
       ],
-      "id": 1032
+      "id": 1034
     },
     {
       "shop": "La Negra Restaurant",
@@ -36702,14 +36762,14 @@
         "arica"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Arica",
           "arica"
         ]
       ],
-      "id": 1033
+      "id": 1035
     },
     {
       "shop": "Bar Nomade",
@@ -36733,14 +36793,14 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
           "antofagasta"
         ]
       ],
-      "id": 1034
+      "id": 1036
     },
     {
       "shop": "Blind Bar",
@@ -36764,14 +36824,14 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Calama",
           "antofagasta"
         ]
       ],
-      "id": 1035
+      "id": 1037
     },
     {
       "shop": "Sazón Peruana",
@@ -36795,14 +36855,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
           "valparaiso"
         ]
       ],
-      "id": 1036
+      "id": 1038
     },
     {
       "shop": "Quinta pata al Gato",
@@ -36826,14 +36886,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Quilpué",
           "valparaiso"
         ]
       ],
-      "id": 1037
+      "id": 1039
     },
     {
       "shop": "Cervecería Nogg",
@@ -36857,14 +36917,14 @@
         "ohiggins"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Machalí",
           "ohiggins"
         ]
       ],
-      "id": 1038
+      "id": 1040
     },
     {
       "shop": "Toro Bayo",
@@ -36888,14 +36948,14 @@
         "maule"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Talca",
           "maule"
         ]
       ],
-      "id": 1039
+      "id": 1041
     },
     {
       "shop": "Dynos2",
@@ -36919,14 +36979,14 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
           "nuble"
         ]
       ],
-      "id": 1040
+      "id": 1042
     },
     {
       "shop": "Taurus Steakbar",
@@ -36950,14 +37010,14 @@
         "nuble"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Chillán",
           "nuble"
         ]
       ],
-      "id": 1041
+      "id": 1043
     },
     {
       "shop": "La Pasta de la Nonna",
@@ -36981,7 +37041,7 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
@@ -36992,7 +37052,7 @@
           "biobio"
         ]
       ],
-      "id": 1042
+      "id": 1044
     },
     {
       "shop": "Hashigo",
@@ -37016,14 +37076,14 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
           "araucania"
         ]
       ],
-      "id": 1043
+      "id": 1045
     },
     {
       "shop": "Carnivo",
@@ -37047,14 +37107,14 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
           "araucania"
         ]
       ],
-      "id": 1044
+      "id": 1046
     },
     {
       "shop": "Martina Lougne",
@@ -37078,14 +37138,14 @@
         "araucania"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Temuco",
           "araucania"
         ]
       ],
-      "id": 1045
+      "id": 1047
     },
     {
       "shop": "Inca Pecador",
@@ -37109,7 +37169,7 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
@@ -37120,7 +37180,7 @@
           "loslagos"
         ]
       ],
-      "id": 1046
+      "id": 1048
     },
     {
       "shop": "Matureo Bar",
@@ -37144,14 +37204,14 @@
         "loslagos"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Osorno",
           "loslagos"
         ]
       ],
-      "id": 1047
+      "id": 1049
     },
     {
       "shop": "Sanbar",
@@ -37181,14 +37241,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
           "rm"
         ]
       ],
-      "id": 1048
+      "id": 1050
     },
     {
       "shop": "Ora Bar",
@@ -37218,14 +37278,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Ñuñoa",
           "rm"
         ]
       ],
-      "id": 1049
+      "id": 1051
     },
     {
       "shop": "Kento Sushi",
@@ -37255,7 +37315,7 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Las Condes",
@@ -37266,7 +37326,7 @@
           "rm"
         ]
       ],
-      "id": 1050
+      "id": 1052
     },
     {
       "shop": "Porfirio",
@@ -37296,14 +37356,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
           "rm"
         ]
       ],
-      "id": 1051
+      "id": 1053
     },
     {
       "shop": "Expendio",
@@ -37333,14 +37393,14 @@
         "rm"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Providencia",
           "rm"
         ]
       ],
-      "id": 1052
+      "id": 1054
     },
     {
       "shop": "Don Taco",
@@ -37370,14 +37430,14 @@
         "antofagasta"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Antofagasta",
           "antofagasta"
         ]
       ],
-      "id": 1053
+      "id": 1055
     },
     {
       "shop": "Koala Sushi",
@@ -37407,14 +37467,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
           "valparaiso"
         ]
       ],
-      "id": 1054
+      "id": 1056
     },
     {
       "shop": "Rossonero",
@@ -37444,14 +37504,14 @@
         "valparaiso"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Viña del Mar",
           "valparaiso"
         ]
       ],
-      "id": 1055
+      "id": 1057
     },
     {
       "shop": "Gustó Restobar",
@@ -37481,14 +37541,14 @@
         "biobio"
       ],
       "origen": "scraper",
-      "leido": "2026-10-23",
+      "leido": "2026-10-24",
       "lugares": [
         [
           "Concepción",
           "biobio"
         ]
       ],
-      "id": 1056
+      "id": 1058
     }
   ]
 }
